@@ -9,20 +9,20 @@ note: "notes for club leaders.md"
 ...
 
 # Giới thiệu { .intro}
-Chúng ta sẽ cùng làm một trò chơi đuổi bắt với __mèo Felix__ và chuột __Herbert__. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down!
+Chúng ta sẽ cùng làm một trò chơi đuổi bắt với __mèo Felix__ và chuột __Herbert__. Hãy dùng chuột để điều khiển Herbert và cố gắng không bị Felix bắt được. Càng tránh được lâu bạn sẽ càng được nhiều điểm, nhưng cố gắng đừng để bị bắt vì điểm số của bạn sẽ giảm! 
 
 ![screenshot](felixherbert_screenshot.png)
 
-# STEP 1: Felix follows the mouse pointer { .activity}
+# BƯỚC 1: Felix di chuyển theo con trỏ chuột { .activity}
 
-## Activity Checklist { .check}
+## Bảng liệt kê các hoạt động cần kiểm tra { .check}
 
-+ **Start a new project.**
++ **Start a new program.**
 
-+ Click on the **stage** next to the sprite and switch to the `Backdrops` {.blocklightgrey} tab, and then click the `Choose Backdrop from library` {.blocklightgrey} button and choose the backdrop indoors/hall. Delete the original blank backdrop.
++ Click vào **stage** bên cạnh hình sprit và chuyển sang thẻ `Backdrops` {.blocklightgrey}, sau đó click vào nút `Choose Backdrop from library` {.blocklightgrey} và chọn backdrop indoors/hall. Xóa backdrop trống ban đầu.  
 
-+ Click on the sprite, and then click on the `i` button to the top left of the Sprite. Change the name of the sprite to **Felix**.
-+ Make sure Felix only points left-right by clicking this button:
++ Click vào hình sprit, và sau đó click vào nút `i` kéo đến phía trái của hình sprit. Đổi tên của hình sprite thành **Felix**.
++ Đảm bảo Felix chỉ di chuyển trái - phải khi click vào nút này: 
 + **Create this script**:
 
 ```blocks
@@ -35,25 +35,25 @@ Chúng ta sẽ cùng làm một trò chơi đuổi bắt với __mèo Felix__ v�
 				end
 ```
 
-##Test your project { .flag}
+##Chạy thử chương trình{ .flag}
 
 **Click the green flag.**
 
-Does Felix follow the mouse pointer? Does it look like he’s walking when he moves? Does he move at the right speed?
+Felix có di chuyển theo đúng hướng con trỏ chuột không? Khi di chuyển, chú mèo có trông giống như đang đi bộ không? Tốc độ di chuyển đã ổn chưa? 
 
-##Save your project { .save}
+##Lưu lại dự án của bạn { .save}
 
 
-#**Step 2:**   Felix chases Herbert {.activity}
+#**Step 2:**   Felix đuổi theo Herbert {.activity}
 
 *Next, we want Felix to chase Herbert the mouse, rather than the mouse pointer.*
 
-##Activity Checklist { .check}
+##Bảng liệt kê các hoạt động cần kiểm tra { .check}
 
-+ Create another sprite using the `choose sprite from library` {.blockgrey} button and selecting **animals/mouse1**.
-+ Change the name of the sprite to **Herbert**.
-+ Switch to the __Costumes__ tab, then click on the costume in the Paint Editor. A box will appear around the costume. Drag a corner of the box to make Herbert smaller than Felix.
-+ Make sure Herbert only points left-right.
++ Tạo 1 hình sprit khác sử dụng nút `choose sprite from library` {.blockgrey} và chọn **animals/mouse1**.
++ Đổi tên của hình sprit thành **Herbert**.
++ Chuyển sang thẻ __Costumes__, sau đó click vào trang phục ở Paint Editor. 1 hộp sẽ hiện ra xung quanh trang phục. Kéo 1 góc hộp để làm Herbert nhỏ hơn Felix.  
++ Đảm bảo Herbert chỉ di chuyển trái - phải.
 + **Give Herbert this script:**
 
 ```blocks
@@ -64,7 +64,7 @@ Does Felix follow the mouse pointer? Does it look like he’s walking when he mo
     end
 ```
 
-##Test your project { .flag}
+##Chạy thử chương trình { .flag}
 
 **Click the green flag.**
 
