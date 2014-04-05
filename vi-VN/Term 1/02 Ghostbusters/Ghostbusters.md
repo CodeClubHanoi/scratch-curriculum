@@ -7,27 +7,32 @@ embeds: "*.png"
 note: "notes for club leaders.md"
 ...
 
-# Introduction { .intro}
-This project is like the game __Whack-a-Mole__. You get points for hitting the ghosts that appear on the screen. The aim is to get as many points as possible in 30 seconds!
-
+# Giới thiệu
+Bản kế hoạch này giống như một trò chơi __Whack-a-Mole__. Bạn ghi điểm khi đánh vào những bóng ma xuất hiện trên màn hình. Mục tiêu là ghi thật nhiều điểm trong thời gian 30 giây!
 ![screenshot](ghostbsuters_screenshot.png)
 
 #STEP 1: Create a flying ghost { .activity}
-
+#BƯỚC 1: Tạo bóng ma bay
 ## Activity Checklist { .check}
-
+## Bảng liệt kê hoạt động
 + __Start a new scratch project.__
 + __Remove the cat sprite__ and replace the background with the __nature/woods__ background.
 + Use the `Choose sprite from library` {.blockgrey} button to add a new ghoul
 sprite to the project (use the __fantasy/ghost1__ costume). 
-
++ __Bắt đầu một dự án mới.__
++ __Xóa yêu tinh mèo__ và thay thế phông nền thành phông nền __thiên nhiên/cây cối__ 
 __Now we want to make our ghost move__
-
+__Bây giờ, chúng ta muốn làm bóng ma di chuyển__
 + Add a `Variable` {.blocklightgrey} for this sprite only called `speed` {.blockorange}.
 On the __Stage__, the stage monitor for this variable should say “__Ghost1 speed__”.
 If it just says “speed”, delete the variable and create it again, for this sprite only. Uncheck the box next to the speed block in the __Data palette__ so it does not show on the Stage.
 The speed variable will control how fast the ghost moves. We use a variable so that we can change how fast the ghost moves as the game progresses.
 + We want the ghost to start moving when the game starts, __so make a script like this__:
++ Thêm một 'Variable' cho yêu tinh mèo, gọi là 'speed'
+Trên __Sân đấu__, người điều khiển của variable này nên nói"__Ma1 tốc độ__"
+Nếu nó chỉ nói là 'Tốc độ', xóa variable này và làm lại (chỉ đối với con yêu tinh). Bỏ tích ô vuông bên cạnh ô tốc độ trong phần __Data palette__ để nó không hiện trên Sân đấu.
+Biến tốc độ sẽ điều khiển sự di chuyển nhanh hay chậm của ma. Chúng ta dùng một biến sao cho có thể thay đổi tốc độ di chuyển của ma cùng với tiến độ của trò chơi.
++ Chúng ta muốn bóng ma bắt đầu di chuyển khi trò chơi khởi động, __nên làm bản script như đây__:
 
 ```blocks
 
@@ -39,10 +44,12 @@ The speed variable will control how fast the ghost moves. We use a variable so t
 		
 ##Test Your Project { .flag}
 __Click the green flag__ and see what your ghost does. Why does it get stuck on the edge of the screen?
-
+## Kiểm tra tiền trình
+__Click vào lá cờ màu xanh__ và xem bóng ma của bạn làm gì. Tại sao nó bị kẹt ở rìa màn hình?
 ## Activity Checklist { .check}
-
+## Bảng liệt kê hoạt động
 + To stop the ghost getting stuck we need to make her go back the other way when she touches the edge of the screen. Edit your existing script by adding an `if on edge, bounce` {.blockblue} block below your `move ` {.blockblue}`speed` {.blockorange}` steps` {.blockblue} block.
++ Để ngừng tình trạng bóng ma bị kẹt, chúng ta cần đưa nó trở lại một lối khác khi nó đi vào từ rìa màn hình. Edit bản script hiện tại bằng việc gõ thêm một khối gọi là 'if on adge, bounce' bên dưới 'move' 'speed' 'steps'
 
 ```blocks
 
