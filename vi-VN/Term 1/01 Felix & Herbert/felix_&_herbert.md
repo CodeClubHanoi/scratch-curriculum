@@ -68,18 +68,18 @@ Felix có di chuyển theo đúng hướng con trỏ chuột không? Khi di chuy
 
 **Click the green flag.**
 
-Does Herbert move with the mouse pointer? Does Felix chase Herbert?
+Herbert có di chuyển theo con trỏ chuột không? Felix có đuổi theo Herbert không? 
 
-##Save your project { .save}
+##Lưu lại dự án của bạn { .save}
 
 
-#**Step 3:**   Felix says when he’s caught Herbert {.activity}
+#**Step 3:**   Felix nói khi bắt được Herbert {.activity}
 
-**We want Felix to know when he’s caught Herbert, and tell us.**
+**We want Felix to know when he’s caught Herbert, and tell us.** (Chúng tôi muốn Felix biết khi bắt được Herbert, vad nói cho chúng tôi)
 
-##Activity Checklist { .check}
+##Bảng liệt kê các hoạt động cần kiểm tra { .check}
 
-+ **Change Felix’s script to be this:**
++ **Change Felix’s script to be this:** (Thay đổi tập lệnh của Felix thành:)
 
 ```blocks
   when FLAG clicked
@@ -94,21 +94,21 @@ Does Herbert move with the mouse pointer? Does Felix chase Herbert?
    end
 ```
 
-##Test your project { .flag}
+##Kiểm tra dự án của bạn { .flag}
 
-**Click the green flag.**
+**Click the green flag.** (Click vào hình cờ màu xanh lá)
 
-Does Felix say when he’s caught Herbert?
+Felix có nói khi bắt được Herbert không?
 
-##Save your project { .save}
+##Lưu lại dự án của bạn { .save}
 
-#**Step 4:**  Herbert turns into a ghost when he’s caught {.activity}
+#**Step 4:**  Herbert biến thành 1 bóng ma khi bị bắt {.activity}
 
-**Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.**
+**Instead of Felix saying something, we want Herbert to turn into a ghost when he’s caught.** (Thay vì Felix nói gì đó, chúng tôi muốn Herbert biến thành bóng ma khi bị bắt)
 
-##Activity Checklist { .check}
+##Bảng liệt kê các hoạt động cần kiểm tra { .check}
 
-+ **Change Felix’s script to send this message when he catches Herbert:**
++ **Change Felix’s script to send this message when he catches Herbert:** (Thay đổi tập lệnh của Felix để gửi tin nhắn này khi bắt được Herbert)
 
 ```blocks
      when FLAG clicked
@@ -126,12 +126,12 @@ Does Felix say when he’s caught Herbert?
         end
 ```
 
-+ Add a new costume into Herbert by selecting Herbert, going into the Costumes section, and clicking the `Choose costume from Library button ` {.blocklightgrey}. Select the **fantasy/ghost2-a** costume.
++ Thêm trang phục mới cho Herbert bằng cách chọn Herbert, vào phần Costumes, và click vào `Choose costume from Library button ` {.blocklightgrey}. Chọn trang phục **fantasy/ghost2-a**.
 
-+ Make the costume smaller by clicking on it in the Paint Editor, and dragging the box that appears, to resize it.
++ Chỉnh trang phục nhỏ hơn bằng cách click vào nó ở mục Paint Editor, và kéo hộp xuất hiện để chỉnh kích cỡ trang phục.
 
-+ Change the names of Herbert’s costumes so the mouse costume is called ‘alive’ and the ghost costume is called ‘dead’.
-+ **Create a new script for Herbert to turn him into a ghost:**
++ Đổi tên trang phục của Herbert để khi là chuột tên là "alive" (sống) và trang phục cho bóng ma tên "dead" (chết).
++ **Create a new script for Herbert to turn him into a ghost:** (Tại 1 tập lệnh mới cho Herbert để biến 1 bóng ma)
 
 ```blocks
   when I receive [caught v]
@@ -141,24 +141,24 @@ Does Felix say when he’s caught Herbert?
 
 ```
 
-##Test your project { .flag}
+##Kiểm tra dự án của bạn { .flag}
 
-**Click the green flag.**
+**Click the green flag.** (Click vào hình cờ màu xanh lá)
 
-Does Herbert turn into a ghost when he’s caught?
-Does Felix play the right sounds at the right time?
-Does Felix still stay still for long enough for Herbert to get away?
+Herbert có biến thành ma khi bị bắt không? 
+Felix có chơi đúng âm thanh ở thời điểm thích hợp không?
+Felix có đứng yên đủ thời gian để Herbert chạy đi không? 
 
-##Save your project { .save}
+##Lưu lại dự án của bạn { .save}
 
-#**Step 5:**  Keep score {.activity}
+#**Step 5:**  Giữ điểm {.activity}
 
-**Let’s add a score so we know how well we do at keeping Herbert alive.
-We’ll start the score at zero and increase it by one every second. If Felix catches Herbert, we’ll reduce the score by one hundred.**
+**Hãy thêm 1 điểm để biết được chúng ta xuất sắc thê nào trong việc giữ Herbert còn sống.
+Bắt đầu tính điểm ở mức 0 và tăng theo từng giây. Nếu Felix bắt được Herber, chúng ta sẽ giảm 100 điểm.**
 
-##Activity Checklist { .check}
+##Bảng liệt kê các hoạt động cần kiểm tra { .check}
 
-+ Make a variable, for all sprites, called Score. Click on `Data` {.blockorange} in the top menu, make a variable and name it `score` {.blockorange}, ensuring that "For all sprites" is selected.
++ Tạo 1 biến, cho tất cả các hình sprit, gọi là Score. Click vào `Data` {.blockorange} ở menu phía trên, tạo 1 biến và đặt tên là `score` {.blockorange}, đảm bảo rằng "For all sprites" (tất cả các hình sprit) được chọn. 
 + **On the stage, create these two scripts:**
 
 
@@ -174,16 +174,16 @@ when I receive [caught v]
 change [score v] by (-100)
 ```
 
-##Test your project { .flag}
+##Kiểm tra dự án của bạn { .flag}
 
-**Click the green flag.** 
+**Click the green flag.** (Click vào hình cờ màu xanh lá)
 
-Does the score go up by one every second?
-Does the score go down by one hundred when Herbert is caught?
-What happens when Herbert is caught before score reaches one hundred? Does the score go back to zero when you start a new game?
+Điểm số có tăng lên theo từng giây không?
+Điểm số có giảm đi 100 khi Herbert bị bắt không?
+Điều gì xảy ra khi Herbert bị bắt trước khi điểm đạt 100? Điểm số có trở lại bằng 0 khi bạn bắt đầu 1 1 lượt chơi mới không? 
 
-##Save your project { .save}
+##Lưu lại dự án của bạn { .save}
 
-**Well done you’ve finished, now you can enjoy the game!**
+**Well done you’ve finished, now you can enjoy the game!** (Rất tốt bạn đã hoàn thành, bây giờ có thể chơi rồi)
 
-Don’t forget you can share your game with all your friends and family by clicking on **Share** on the menu bar!
+Đừng quên rằng bạn có thể chia sẽ trò chơi của mình với tất cả bạn bè và gia đình bằng cách click vào **Share** ở thanh menu!
