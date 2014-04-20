@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Desert Race — Code Club World</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
+<div class="title">Desert Race</div>
+<div><span class="level">Level 2</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Desert Race</strong></li></ol>
+</section>
+<section id="introduction" class="level1 intro">
+<h1>Introduction</h1>
+<p>This game is a two player game where you race a parrot and a lioness across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.</p>
+<p><img src="desertrace_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="step-1-create-the-scene-and-add-the-sprites" class="level1 activity">
+<h1>STEP 1: Create the scene and add the sprites</h1>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>scratch2</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<ol>
+<li>Select the Stage, and add the <strong>Nature/desert</strong> backdrop.<br />ticking off the boxes below:<br /></li>
+<li>Add a new sprite, select the <strong>Lioness</strong> sprite that you will find in the <strong>Animals</strong> folder.<br /></li>
+<li>Add another sprite, select the <strong>Parrot</strong> sprite that you will find in the <strong>Animals</strong> folder. <code class="blocklightgrey">Shrink</code> it so that it is roughly the same size as the lioness sprite.</li>
+</ol>
+</section>
+</section>
+<section id="step-2-make-the-lioness-and-the-parrot-move" class="level1 activity">
+<h1>STEP 2: Make the lioness and the parrot move</h1>
+<p>We want the sprite to move when you press a key.</p>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li>First select the lion sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘L’</strong> key.</li>
+</ol>
+<p><img src="5f030d2b539995c45e725827c6c48a493c6811cd.png" alt="when [l v] key pressed
+    move (4) steps" /></p>
+<ol>
+<li>Next, select the parrot sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘A’</strong> key.</li>
+</ol>
+<p><img src="ea0da29ff29dcacb944b66526cb76769453ed58a.png" alt="when [a v] key pressed
+    move (4) steps" /></p>
+</section>
+<section id="test-your-project" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag</strong><br />Do your lioness and parrot move across the screen when you press the ‘A’ and ‘L’ keys?</p>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-3-starting-the-race" class="level1 activity">
+<h1>STEP 3: Starting the race</h1>
+<p>We need to have a way to start the race and to know who has won. <strong>First we create a start button.</strong></p>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li>Add a new sprite from a file. Choose the <strong>button3</strong> sprite which is inside <strong>“Things”</strong>.<br /></li>
+<li>Edit the costume of the button sprite, add the text <strong>‘start’</strong> to it and click OK. Move the sprite to the middle of the stage.<br /></li>
+<li>Now add a script that shows the sprite when the project is run:</li>
+</ol>
+<p><img src="6b092c29425ba351f83f775c5750be3bce319e9c.png" alt="    when FLAG clicked
+    show" /></p>
+<ol>
+<li>Now we want the button to count down from 3 and then say go and then <code class="blockblue">hide</code> when it is clicked. Add another script like this one:</li>
+</ol>
+<p><img src="e4146642f573e25db0a2c498766f864e72b4b2ba.png" alt="when this sprite clicked
+    say [3] for (1) secs
+    say [2] for (1) secs
+    say [2] for (1) secs
+    say [GO!] for (1) secs
+    hide" /></p>
+</section>
+<section id="test-your-project-1" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click on the green flag.</strong></p>
+<p>When you press the start button does it countdown to the start of the race before disappearing?</p>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save your project</h2>
+<p>We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.</p>
+<ol>
+<li>Add a variable for all sprites called <code class="blockorange">racing</code>. Untick the box next to it so it does not show on the stage.<br /></li>
+<li>Now set <strong>racing</strong> to be <strong>0</strong> when the project is first started. Change your <code class="blockyellow">when flag clicked</code> script from before to look like this:</li>
+</ol>
+<p><img src="c7fe261470330ace56dcaf22a99fadf7eb376875.png" alt="when FLAG clicked
+    show
+    set [racing v] to (0)" /></p>
+<ol>
+<li>Next, set the <strong>racing</strong> variable to be 1 when the starting countdown has finished.<br /></li>
+<li>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.</li>
+</ol>
+<p><img src="862519bb20dcebacc1653a655e832a588d2f849f.png" alt="
+    when [a v] key pressed
+    if &lt;(racing) = [1]&gt;
+        move (4) steps" /></p>
+<ol>
+<li>Now do the same for the lion sprite.</li>
+</ol>
+</section>
+<section id="test-your-project-2" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click on the green flag.</strong></p>
+<p>Does the lioness or the parrot move only after the countdown has finished?</p>
+<p>We want to know who wins the race and reset it when it has finished so you can<br />race again.</p>
+</section>
+<section id="save-your-project-2" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-4-finishing-the-race" class="level1 activity">
+<h1>STEP 4: Finishing the race</h1>
+<section id="activity-checklist-3" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li>Add a block to the parrot’s script that sets the <strong>racing</strong> variable to be 0 when the sprite touches the edge of the screen.</li>
+</ol>
+<p><img src="c8d847225cfeeba3c665c15a745a87a1f28d34a6.png" alt="when [a v] key pressed
+if &lt;(racing) = [1]&gt;
+    move (4) steps
+    if &lt;touching [edge v]?&gt;
+    set (racing) to [0]" /></p>
+<ol>
+<li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <code class="blocklightgrey">sounds</code> and then record the sound of the parrot winning the race!<br /></li>
+<li>Now add blocks that <code class="blockpurple">play</code> the sound you recorded and makes the parrot say it has won:</li>
+</ol>
+<p><img src="63957c0f693cd6cf5735a0cc9d42e8945155f981.png" alt="    when [a v] key pressed
+    if &lt;(racing) = [1]&gt;
+        move (4) steps
+        if &lt;touching [edge v]?&gt;
+            set (racing) to [0]
+            play sound [recording1 v]
+            say [The Parrot Wins! v] for (3) secs   " /></p>
+<ol>
+<li>Now repeat these steps for the lioness.</li>
+</ol>
+</section>
+<section id="test-your-project-3" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click on the green flag.</strong></p>
+<p>Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?<br />Do the sprites make their winning sound and say they’ve won when they reach the end of the race?</p>
+</section>
+<section id="save-your-project-3" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-5-resetting-the-game" class="level1 activity">
+<h1>STEP 5: Resetting the game</h1>
+<p>After the race is finished we need to tell the other sprites we have won and reset the game so we can play again.</p>
+<p><strong>We need the winning sprite to broadcast that it has won.</strong></p>
+<section id="activity-checklist-4" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li>Click on the Parrot sprite.<br />Add a block that broadcasts a <strong>&quot;finished”</strong> message after the sprite says it has won.</li>
+</ol>
+<p><img src="b150a0748e51f9be5048cbb4151773c839b0a902.png" alt="when [a v] key pressed
+if &lt;(racing) = [1]&gt;
+    move (4) steps
+    if &lt;touching [edge v]?&gt;
+        set (racing) to [0]
+        play sound [recording1 v]
+        say [The Parrot Wins! v] for (3) secs
+        broadcast [finished v]" /></p>
+<ol>
+<li>Now we need to add a new script that listens for the finished broadcast and moves the parrot back to the start. What happens if you change the value that <strong>x</strong> is set to?</li>
+</ol>
+<p><img src="19dc6417503fa4c1f570030cdb637718b60594db.png" alt="when I receive [finished v]
+    set x to (-170)" /></p>
+<ol>
+<li>Now add the same script for the lioness. Test different <strong>x</strong> values to make sure the lion and the parrot line up at the start.<br /></li>
+<li>We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start when we click the flag.</li>
+</ol>
+<p><img src="f0f83b812562c866b3473e28eac324c59c9c0b9c.png" alt="when FLAG clicked
+    set x to (-170)" /></p>
+<ol>
+<li>Now click on the button sprite and add a script that shows it when it receives the finished message.</li>
+</ol>
+</section>
+<section id="test-your-project-4" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click on the green flag.</strong></p>
+<p>Can you race against a friend, one of you moving the parrot by pressing ‘A’ and the other moving the Lion by pressing ‘L’?</p>
+</section>
+<section id="save-your-project-4" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-1-add-a-booster" class="level2 challenge">
+<h2>Challenge 1: Add a booster</h2>
+<ul>
+<li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong><br /></li>
+<li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.<br /></li>
+<li><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</li>
+</ul>
+<p><img src="4439f6da04ee4a5e49a5eba5727fd9070cc29f34.png" alt="when [p v] key pressed
+if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
+    switch to costume [parrot-boost v]
+    set [boosted v] to [1]     
+    move (4) steps
+    if &lt;touching [edge v]?&gt;
+         set (racing) to [0]
+        play sound [recording1 v]
+        say [The Parrot Wins! v] for (3) secs
+        broadcast [finished v]" /></p>
+</section>
+<section id="test-your-project-5" class="level2 flag">
+<h2>Test Your Project</h2>
+</section>
+<section id="save-your-project-5" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="challenge-2-use-custom-blocks-to-simplify-your-script" class="level2 challenge">
+<h2>Challenge 2: Use custom blocks to simplify your script</h2>
+<p>The code to check if the race has finished is now used in two places for each sprite: when the sprite is moving normally and when it's moving with the booster. We can simplify our script using a custom block which is a chunk of code that gets used in more than one place. It's a bit like making up our own Scratch code block!</p>
+<ol>
+<li>Choose the Parrot's script.<br /></li>
+<li>Select the <code class="blocklightgrey">More Blocks</code> palette and then click the <code class="blocklightgrey">Make a Block</code> button.<br /></li>
+<li>Give the custom block a name by typing <strong>&quot;finished&quot;</strong> into the pink box. Then click OK.<br /></li>
+<li>You'll now see a <code class="blockpurple">define finished</code> block appear in the scripts window. Drag it to a clear area.<br /></li>
+<li>Detach the <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> block and drag it to the <code class="blockpurple">define finished</code> block.</li>
+</ol>
+<p><img src="e9d32fc8348aaec692744258a6434d21f6abda6b.png" alt="define finished
+ if &lt;touching [edge v]?&gt;
+     set (racing) to [0]
+     play sound [recording1 v]
+     say [The Parrot Wins! v] for (3) secs
+     broadcast [finished v]
+
+when [q v] key pressed 
+if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
+    switch to costume [parrot-boost v]
+    set [boosted v] to [1]     
+    move (4) steps
+finished" /></p>
+<p>Can you drag the <code class="blockpurple">finished</code> block from the palette and use it like any other code item?</p>
+<p>Delete the other <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code> block from your script and replace it with another <code class="blockpurple">finished</code> custom block.</p>
+<p>Does this make your code easier to read? Can you create a similar custom block for the lioness sprite?</p>
+</section>
+<section id="test-your-project-6" class="level2 flag">
+<h2>Test Your Project</h2>
+</section>
+<section id="save-your-project-6" class="level2 save">
+<h2>Save your project</h2>
+<p><strong>Well done you’ve finished, now you can enjoy the game!</strong></p>
+</section>
+</section>
+<section class="legal" id="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-2']);
+        _gaq.push(['_setDomainName', 'codeclubworld.org']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>

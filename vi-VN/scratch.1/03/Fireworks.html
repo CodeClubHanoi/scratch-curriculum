@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Fireworks — Code Club World</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
+<div class="title">Fireworks</div>
+<div><span class="level">Level 1</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Fireworks</strong></li></ol>
+</section>
+<section id="li-gii-thiu" class="level1 intro">
+<h1>Lời giới thiệu</h1>
+<p>Lần này, chúng ta sẽ tạo một màn hình pháo hóa trong một thành phố.</p>
+<p><img src="fireworks_screenshot.png" alt="screenshot" /></p>
+</section>
+<section id="buc-1-tao-mt-ten-la-bay-v-phia-con-tro-chut" class="level1 activity">
+<h1>BƯỚC 1: Tạo một tên lửa bay về phía con trỏ chuột</h1>
+<p><strong>Nhãy nhập những hình nền khác nhau cho trò chơi</strong></p>
+<section id="danh-sach-lit-ke-hoat-ng" class="level2 check">
+<h2>Danh sách liệt kê hoạt động</h2>
+<ul>
+<li>Bắt đầu một dự án Scratch. Xóa chú mèo bằng cách click chuột phải và chọn lệnh &quot;Delete&quot;<br /></li>
+<li>Thay thế phông nền với <strong>outdoor/city-with-water</strong> (ngoài trời/thành phố trong nước)<br /></li>
+<li>Sử dụng lệnh <code>Upload sprite from file</code> (tải hình ảnh từ file) {.blockgrey} để thêm một tên lửa cho dự án.<br /></li>
+<li>Làm ẩn tên lửa khi click vào lá cờ màu xanh lá cây.</li>
+</ul>
+<p>Bây giờ chúng ta cần tạo một tên lửa di chuyển về phía con trỏ chuột khi click.</p>
+<ul>
+<li>Thêm một khối điểu khiển <code>when space key pressed</code> và ở đó làm cho tên lửa xuất hiện và lướt về phía con trỏ chuột.</li>
+</ul>
+<p><img src="259a2b754818d1824a4a90a632123ac2a7ddcaf1.png" alt="
+    when FLAG clicked
+    hide
+
+    when [space v] key pressed 
+    show
+    glide (1) secs to x: (mouse x) y: (mouse y)" /></p>
+</section>
+<section id="chay-th-d-an-cua-ban" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Chọn vào lá cờ màu xanh lá cây, đặt con trỏ chuột lên sân khấu.</strong></p>
+<p>Tên lửa có xuất hiện và di chuyển đến con trỏ chuột?<br />Chuyện gì sẽ xảy ra khi ta không di chuyển chuột và nhấn vào khoảng không một lần nữa?</p>
+</section>
+<section id="danh-sach-hoat-ng" class="level2 check">
+<h2>Danh sách hoạt động</h2>
+<ul>
+<li>Pháo hoa không bay từ bên này sang bên kia, do đó đảm bảo rằng nó luôn lướt về phía con trỏ chuột từ phía dưới màn hình. Trước khi chúng ta cho hiển thị tên lửa, dùng khối <code>go to block</code> để giúp nó di chuyển tới đáy màn hình nhưng giữ nguyên vị trí theo chiều dọc.</li>
+</ul>
+<p><img src="860f21a1a7af18f6a1bd8c93abd328e1c9609d04.png" alt="
+    when FLAG clicked
+    hide
+
+    when [space v] key pressed 
+    go to x: (mouse x) y: (-200)
+    show
+    glide (1) secs to x: (mouse x) y: (mouse y)" /></p>
+</section>
+<section id="chay-th-d-an-cua-ban-1" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh, đặt trỏ chuột vào màn hình và nhấn phím cách.</strong><br />Tên lửa có bay về phía trỏ chuột từ dưới màn hình? Chuyện gì xảy ra khi ta di chuyển chuột và nhấn vào khoảng không một lần nữa?</p>
+</section>
+<section id="danh-sach-hoat-ng-1" class="level2 check">
+<h2>Danh sách hoạt động</h2>
+<ul>
+<li>Cuối cùng, hãy thực hiện công việc này bằng cách dùng chuột thay vì dấu cách. Để thực hiện nó, chúng ta có thể dùng lệnh trong một khối <strong>forever if mouse down</strong> (luôn luôn nếu dùng chuột).<br />Sau đó hoán đổi khối <strong>when space key pressed</strong> (khi ấn chuột) bằng khối <strong>when flag clicked</strong> (khi click vào lá cờ) và hãy chắc chắn rằng tên lửa được ẩn đi khi mọi thứ khởi động.</li>
+</ul>
+<p><img src="2385f76aa74b16d7b68a11021da88ff675c672a2.png" alt="
+    when FLAG clicked
+    hide
+    forever 
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)" /></p>
+</section>
+<section id="chay-th-d-an-cua-ban-2" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vài lá cờ màu xanh lá, sau đó nhấn chuột trên sân khấu. Click một lần nữa tại một điểm khác.</strong></p>
+</section>
+<section id="hay-th" class="level2 try">
+<h2>Hãy thử!</h2>
+<ol>
+<li>Thử làm cho một vài tên lửa chậm hoặc nhanh hơn các tên lửa khác một chút.<br /></li>
+<li>Thử thay đổi nơi tên lửa di chuyển để khiến nó trượt về phía con trỏ chuột hơi có hình vòng cung.</li>
+</ol>
+</section>
+<section id="luu-d-an-cua-ban" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
+</section>
+</section>
+<section id="buc-2-lam-cho-ten-la-phat-n" class="level1 activity">
+<h1>BƯỚC 2: Làm cho tên lửa phát nổ</h1>
+<section id="danh-sach-hoat-ng-2" class="level2 check">
+<h2>Danh sách hoạt động</h2>
+<ul>
+<li>Bước đầu tiên để làm cho tên lửa phát nổ là làm nó tạo ra một tiếng nổ <strong>Resources/bang.wav</strong> trước khi nó bắt đầu di chuyển, sau đó ẩn đi khi nó tới vị trí con trỏ chuột. Nhập một đoạn âm thanh vào thẻ Sounds (âm thanh) và click nút <code class="blockgrey">Upload sound from file</code> (Tải âm thanh từ file).</li>
+</ul>
+<p><img src="6ddd864e4874536ecf273354571e6a4cfdde8f70.png" alt="
+    when FLAG clicked
+    hide
+    forever
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            play sound [bang v]
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)
+            hide" /></p>
+<ul>
+<li>Bước tiếp theo, làm cho tên lửa truyền một thông điệp mới khi nó phát nổ. Chúng ta sẽ nghe thông điệp này sau.</li>
+</ul>
+<p><img src="98bd1c1cc77c7757c10c677b12365f612c5af479.png" alt="
+    when FLAG clicked
+    hide
+    forever
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            play sound [bang v]
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)
+            hide
+            broadcast [explode v]" /></p>
+</section>
+<section id="chay-th-d-an-cua-ban-3" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh.</strong><br />Hãy chắc chắn rằng tên lửa phát ra âm thanh và ẩn khi tới vị trí con trỏ chuột.</p>
+</section>
+<section id="danh-sach-hoat-ng-3" class="level2 check">
+<h2>Danh sách hoạt động</h2>
+<ul>
+<li>Tạo một hình mới từ File, <strong>Resources/firework1.png</strong><br /></li>
+<li>Khi nhận được thông điệp về vụ nổ, nó sẽ tự ẩn đi và di chuyển tới vị trí quả tên lửa, sử dụng khối <code>go to</code>, tự hiện ra và lại biến mất sau một giây.</li>
+</ul>
+<p><img src="dfc42e82a65fccdb33e8da460ea3f7273b41a43f.png" alt="
+    when I receive [explode v]
+    hide
+    go to [rocket v]
+    show
+    wait (1) secs
+    hide" /></p>
+</section>
+<section id="chay-th-d-an-cua-ban-4" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Bắn một quả tên lửa khác.</strong></p>
+<p>Nó có được thay thế bằng hình vụ nổ khi phát nổ không?<br />Chuyện gì sẽ xảy ra khi bạn giữ chuột trong lúc di chuyển nó? (Đừng lo lắng, chúng ta sẽ sửa lỗi đó sau).</p>
+</section>
+<section id="luu-d-an-cua-ban-1" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
+</section>
+</section>
+<section id="buc-3-lam-cho-mi-vu-n-tr-nen-c-ao" class="level1 activity">
+<h1>BƯỚC 3: Làm cho mỗi vụ nổ trở nên độc đáo</h1>
+<ul>
+<li>Bây giờ chúng ta làm cho mỗi vụ nộ trở nên độc đáo hơn bằng cách sử dụng lệnh <code class="blockpurple">set color effect</code>, và chọn một màu sắc bất kì trong khoảng từ <strong>1</strong> tới <strong>200</strong> trước khi hiển thị chúng.</li>
+</ul>
+<p><img src="ab4cca93ae691be97374355aefb7c04ae79f9eb6.png" alt="
+    when I receive [explode v]
+    hide
+    set [color v] effect to (pick random (1) to (200))
+    go to [rocket v]
+    show
+    wait (1) secs
+    hide    
+    " /></p>
+<section id="chay-th-d-an-cua-ban-5" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh.</strong></p>
+<p>Mỗi vụ nổ có một màu khác nhau không?</p>
+</section>
+<section id="danh-sach-hoat-ng-4" class="level2 check">
+<h2>Danh sách hoạt động</h2>
+<ul>
+<li>Hãy thêm một số hình ảnh khác nhau cho vụ nổ bằng các sử dụng <strong>Resources/firework2.png</strong> và <strong>Resources/firework3.png</strong>, rồi chuyển đổi chúng cho mỗi tên lửa một lần nữa trước khi hiển thị nó.</li>
+</ul>
+</section>
+<section id="chay-th-d-an-cua-ban-6" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ xanh lá.</strong></p>
+<p>Mỗi tên lửa có một hình ảnh vụ nổ khác nhau không?</p>
+</section>
+<section id="danh-sach-hoat-ng-5" class="level2 check">
+<h2>Danh sách hoạt động</h2>
+<ul>
+<li>Cuối cùng, hãy làm cho vụ nổ lớn hơn sau khi tên lửa phát nổ! Thay vì chờ trong một giây, đặt kích thước của sprite <strong>5%</strong> trước khi hiển thị nó, và sau khi nó đã được thể hiện, tăng kích thước <strong>2 fifty times</strong>, sử dụng lệnh <code class="blockorange">repeat</code>.</li>
+</ul>
+<p><img src="02b896c403dc388c4756a1b2b7a4b49452c2007f.png" alt="    
+    when I receive [explode v]
+    hide
+    set [color v] effect to (pick random (1) to (200))
+    go to [rocket v]
+    show
+    set size to (5) %
+    repeat (50)
+        change size by (2)
+    end
+    hide
+    " /></p>
+</section>
+<section id="chay-th-d-an-cua-ban-7" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh lá.</strong></p>
+<p>Hình ảnh vụ nổ có lan ra từ trung tâm và lớn dần lên không?</p>
+</section>
+</section>
+<section id="hay-th-1" class="level1 try">
+<h1>Hãy thử!</h1>
+<ul>
+<li>Tại sao không làm mỗi vụ nổ trở nên độc đáo hơn bằng cách thay đổi kích thước và tốc độ bùng cháy của vụ nổ.</li>
+</ul>
+<section id="luu-d-an-cua-ban-2" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
+</section>
+</section>
+<section id="step-4-sa-li-phat-thong-tin" class="level1 activity">
+<h1>Step 4: Sửa lỗi phát thông tin</h1>
+<p>Bạn có nhớ rằng lúc trước chúng ta đã có một lỗi liên quan tới việc giữ chuột?<br />Vấn đề này xuất hiện bởi khi tên lửa phát thông tin vụ nổ của nó, nó sẽ ngay lập tức lặp lại nếu có vòng lặp và di chuyển trở lại phía dưới sân khấu, nó diễn ra trước khi vụ nổ được chuyển tới vị trí của tên lửa.</p>
+<section id="danh-sach-hoat-ng-6" class="level2 check">
+<h2>Danh sách hoạt động</h2>
+<ul>
+<li>Để sửa lỗi này, chúng ta có thể thay thế các khối truyền phát bằng một khối truyền và chờ. Bằng cách này, vòng lặp sẽ không lặp lại tới khi vụ nổ kết thúc.</li>
+</ul>
+<p><img src="51d790b810c54f3bd5143fbe57929d98b79c1fe9.png" alt="    
+    when FLAG clicked
+    hide
+    forever
+        if &lt;mouse down?&gt; then
+            go to x: (mouse x) y: (-200)
+            play sound [bang v]
+            show
+            glide (1) secs to x: (mouse x) y: (mouse y)
+            hide
+            broadcast [explode v] and wait
+" /></p>
+</section>
+<section id="chay-th-d-an-cua-ban-8" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh lá, giữ chuột và di chuyển quanh sân khấu.</strong></p>
+<p>Hình ảnh vụ nổ xuất hiện ở đúng nơi và vào đúng thời điểm không?</p>
+</section>
+<section id="luu-d-an-cua-ban-3" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
+<p><strong>Tuyệt vời, bạn đã hoàn thành, giờ hãy thưởng thức trò chơi!</strong></p>
+<p>Đừng quên chia sẻ trò chơi của bạn với những người thân bằng cách click &quot;Share&quot; (chia sẻ) trên thanh menu!</p>
+</section>
+</section>
+<section class="legal" id="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-2']);
+        _gaq.push(['_setDomainName', 'codeclubworld.org']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>
