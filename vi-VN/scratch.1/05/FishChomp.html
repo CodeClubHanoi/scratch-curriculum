@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Fish Chomp — Code Club World</title>
+    <title>Cá bắt mồi — Code Club World</title>
 
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -16,8 +16,8 @@
 <body>
 <header>
 <div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
-<div class="title">Fish Chomp</div>
-<div><span class="level">Level 2</span></div>
+<div class="title">Cá bắt mồi</div>
+<div><span class="level">Cấp độ 2</span></div>
 </header>
 <section class="legal">
 <div>
@@ -25,96 +25,96 @@ These projects are for use outside the UK only. More information is available on
 </div>
 </section>
 <section class="breadcrumb">
-<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Fish Chomp</strong></li></ol>
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Cá bắt mồi</strong></li></ol>
 </section>
-<section id="introduction" class="level1 intro">
-<h1>Introduction</h1>
-<p>We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.</p>
+<section id="gii-thiu" class="level1 intro">
+<h1>Giới thiệu</h1>
+<p>Chúng ta sẽ làm trò Fish Chomp! Điều khiển con cá lớn đang đói và cố gắng ăn hết những con mồi bơi xung quanh.</p>
 <p><img src="fishchomp_screenshot.png" alt="screenshot" /></p>
 </section>
-<section id="step-1-create-a-sprite-that-follows-the-mouse" class="level1 activity">
-<h1>STEP 1: Create a sprite that follows the mouse</h1>
-<p><strong>Let’s make the Hungry Fish swim around the sea!</strong></p>
-<section id="activity-checklist" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-1-tao-mt-hinh-hoa-chay-theo-con-tro-man-hinh" class="level1 activity">
+<h1>BƯỚC 1: Tạo một hình họa chạy theo con trỏ màn hình</h1>
+<p><strong>Hãy làm con cá đang đói bơi xung quanh biển</strong></p>
+<section id="hoat-ng" class="level2 check">
+<h2>Hoạt động</h2>
 <ol>
-<li>Start a new Scratch project.<br /></li>
-<li>Select the Stage, then select the Stage’s Backdrop tab. Import the<br />background <strong>Nature/underwater3</strong> using <code class="blocklightgrey">choose background from library</code>. Finally, remove <strong>backdrop1</strong>.<br /></li>
-<li>Change the name of Sprite1 to 'Hungry Fish' by clicking on the blue 'i' symbol.<br /></li>
-<li>Import Hungry Fish’s costume, <strong>resources/hungry-fish.png</strong> then remove its existing <strong>costume1</strong> and <strong>costume2</strong>.<br /></li>
-<li>Click on the blue '<strong>i</strong>' symbol again, and make sure the sprite can only flip left-right.<br /></li>
-<li>Now create a script for Hungry Fish to follow the mouse around the sea like this:</li>
+<li>Bắt đầu một dự án mới.<br /></li>
+<li>Chọn stage, backdrop. Chọn hình nền <strong>Nature/underwater3</strong> bằng cách nhấn nút <code class="blocklightgrey">choose background from library</code>. Cuối cùng, bỏ <strong>backdrop1</strong><br /></li>
+<li>Thay đổi tên của Sprite1 thành ‘Hungry Fish’ bằng cách nhấp chuột vào biểu tượng chữ ‘i’ màu xanh.<br /></li>
+<li>Nhập hình Hungry Fish, <strong>resources/hungry-fish.png</strong> rồi xóa <strong>costume1</strong> và <strong>costume2</strong> đang có sẵn.<br /></li>
+<li>Click vào biểu tượng chữ ‘<strong>i</strong>’ màu xanh một lần nữa, mà đảm bảo là hình họa chỉ có thể xoay trái-phải.<br /></li>
+<li>Bây giờ, tạo lệnh cho Hungry Fish để nó di chuyển theo con trỏ xung quanh biển như sau:</li>
 </ol>
-<p><img src="89a23fdce94f6c4c0f3b2bd2b5ef30b3bbea425f.png" alt="when FLAG clicked
-    forever     
+<p><img src="b588ac72a037cc18c51388902a2d8539cb055450.png" alt="when FLAG clicked
+    forever        
         point towards [mouse pointer v]
         move (3) steps" /></p>
 </section>
-<section id="test-your-project" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag.</strong><br />Move the mouse pointer around the sea. Does the fish follow the pointer?<br />What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?</p>
+<section id="chay-th" class="level2 flag">
+<h2>Chạy thử</h2>
+<p><strong>Click vào biểu tượng lá cờ màu xanh.</strong><br />Di chuyển con trỏ chuột xung quanh biển. Con cá có đi theo con trỏ không?<br />Chuyện gì sẽ xảy ra nếu bạn không di chuyển con trỏ chuột và con cá theo kịp nó? Trông con cá lúc đó thế nào? Và tại sao nó lại làm như vậy?</p>
 <ol>
-<li>You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer<br />(The <code class="blocklightblue">distance to</code> block is in the <code class="blocklightgrey">Sensing</code> palette).</li>
+<li>Bạn có thể dừng việc Hungry Fish xoay chiều liên tục bằng cách làm nó di chuyển chỉ khi nó ở quá gần con trỏ<br />(Dùng khối <code class="blocklightblue">distance to</code> trong bảng <code class="blocklightgrey">Sensing</code>).</li>
 </ol>
 <p><img src="773a8f2892e29a5e40ca51cc8b01daaea557e4b2.png" alt="when FLAG clicked
     forever if &lt;(distance to [mouse-pointer v]) &gt; (10)&gt;
         point towards [mouse-pointer v]
         move (3) steps" /></p>
 </section>
-<section id="save-your-project" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-tin--cua-ban" class="level2 save">
+<h2>Lưu lại tiến độ của bạn</h2>
 </section>
-<section id="things-to-try" class="level2 try">
-<h2>Things to try</h2>
-<p>If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).</p>
+<section id="co-th-th-them" class="level2 try">
+<h2>Có thể thử thêm</h2>
+<p>Nếu bạn muốn, bạn có thể cho số khác nhau vào lệnh. Việc này có ảnh hưởng gì đến việc di chuyển có con cá? Thay đổi khoảng cách lên số lớn( VD: 100), hoặc số nhỏ hơn (VD: 1). Thay đổi số lần di chuyển của con cá lên số lớn (VD: 20), hoặc nhỏ (VD: 1 hoặc 0).</p>
 </section>
 </section>
-<section id="step-2-add-some-prey" class="level1 activity">
-<h1>STEP 2: Add some prey</h1>
-<p><strong>It's time to make something for the Hungry Fish to try to eat!</strong></p>
-<section id="activity-checklist-1" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-2-them-con-mi" class="level1 activity">
+<h1>BƯỚC 2: Thêm con mồi</h1>
+<p><strong>Đã đến lúc làm gì đấy cho con cá ăn rồi!</strong></p>
+<section id="hoat-ng-1" class="level2 check">
+<h2>Hoạt động</h2>
 <ol>
-<li>Create a new sprite from the library, using <strong>Animals/starfish</strong>.<br /></li>
-<li>Use the <code class="blocklightgrey">Shrink</code> sprite tool (above the Stage) to make the sprite smaller.<br /></li>
-<li>Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.</li>
+<li>Tạo một hình họa mới trong thư viện, dùng <strong>Animals/starfish</strong><br /></li>
+<li>Dùng côn cụ <code class="blocklightgrey">Shrink</code> (ở trên Stage) để làm hình họa nhỏ hơn.<br /></li>
+<li>Tạo lệnh để làm những con mồi bơi xung quanh. Chúng ta muốn chúng di chuyển ngẫu nhiên, nên hãy làm chúng tiến lên một chút, rồi quay một chút, sang trái hoặc phải, rồi lặp lại.</li>
 </ol>
-<p><img src="d55a1a116e2f1450af684695fecca7d1d50a0b11.png" alt="when FLAG clicked
-    forever     
+<p><img src="64d791d02e1b47392eff8e816d2308ac9e4f6192.png" alt="when FLAG clicked
+    forever        
         move (2) steps
         turn right (pick random (-20) to (20)) degrees
         if on edge, bounce  " /></p>
 </section>
-<section id="test-your-project-1" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong> and watch the prey swim around. Does it swim like you expect? Does it swim realistically?</p>
-<p><strong>At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.</strong></p>
+<section id="chay-th-1" class="level2 flag">
+<h2>Chạy thử</h2>
+<p><strong>Click vào biểu tượng lá cờ màu xanh</strong> rồi xem những con mồi di chuyển. Chúng có bơi như bạn mong muốn? Chúng có thực sự đang bơi?</p>
+<p><strong>Tại thời điểm này, con hungry Fish và những con mồi chưa có tương tác, chúng ta sẽ làm việc này trong bước sau.</strong></p>
 </section>
-<section id="save-your-project-1" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-tin--cua-ban-1" class="level2 save">
+<h2>Lưu lại tiến độ của bạn</h2>
 </section>
-<section id="things-to-try-1" class="level2 try">
-<h2>Things to try</h2>
+<section id="co-th-th-them-1" class="level2 try">
+<h2>Có thể thử thêm</h2>
 <ul>
-<li>Try changing the numbers in the <code class="blockgreen">pick random</code> and move blocks. How do they make the prey move differently?<br /></li>
-<li>What does the <code class="blockblue">if on edge, bounce</code> block do? Take it out and see what happens.</li>
+<li>Thử thay đổi số trong <code class="blockgreen">pick random</code><br /> và di chuyển các khối. Việc này làm những con mồi di chuyển khác như thế nào?<br /></li>
+<li>Khối <code class="blockblue">If on edge, bounce</code> có tác dụng gì? Bỏ nó đi và xem chuyện gì xảy ra.</li>
 </ul>
 </section>
 </section>
-<section id="step-3-hungry-fish-eats-the-prey" class="level1 activity">
-<h1>STEP 3: Hungry Fish eats the prey</h1>
-<p><strong>Now we want to make the Hungry Fish eat the prey!</strong> Once the Hungry Fish has caught the prey in its mouth, two things need to happen:</p>
+<section id="buc-3-hungry-fish-an-mi" class="level1 activity">
+<h1>BƯỚC 3: Hungry Fish ăn mồi</h1>
+<p><strong>Bây giờ chúng ta muốn làm con cá ăn những con mồi!</strong> Một khi con cá bắt được mồi trong miệng nó, hai việc cần xảy ra:</p>
 <ul>
-<li>The Hungry Fish needs to close its mouth and make a &quot;chomp&quot; sound.<br /></li>
-<li>The prey needs to disappear, then reappear a short while later.</li>
+<li>Con Hungry Fish cần ngậm miện lại là tạo ra âm thanh nuốt con mồi.<br /></li>
+<li>Con mồi cần biến mất, rồi xuất hiện lại sau đó một lúc.</li>
 </ul>
-<section id="activity-checklist-2" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="hoat-ng-2" class="level2 check">
+<h2>Hoạt động</h2>
 <ol>
-<li>First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the <code class="blocklightblue">touching</code> block to see if it is touching the fish.</li>
+<li>Đầu tiên, hãy làm con mồi biến mất khi nó chạm vào con Hungry Fish, rồi xuất hiện lại sau 3 giây. Dùng khối <code class="blocklightblue">touching</code> để xem liệu nó có chạm vào con cá không.</li>
 </ol>
-<p><img src="b8183d6c95d09c3940e964729462d54718bdb397.png" alt="
-forever     
+<p><img src="860c0dcd6b3a5e3ac66660720c60fe7fe0781b2b.png" alt="
+forever        
         move (2) steps
         turn right (pick random (-20) to (20)) degrees
         if on edge, bounce
@@ -123,15 +123,15 @@ forever
             wait (3) secs
             show" /></p>
 </section>
-<section id="test-your-project-2" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Try out your game again – can you spot any problems?</strong> Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!</p>
+<section id="chay-th-2" class="level2 flag">
+<h2>Chạy thử</h2>
+<p><strong>Thử lại trò chơi - bạn có gặp vấn đề gì không?</strong> Hãy để ý, con mồi có thể biến mất dù nó chạm vào bất kì bộ phần nào của con cá. Vì thế, con cá có thể đứng yên đợi 3 giây để con mồi xuất hiện lại rồi ăn nó tiếp. Như vậy không công bằng!</p>
 <ol>
-<li>How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the <code class="blocklightblue">touching color</code> block, and see if it is touching the fish’s blue teeth. To do this, replace the <code class="blocklightblue">touching</code> block with a <code class="blocklightblue">touching color</code> block in your script, click on the color in the block and then click again on the fish’s teeth.<br /></li>
-<li>Next we can make the prey move to a random point on the screen before reappearing using a <code class="blockblue">go to</code> block, and giving it a random value for <strong>x</strong> and <strong>y</strong>.</li>
+<li>Làm thế nào để đảm bảo con mồi chỉ biến mất khi nó chạm vào miệng con cá? Chúng ta có thể dùng khối <code class="blocklightblue">touching color</code>, và xem nếu con mồi chạm vào răng màu xanh của con cá không. Để làm việcnaày, bỏ khối <code class="blocklightblue">touching</code> và thay bằng <code class="blocklightblue">touching color</code> trong lệnh cũ, chọn màu trong khối và click vào răng con cá.<br /></li>
+<li>Tiếp theo, chúng ta có thể làm con mồi di chuyển đến một vị trí bất kì trên màn hình trước khi xuất hiện trở lại bằng cách dùng khối <code>go to</code>, và cho nó một giá trị <strong>x</strong> và <strong>y</strong> ngẫu nhiên.</li>
 </ol>
-<p><img src="66e79c114cb9343ecffc908cc3179fe6db736d23.png" alt="when FLAG clicked
-    forever     
+<p><img src="9042e95d996d841dc697ab15ed7874192b2d9abd.png" alt="when FLAG clicked
+    forever        
         move (2) steps
         turn right (pick random (-20) to (20)) degrees
         if on edge, bounce
@@ -141,15 +141,15 @@ forever
             go to x:(pick random (-220) to (220)) y: (pick random (-170) to (170))
             show" /></p>
 </section>
-<section id="test-your-project-3" class="level2 flag">
-<h2>Test Your Project</h2>
-<p>Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?</p>
+<section id="chay-th-3" class="level2 flag">
+<h2>Chạy thử</h2>
+<p>Thử chơi lại trò chơi – Con mồi có biến mất chỉ khi nó chạm vào miệng con cá không? Và nó có xuất hiện trở lại tại một điểm bất kì thay bằng tại điểm nó bị ăn không?</p>
 <ol>
-<li>The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey <code class="blockyellow">broadcast</code> the fact that it’s been eaten before vanishing.</li>
+<li>Con cá cần biết khi nó ăn được con mồi để có thể tạo ra âm thanh và đổi màu da của nó. Để làm được việc này, chúng ta cần khối <code class="blockyellow">broadcast</code> chỉ ra việc con mồi đã bị ăn trước khi biến mất.</li>
 </ol>
-<p><img src="a8fc4de49458e4a8355a114fa543f8726a05a50d.png" alt="
+<p><img src="d209f5412d6cd2cd49394edc40916a96370d6bda.png" alt="
 when FLAG clicked
-forever     
+forever        
     move (2) steps
     turn right &lt;pick random (-20) to (20)&gt; degrees
     if on edge, bounce
@@ -160,10 +160,10 @@ forever
         go to x:&lt;pick random (-220) to (220)&gt; y: &lt;pick random (-170) to (170)&gt;
         show
     " /></p>
-<p><strong>Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.</strong></p>
+<p><strong>Bây giờ chúng ta cần con cá phản hồi lại bằng việc tạo ra âm thanh và ngậm hàm lại.</strong></p>
 <ol>
-<li>Add the <strong>resources/mouth-closed.png</strong> costume and the <strong>resources/chomp.mp3</strong> sound to the Hungry Fish sprite.<br /></li>
-<li>Then, add a new script to the Hungry Fish to respond to the message <code class="blockyellow">broadcast</code> by the prey. This script should make the fish play the <strong>'chomp'</strong> sound and <code class="blockpurple">switch to</code> the mouth-closed costume, wait briefly and then switch back.</li>
+<li>Thêm hình <strong>resources/mouth-closed.png</strong> và âm thanh <strong>resources/chomp.mp3</strong> cho hình họa Hungry Fish.<br /></li>
+<li>Sau đó, thêm lệnh mới cho Hungry Fish để phản ứng lại tin <code>broadcast</code> của con mồi. Đoạn lệnh này cần làm con cá tạo tiếng động và chuyển sang hình <code class="blockyellow">mouth-closed</code>, đợi một lúc rồi chuyển đổi trở lại.</li>
 </ol>
 <p><img src="23d3179ded053b5ca7880f47a9fd94024446d453.png" alt="when I receive [got me v]
     play sound [chomp v]
@@ -171,94 +171,95 @@ forever
         switch to costume [mouth-closed v]
         wait (0.5) secs
         switch to costume [hungry-fish v]" /></p>
-<p><strong>Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.</strong></p>
+<p><strong>Bây giờ Hungry Fish đã sẵn sàng đi ăn mồi, hãy phủ đầy con mồi trong nước biến. Click chuột phải vào hình họa con mồi và nhấn &quot;Duplicate&quot; vài lần.</strong></p>
 </section>
-<section id="test-your-project-4" class="level2 flag">
-<h2>Test Your Project</h2>
-<p>Click the green flag.<br />Does the Hungry Fish eat the prey? Does it eat each of the different prey?</p>
+<section id="chay-th-4" class="level2 flag">
+<h2>Chạy thử</h2>
+<p><strong>Click biểu tượng lá cờ màu xanh.</strong><br />Con cá có ăn mồi không? Và nó có ăn các con mồi khác nhau không?</p>
 </section>
-<section id="save-your-project-2" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-tin--cua-ban-2" class="level2 save">
+<h2>Lưu lại tiến độ của bạn</h2>
 </section>
-<section id="things-to-think-about" class="level2">
-<h2>Things to think about</h2>
-<p>Why do we need to add a <code class="blockblue">show</code> block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?</p>
-<p><strong>Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?</strong></p>
+<section id="nghi-them" class="level2">
+<h2>Nghĩ thêm:</h2>
+<p>Tại sao chúng ta cần thêm khối <code class="blockblue">show</code> để bắt đầu dòng lệnh cho con mồi? Nghĩ xem chuyện gì sẽ xảy ra nếu con mồi bị ăn, sau đó trò chơi dừng lại trước khi tiếp tục. Chuyện gì sẽ xảy ra nếu trò chơi bắt đầu lại?</p>
+<p><strong>Tốt lắm! Bạn đã hoàn thành trò chơi cơ bản. Có nhiều thứ khác bạn có thể sáng tạp với trò chơi này. Bạn có sẵn sàng thử thách?</strong></p>
 </section>
-<section id="challenge-1-make-the-prey-move-differently" class="level2 challenge">
-<h2>Challenge 1: Make the prey move differently</h2>
-<p>At the moment, all the prey move in the same way. <strong>Can you make one of them move differently?</strong> <strong>Hint:</strong> Don’t spend too long on this bit without looking at the other activities in this project.</p>
-<p><strong>Pick one of the prey to experiment on.</strong> If they have the same costumes, make it a different colour with the <code class="blockpurple">set color effect</code> block. That way, you can tell it apart from the rest of the prey.</p>
-<p>Make this prey move slower than the others. <strong>Hint:</strong> Look at the <code class="blockblue">move 2 steps</code> block.</p>
+<section id="th-thach-1-lam-con-mi-di-chuyn-khac-i" class="level2 challenge">
+<h2>Thử thách 1: Làm con mồi di chuyển khác đi</h2>
+<p>Hiện tại, tất cả các con mồi đều di chuyển cùng chiều. <strong>Bạn có thể làm một con trong số chúng di chuyển khác đi?</strong> <strong>Gợi ý:</strong> Không cần dành quá nhiều thời gian cho việc này mà bỏ qua những hoạt động khác trong dự án.</p>
+<p><strong>Chọn một con mồi để thử nghiệm.</strong> Nếu chúng có cùng vẻ ngoài, làm chúng khác đi bằng cách thay đổi màu sắc với khối <code>set color effect</code>. Bằng cách này, bạn có thể phân biệt chúng với những con còn lại.</p>
+<p>Làm con mồi này bơi chậm hơn các con khác. <strong>Gợi ý:</strong> Nhìn vào khối <code class="blockblue">move 2 steps</code>.</p>
 </section>
-<section id="test-your-project-5" class="level2 flag">
-<h2>Test Your Project</h2>
-<p>Does the prey move slower? Does this make the game better?<br />If you can do that, <strong>try making one of the prey move quicker than the others.</strong></p>
-<p>Does the prey still move in a sensible way? Do these changes make the game better?<br /><strong>Hint:</strong> If your prey swims around in circles, check the values of the <code class="blockgreen">pick random</code> block in the <code class="blockblue">turn</code> block.</p>
-<p>How about you make each of the prey behave differently, using different combinations of these changes?</p>
-<p>Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?</p>
+<section id="chay-th-5" class="level2 flag">
+<h2>Chạy thử</h2>
+<p>Con mồi có di chuyển chậm hơn không? Việc này có làm trò chơi thú vị hơn không?<br />Nếu bạn làm được việc đó, <strong>hãy thử làm một con mồi di chuyển nhanh hơn các con mồi khác.</strong></p>
+<p>Con mồi vẫn di chuyển như bình thường chứ? Những thay đổi này có làm trò chơi thú vị hơn không?</p>
+<p><strong>Gợi ý:</strong> Nếu con mồi bơi quanh vòng tròn, kiểm tra lại giá trị của khối <code class="blockgreen">pick random</code> trong khối <code class="blockblue">turn</code>.</p>
+<p>Bạn nghĩ sao về việc làm mỗi con mồi di chuyển khác nhau bằng cách kết hợp những thay đổi trên?</p>
+<p>Những thay đổi này có làm trò chơi hay hơn, thú vị hơn, khó hơn hay dễ hơn không?</p>
 </section>
-<section id="save-your-project-3" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-tin--cua-ban-3" class="level2 save">
+<h2>Lưu lại tiến độ của bạn</h2>
 </section>
-<section id="challenge-2-make-the-prey-avoid-the-hungry-fish" class="level2 challenge">
-<h2>Challenge 2: Make the prey avoid the Hungry Fish</h2>
-<p>The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real prey swim away from predators. <strong>Let’s make one of the prey swim away from the Hungry Fish.</strong></p>
-<p>There’s no block in Scratch that tells you the direction that another sprite is in. But you can make one sprite point towards another, then make it turn around to face away. The blocks you need are in the <code class="blocklightgrey">Motion</code> palette.</p>
-<p>Using that idea, <strong>make one of the prey always point away from the Hungry Fish.</strong></p>
-<p>You might find that your prey gets stuck in the corner if it is always swimming away from the fish. You might want to have the prey only try to escape when the fish gets close. <strong>Hint:</strong> Look back at how we used the <code class="blocklightblue">distance to</code> block ealier in the game.</p>
+<section id="th-thach-2-lam-nhng-con-mi-tranh-hungry-fish" class="level2 challenge">
+<h2>Thử thách 2: làm những con mồi tránh Hungry Fish</h2>
+<p>Những con mồi trong trò này rất ngu xuẩn! Chúng chỉ bơi xung quanh cho đến khi bị ăn. Những con mồi thật thường bơi xa khỏi kẻ thù của chúng. <strong>Hãy làm con mồi chạy khỏi Hungry Fish</strong></p>
+<p>Không có khối nào trong Scratch cho bạn biết trước đường đi của hình họa. Nhưng bạn có thể làm một hình họa chỉ về phía một hình khác, sau đó làm nó quay đi hướng khác. Nhứng khối bạn cần nằm trong bảng <code class="blocklightgray">Motion</code>.</p>
+<p>Với ý tưởng này, <strong>làm một con mồi quay đầu ra hướng khác con cá.</strong></p>
+<p>Bạn có thể thấy những con mồi bị kẹt ở góc nếu chúng luôn bơi ra khỏi con cá. Bạn muốn con mồi chỉ bơi đi xa khi con cá lại gần. <strong>Gợi ý:</strong> xem lại cách chúng ta dùng khối <code class="blocklightblue">distance to</code>.</p>
 </section>
-<section id="test-your-project-6" class="level2 flag">
-<h2>Test Your Project</h2>
-<p>Does this make the prey harder to catch? Does it make the game better?</p>
+<section id="chay-th-6" class="level2 flag">
+<h2>Chạy thử</h2>
+<p>Việc này có khiến việc bắt mồi khó hơn không? Nó có làm trò chơi tốt hơn không?</p>
 </section>
-<section id="save-your-project-4" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-tin--cua-ban-4" class="level2 save">
+<h2>Lưu lại tiến độ của bạn</h2>
 </section>
-<section id="challenge-3-add-a-score" class="level2 challenge">
-<h2>Challenge 3: Add a score</h2>
-<p>It’s not enough just to eat lobsters. How do you know you’re better at the game than your friends? <strong>You need a way to keep score so lets add a score board.</strong> Look at the <strong>Keep Score scratch card</strong> for an idea of how to do it.</p>
-<p>Where should you put the block that changes the score?</p>
-<p>Make sure the score goes back to zero at the start of the game. Where should you put that block?</p>
+<section id="th-thach-3-them-im-s" class="level2 challenge">
+<h2>Thử thách 3: Thêm điểm số</h2>
+<p>Chỉ ăn mồi là chưa đủ. Làm thế nào để bạn biết bạn chơi tốt hơn người khác? <strong>Bạn cần tìm cách ghi lại điểm số, nên hãy thêm bảng ghi điểm.</strong> Nhìn vào <strong>Keep score scratch card</strong> để xem cách làm.</p>
+<p>Bạn nên để ô ghi điểm ở đâu?</p>
+<p>Đảm bảo điểm số về 0 lúc bắt đầu trò chơi. Bạn nên để khối đó ở đâu?</p>
 </section>
-<section id="test-your-project-7" class="level2 flag">
-<h2>Test Your Project</h2>
-<p>Does the score go to zero at the start of the game? Does it go up every time you eat prey?</p>
+<section id="chay-th-7" class="level2 flag">
+<h2>Chạy thử</h2>
+<p>Điểm số có về 0 lúc trò chơi bắt đầu không? Điểm có tăng dần mỗi khi con cá ăn mồi?</p>
 </section>
-<section id="save-your-project-5" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-tin--cua-ban-5" class="level2 save">
+<h2>Lưu lại tiến độ của bạn</h2>
 </section>
-<section id="challenge-4-add-a-countdown" class="level2 challenge">
-<h2>Challenge 4: Add a countdown</h2>
-<p><strong>Give yourself a time limit in the game.</strong> How many prey can you eat in thirty seconds?</p>
-<p>Look at the <strong>Timer scratch card</strong> for how to add a timer to the game. Start with the game lasting thirty seconds.</p>
+<section id="th-thach-4-them-bin-thi-gian" class="level2 challenge">
+<h2>Thử thách 4: Thêm biến thời gian</h2>
+<p><strong>Giới hạn thời gian cho trò chơi.</strong> Bạn có thể ăn bao nhiêu mồi trong 30 giây?</p>
+<p>Nhìn vào <strong>Timer scratch card</strong> để xem cách thêm bảng tính thời gian. Bắt đầu với 30 giây</p>
 </section>
-<section id="test-your-project-8" class="level2 flag">
-<h2>Test Your Project</h2>
-<p>Does the timer start at 30?</p>
-<p>Does it go down at the right speed?</p>
-<p>Can you catch prey while the timer is going?</p>
-<p>Does the game stop when the timer reaches zero?</p>
+<section id="chay-th-8" class="level2 flag">
+<h2>Chạy thử</h2>
+<p>Timer có phải 30 giây không?</p>
+<p>Nó có giảm đúng tốc độ?</p>
+<p>Bạn có thể ăn mồi lúc bảng tính thời gian đang chạy không?</p>
+<p>Trò chơi có dừng lại khi hết giờ?</p>
 </section>
-<section id="save-your-project-6" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
-<section id="challenge-5-add-a-bonus-score" class="level2 challenge">
-<h2>Challenge 5: Add a bonus score</h2>
-<p>Award a large bonus score if you can eat all three lobsters at the same time. How can you tell how many prey have been eaten?</p>
-<p><strong>Hint:</strong> One way to do this <strong>uses a variable to count how many prey are swimming around.</strong></p>
+<section id="th-thach-5-them-im-thung" class="level2 challenge">
+<h2>Thử thách 5: Thêm điểm thưởng</h2>
+<p>Thưởng thêm nhiều điểm nếu bạn có thể ăn hết 3 con mồi một lúc. Làm cách nào để biết bạn đã ăn bao nhiêu con mồi?</p>
+<p><strong>Gợi ý:</strong> Một cách để làm việc này là <strong>dùng một biến để đếm số mồi đang bơi xung quanh.</strong></p>
 </section>
-<section id="save-your-project-7" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-1" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
-<section id="challenge-6-change-the-game-keep-a-prey-alive" class="level2 challenge">
-<h2>Challenge 6: Change the game: keep a prey alive!</h2>
-<p>Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.</p>
-<p><strong>Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.</strong> How long can you last before you’re eaten? Instead of having a score, how about giving the prey 3 lives and ending the game when they're all gone?</p>
+<section id="th-thach-6-thay-i-tro-choi-lam-con-mi-sng" class="level2 challenge">
+<h2>Thử thách 6: Thay đổi trò chơi: làm con mồi sống!</h2>
+<p>Đôi khi bạn có thể có ý tưởng tuyệt vời bằng cách lấy một ý tưởng có sẵn và làm ngược lại.</p>
+<p><strong>Giản lược trò chơi bằng cách, thay bằng việc bạn điều khiển một con cá ăn mồi, bạn sẽ điều khiển một con mồi trong biển có rất nhiều Hungry Fish. </strong> Bạn có thể sống sót trong bao lâu? Thay bằng việc có điểm số, hãy cho con mồi 3 mạng và trò chơi kết thúc khi hết số mạng sống.</p>
 </section>
-<section id="save-your-project-8" class="level2 save">
-<h2>Save your project</h2>
-<p><strong>Well done you’ve finished, now you can enjoy the game!</strong><br />Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
+<section id="luu-lai-2" class="level2 save">
+<h2>Lưu lại</h2>
+<p><strong>Tốt lắm! Bạn đã kết thúc. Bây giờ bạn có thể thử chơi!</strong><br />Đừng quên bạn có thể chia sẻ trò chơi của bạn với bạn bè và gia đình bằng cách nhấp chuột vào <strong>Share</strong> ở thanh menu!</p>
 </section>
 </section>
 <section class="legal" id="legal">

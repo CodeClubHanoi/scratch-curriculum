@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Paint Box — Code Club World</title>
+    <title>Hộp sơn — Code Club World</title>
 
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -16,7 +16,7 @@
 <body>
 <header>
 <div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
-<div class="title">Paint Box</div>
+<div class="title">Hộp sơn</div>
 <div><span class="level">Level 3</span></div>
 </header>
 <section class="legal">
@@ -25,32 +25,32 @@ These projects are for use outside the UK only. More information is available on
 </div>
 </section>
 <section class="breadcrumb">
-<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Paint Box</strong></li></ol>
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Hộp sơn</strong></li></ol>
 </section>
-<section id="introduction" class="level1 intro">
-<h1>Introduction</h1>
-<p>The project creates a drawing tool for you to make your own art. You can change the colour of the line, clear the screen, make stamps and much more!</p>
+<section id="gii-thiu" class="level1 intro">
+<h1>Giới thiệu</h1>
+<p>Dự án này tạo ra một công cụ để vẽ giúp bạn tự sáng tạo. Bạn có thể đổi màu của các hàng, xóa màn hình, làm con dấu và nhiều hơn nữa!</p>
 <p><img src="paintbox_screenshot.png" alt="screenshot" /></p>
 </section>
-<section id="step-1-drag-and-draw" class="level1 activity">
-<h1>STEP 1: Drag and draw</h1>
-<p>We’ll start with a pen that draws when you drag it around the Stage.</p>
-<section id="activity-checklist" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-1-keo-va-ve" class="level1 activity">
+<h1>BƯỚC 1: Kéo và Vẽ</h1>
+<p>Chúng ta sẽ bắt đầu với một cây bút vẽ mỗi khi bạn kéo nó xung quanh sân chơi.</p>
+<section id="ban-lit-ke-hoat-ng" class="level2 check">
+<h2>Bản liệt kê hoạt động</h2>
 <ol>
-<li>Start a new Scratch project. Delete the cat by right clicking it and clicking <strong>delete</strong><br /></li>
-<li>Click <strong>Stage</strong> and then the <strong>Backdrops</strong> tab. Upload the <strong>resources\frame.png</strong> background.<br /></li>
-<li>Upload a new sprite called <strong>green-pencil</strong>, using <strong>resources\green-pencil.png</strong><br /></li>
-<li>Switch to the <strong>costumes</strong> tab and click edit from the <strong>Paint Editor</strong>, change the center of the image to be at the tip of the pen. To do this, click the <strong>Set costume center</strong> button and drag the lines until they are at the tip.<br /></li>
-<li>Make the pencil follow the mouse around the stage using the <code class="blockyellow">forever</code> and <code class="blockblue">go to</code> mouse-pointer blocks.</li>
+<li>Bắt đầu một dự án mới. Cóa con mèo bằng cách click chuột phải và chọne delete.<br /></li>
+<li>Ấn <strong>Stage</strong> rồi <strong>Backdrop</strong>. Tải phông nền <strong>resources\frame.png</strong><br /></li>
+<li>Tải một hình họa mới gọi là <strong>green-pencil</strong>, dùng <strong>resource\green-pencil.png</strong><br /></li>
+<li>Chuyển sang thẻ <strong>costume</strong> và ấn edit trong phần <strong>Paint Editor</strong>, để phần trung tâm ảnh là đầu bút bi. Để làm việc này, ấn vào nút <strong>Set costume center</strong> và kéo các hàng cho đến khi chúng chạm vào đầub út bi.<br /></li>
+<li>Làm cho cây bút bi di chuyển theo con trỏ chuột trên sân chơi bằng cách dùng các khối chỉ chuột ‘forever’ (màu vàng) và khối ‘go to’ (mày xanh)</li>
 </ol>
 <p><img src="114c4cccdc793fbabf6110c475b637da603af339.png" alt="when FLAG clicked
 forever
     go to [mouse-pointer v]
 end" /></p>
-<p><strong>Now we want to use this pen sprite as an actual pen.</strong> If you look under the pen section you’ll see all sorts of drawing related blocks. The ones we’re initially interested in are <code class="blockgreen">pen down</code> and <code class="blockgreen">pen up</code>.</p>
+<p><strong>Bây giờ chúng ta muốn dùng hình họa cây bút như một chiếc bút thật.</strong> Nếu bạn nhìn dưới phần bút bi, bạn sẽ thấy các khối liên quan đvến ẽ. Những khối màu đầu tiên chúng ta dùng là ‘pen down’ và ‘pen up’ (màu xanh lá cây).</p>
 <ol>
-<li>We want to use the mouse button to control the pen – whenever the mouse button is down the pen should be down, and when it is up the pen should be up. We can do this using an <code class="blockyellow">if... else</code> and <code class="blocklightblue">mouse down?</code> blocks.</li>
+<li>Chúng ta muốn dùng con chuột để điều khiển cây bút - bất cứ khi nào nút con chuột chỉ xuống thì cây bút cũng chỉ xuống, và ngược lại. Chúngc ta ó thể làm việc này bằng cách dùng các khối ‘if… else’ (màu vàng) và ‘mouse down?’ (mày xanh nhạt).</li>
 </ol>
 <p><img src="0335211614918d072cc714a07c49863a32b89d4e.png" alt="when FLAG clicked
 forever
@@ -62,11 +62,11 @@ forever
     end
 end" /></p>
 </section>
-<section id="test-your-project" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong><br />Does the pen follow the mouse around? What happens if you hold the mouse button down and move the mouse? Don’t worry about the pen colour for now.</p>
+<section id="kim-tra-lai" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Ấn vào biểu tượng lá cờ màu xanh.</strong><br />Cây bút co đi theo con chuột không? Chuyện gì xảy ra nếu bạn giữ nút con chuột chỉ xuống và di chuyển nó? Đừng bận tâm về màu cây bút lúc này.</p>
 <ol>
-<li>Eventually the screen is going to get pretty filled with scribbles. The clear block can be used to clear the screen.</li>
+<li>Sau một hồi, màn hình sẽ đầy vết bút. Bạn có thể dùng khối xóa để làm sạchmaàn hình</li>
 </ol>
 <p><img src="a5d678e7067f6ca67aba536d05bac1763087f1f1.png" alt="when FLAG clicked
 clear
@@ -79,87 +79,83 @@ forever
     end
 end" /></p>
 </section>
-<section id="test-your-project-1" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>Does your drawing disappear when you click on the green flag?</p>
+<section id="kim-tra-lai-1" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Ấn vào biểu tượng lá cờ màu xanh.</strong><br />Các nét vẽ có biến mất khi bạn ấn vào lá cờ?</p>
 </section>
-<section id="save-your-project" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-2-clearing-up" class="level1 activity">
-<h1>STEP 2: Clearing up</h1>
-<section id="activity-checklist-1" class="level2 check">
-<h2>Activity Checklist</h2>
-<p>Rather than having to stop and start the whole project, let’s add a button that<br />clears the drawing. It will do that using the clear block.</p>
+<section id="buc-2-lam-sach-man-hinh" class="level1 activity">
+<h1>BƯỚC 2: Làm sạch màn hình</h1>
+<section id="ban-lit-ke-hoat-ng-1" class="level2 check">
+<h2>Bản liệt kê hoạt động</h2>
+<p>Thay bằng việc dừng lại và bắt đầu một dự án mới, hãy thêm một nút xoá nét vẽ, sử dụng khối ‘clear’</p>
 <ol>
-<li>Create a new sprite from the <strong>resources/cancel-button.png</strong> costume.<br /></li>
-<li>Change the sprite’s name to <strong>clear</strong>.<br /></li>
-<li>Position the sprite near the bottom-left corner of the stage.<br /></li>
-<li>Give the clear sprite this simple script:</li>
+<li>Tạo một hình họa mới từ <strong>resources/cancel-button.png</strong>.<br /></li>
+<li>Đổi tên hình họa thành <strong>clear</strong>.<br /></li>
+<li>Đặt hình họa mới này vào góc bên trái ở dưới của sân chơi.<br /></li>
+<li>Viết đoạn cript sau:</li>
 </ol>
 <p><img src="459fde6a9e9bb3d03456f45d44fa7dbc956abd14.png" alt="when this sprite clicked
 clear" /></p>
 </section>
-<section id="test-your-project-2" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>Does the clear button clear all your drawing?</p>
+<section id="kim-tra-lai-2" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Ấn vào biểu tượng lá cờ màu xanh.</strong><br />Nó có xóa hết phần vẽ lúc trước không?</p>
 </section>
-<section id="save-your-project-1" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-1" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-3-changing-colour" class="level1 activity">
-<h1>STEP 3: Changing colour</h1>
-<section id="activity-checklist-2" class="level2 check">
-<h2>Activity Checklist</h2>
-<p>So far, we can only draw blue lines. Let’s draw with some different colours! We’ll add some sprites at the bottom of the frame. The sprites will look like coloured buttons. If we click on a button, it will change the colour of the line we draw. So we know what colour we’re using, the button will also change the colour of the pencil sprite.</p>
+<section id="buc-3-i-mau" class="level1 activity">
+<h1>BƯỚC 3: Đổi màu</h1>
+<section id="bang-lit-ke-hoat-ng" class="level2 check">
+<h2>Bảng liệt kê hoạt động</h2>
+<p>Hiện chúng ta chỉ có thể vẽ nét màu xanh. Hãy vẽ với màu khác! Chúng ta sẽe têm vài hình họa ở cuối của khung. Những hình hoạt mới này sẽ giống như những nút màu. Nếu chúng ta ấn vào một bút, nó sẽ thay đổi màu vẽ của cây bút, và cả mày của hình họa cây bút chì.</p>
 <ol>
-<li>Add a new sprite, called <strong>red</strong>, using the <strong>resources/red-selector.png</strong> costume.<br /></li>
-<li>Place it somewhere along the bottom of the frame, near the <strong>clear button</strong>.<br /></li>
-<li>When the red sprite is clicked, it should broadcast the message <strong>red</strong>.</li>
+<li>Thêm một hình họa mới, gọi là <strong>red</strong>, dùng <strong>resources/red-selector.png</strong><br /></li>
+<li>Đặt nó vào phí cuối khung, gần nút <strong>clear</strong>.<br /></li>
+<li>Khi hình họa đỏ được ấn, nó cần gửi tin nhắn <strong>red</strong></li>
 </ol>
 <p><img src="be778103a7cd23ceaed7ad99d56a2e6a72b4894d.png" alt="when this sprite clicked
 broadcast [red v]" /></p>
 <p><strong>Yes, that’s all it does. The hard work is done by the pencil.</strong></p>
-<p>In the pencil, upload a new costume, <strong>resources/red-pencil.png</strong>. Set the costume centre to be the tip of the pencil as you did for the original costume.</p>
+<p>Trong bút chì, tải thêm <strong>resources/red-pencil.png</strong>. Điều khiển để trung tâam ủa hình là đầu cây bút giống như cách bạn làm cho hình họa cây bút xanh.</p>
 <ol>
-<li>Add a new script to the pencil. When the pencil receives the message <strong>red</strong>, it should change to the red pencil costume and change the pen colour to red (using the <code class="blockgreen">set pen color to</code> block).</li>
+<li>Thêm tập lệnh mới cho bút chì. Khi bút chì nhận tin <strong>red</strong>, nó cần đổia sang àu đỏ và đổi màu bút bi sang màu đỏ, bằng cách dùng khối’s et pen color to’ (màu xanh lá cây).</li>
 </ol>
-<p><strong>Hint:</strong> if you click on the coloured square in the <code class="blockgreen">set pen color to</code> block, you can<br />click the red button sprite to make sure it’s the same colour.</p>
+<p><strong>Gợi ý:</strong> Nếu bạn ấn vào ô vuông màu trong khối ‘set pen color to’, bạn có thể ấn nút hình họa màu đỏ để chắc chắn chúng có cùng màu.</p>
 <p><img src="1770ec6fed72a7284134c838efd6b783c8d46907.png" alt="when I receive [red v]
 switch to costume [red-pencil v]
 set pen color to [#FF0000]" /></p>
 </section>
-<section id="test-your-project-3" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>Start by drawing a line. Then click on the red selector sprite and draw some more. Does the pencil change costume? Does it now draw red? Does it draw from the tip of the red pencil?</p>
+<section id="kim-tra-lai-3" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Ấn vào biểu tượng lá cờ màu xanh.</strong></p>
+<p>Bắt đầu bằng việc vẽ mộ đường thẳng. Sau đó ấn vào hình họa chọn màu đỏ và vẽ thêm. Cây bút chì có chuyển màu không? Nó có vẽ ra màu đỏ khô ng? Nó có vẽ ra màu từ đầu bút không?</p>
 </section>
-<section id="save-your-project-2" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-2" class="level2 save">
+<h2>Lưu lại</h2>
 <ol>
-<li>Repeat what you just did for the blue, yellow, and green selector sprites.</li>
+<li>Lặp lại trình tự bạn vừa thực hiện với hình họa chọn màu màu xanh, vàng và xanh lá cây.</li>
 </ol>
 </section>
-<section id="test-your-project-4" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>Do all the selector buttons work? Do they all change the pencil’s costume to the right colour? Do they all make the pencil draw in the right colour? Do all the costumes draw with the tip of the pencil?</p>
+<section id="kim-tra-lai-4" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Ấn vào biểu tượng lá cờ màu xanh.</strong></p>
+<p>Tất cả các nút chọn màu có hoạt động không? Chúng có chuyển màu bút chì đúng không? Chúng có làm bút chì vẽ đúng màu lựa chọn không? Cúng tcos vẽ ra từ đầu bút không?</p>
 </section>
-<section id="save-your-project-3" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-3" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-4-only-drawing-inside-the-border" class="level1 activity">
-<h1>STEP 4: Only drawing inside the border</h1>
-<p>You’ve probably noticed that you can draw all over the Stage, even in the border. We don’t want that to happen. We want to keep the drawing in the middle of the Stage. We can do this by making sure the pen isn’t allowed to leave the drawing area - the light grey part on the Stage.</p>
-<p>Remember that Scratch defines points using x and y axis. Our drawing area lies between 230 and -230 on the x-axis and 170 and -120 on the y-axis. We can use these values in an <code class="blockyellow">if</code> block, making sure the mouse is inside this area before we move the pencil to it.</p>
-<p>To do this, wrap a new if block around your existing <code class="blockblue">goto...</code><code class="blockyellow">if</code> block, and inside this new if check for the following:</p>
-<p>mouse y is greater than -120 and mouse y is less than 170<br />and mouse x is greater than -230 and mouse x is less than 230</p>
-<p><strong>Note</strong> to do this you’ll need to use multiple <code class="blockgreen">and</code> operator blocks, one for the two mouse x conditions, one for the two mouse y conditions and a final one to join these all together:</p>
+<section id="buc-4-chi-ve-ben-trong-ung-vin" class="level1 activity">
+<h1>BƯỚC 4: Chỉ vẽ bên trong đường viền</h1>
+<p>Bạn hẳn nhận ra là bạn có thể vẽ khắp sân chơi, thậm chí trên lề. Chúngta khoông muốn việc này xảy ra. Chúng ta muốn giữ các nét vẽ ở giữa sân chơi bằng cách làm cho bút bi không thể di chuyển ngoài khu vực vẽ - khu màu xám nhạt trên sân chơi.</p>
+<p>Hãy nhớ là Scratch đánh dấu các điểm bằng trục x và y. Vùng vẽ của chúngta naằm giữa điểm 230 và -230 trên trục x và giữa 170 và -120 trên trục y. Chúng ta có thể dùng những giá trị này trong khối ‘if’ (màu vàng), đảm bảo con chuột ở tỏng vùng này trước khi chúng ta gắn búti cì cho nó.</p>
+<p>Để làm việc này, lấy một khối mày mới xung quanh khối ‘go to’ (màu xanh) và khối ‘if’ (màu vàng). Trong khối ‘if’ này, kiểm tra những việc sau:<br />Tọa độ con chuột lớn hớn -120 và nhỏ hơn 170 trên trục y, và lớn hơn -230, nhỏ hơn 230 trên trục x.<br /><strong>Ghi chú</strong> bạn sẽ cần dùng nhiwwuf block ‘and’ (màu xanh lá cây) để làm được việc này; một để dùng cho tung độ (y), một cho hoành độ (x)và một để gộp 2 yếu tố này với nhau:</p>
 <p><img src="4f95ac677849eaa30b89aafa12b6e18aef2bda24.png" alt="clear
 forever 
 if &lt;&lt;(mouse y) &gt; (-120)&gt; and &lt;(mouse y) &lt; (170)&gt; and &lt;(mouse x) &gt; (-230)&gt; and &lt;(mouse x) &lt; (230)&gt;&gt;
@@ -182,12 +178,12 @@ forever
         hide
     end
 end" /></p>
-<section id="test-your-project-5" class="level2 flag">
+<section id="test-your-project" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong></p>
 <p>Can you still draw inside the drawing area? Can you draw outside the drawing area? What happens to the pencil when you leave the drawing area and go back in?</p>
 </section>
-<section id="save-your-project-4" class="level2 save">
+<section id="save-your-project" class="level2 save">
 <h2>Save your project</h2>
 </section>
 </section>
@@ -196,19 +192,19 @@ end" /></p>
 <p><strong>Drawing lines is great, but there are times when you’ve made a mistake and you want to rub it out.</strong> We can do that with a new pencil tool that draws in grey (the same colour as the background).</p>
 <p>Add a new button-sprite to the Stage to select the eraser. Use the <strong>resources/eraser.png</strong> costume for it, making it smaller to fit at the bottom of the Stage. It should work the same as the other colour-selection buttons, sending an eraser message.</p>
 <p>The pencil sprite should respond to the eraser message by switching the pen colour to grey (remember you can use the <strong>picker</strong> to select the colour of the background). It will also need a new costume to represent the eraser tools: use the same <strong>resources/eraser.png</strong> costume. <strong>Remember to reset the costume’s centre.</strong></p>
-<section id="test-your-project-6" class="level2 flag">
+<section id="test-your-project-1" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong></p>
 <p>Does the eraser rub out lines? Does it work right up to the edges? Can you switch between eraser and pencil tools?</p>
 </section>
-<section id="save-your-project-5" class="level2 save">
+<section id="save-your-project-1" class="level2 save">
 <h2>Save your project</h2>
 </section>
 </section>
 <section id="step-6-stamps" class="level1 activity">
 <h1>STEP 6: Stamps</h1>
 <p>The next thing to add is a stamp tool, to stamp small pictures on the drawing.</p>
-<section id="activity-checklist-3" class="level2 check">
+<section id="activity-checklist" class="level2 check">
 <h2>Activity Checklist</h2>
 <ol>
 <li>Add a new sprite, using whichever image or costume you want. Shrink the sprite down and place it at the bottom of the screen alongside the other tools. When this sprite is clicked, it should <code class="blockyellow">broadcast stamp</code><br /></li>
@@ -219,13 +215,13 @@ end" /></p>
 <li>Finally, lets check this variable <strong>when the mouse button is down</strong> to see if we should be drawing or stamping. If <code class="blockorange">pencil mode</code> = true we should use the existing <code class="blockgreen">pen down</code>, if not we should <code class="blockgreen">stamp</code> instead.</li>
 </ol>
 </section>
-<section id="test-your-project-7" class="level2 flag">
+<section id="test-your-project-2" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong></p>
 <p>Does the stamp tool work correctly?</p>
 <p>What happens when you switch back to one of the normal pencil tools?</p>
 </section>
-<section id="save-your-project-6" class="level2 save">
+<section id="save-your-project-2" class="level2 save">
 <h2>Save your project</h2>
 <p><strong>Well done, you have completed the basic steps for this project.</strong><br />Try these challenges!</p>
 </section>
@@ -241,13 +237,13 @@ end" /></p>
 <p>You also need to control that loop so that it only changes the pen colour when you’ve selected the rainbow pencil, otherwise all the pencils will have a rainbow effect! You can do this in a very similar way to how the pencil sprite changes between pencil and stamp modes. You need to create a <code class="blocklightgrey">variable</code> called <code class="blockorange">rainbowChange</code> that has the value true when you want the rainbow effect and false otherwise. Every time the pencil responds to a tool-selection message, it should set the value of <code class="blockorange">rainbowChange</code> accordingly.</p>
 <p><strong>Use what you learnt from the stamp step above to control the rainbow effect</strong>. The scripts that respond to the tool-selection messages will set two <strong>variables</strong> each: <code class="blockorange">pencilMode</code> and <code class="blockorange">rainbowChange</code>.</p>
 </section>
-<section id="test-your-project-8" class="level2 flag">
+<section id="test-your-project-3" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong></p>
 <p>Does the rainbow tool work correctly?</p>
 <p>What happens when you switch back to one of the normal pencil tools?</p>
 </section>
-<section id="save-your-project-7" class="level2 save">
+<section id="save-your-project-3" class="level2 save">
 <h2>Save your project</h2>
 </section>
 <section id="challenge-2-keyboard-shortcuts" class="level2 challenge">
@@ -265,12 +261,12 @@ end" /></p>
 <li>Stamp - s</li>
 </ul>
 </section>
-<section id="test-your-project-9" class="level2 flag">
+<section id="test-your-project-4" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong></p>
 <p>Do all the tools get selected with the correct keyboard shortcuts? Does each of the tools work correctly when you select it with keyboard? Are the correct tools still selected with the tool-selection sprites on the stage?</p>
 </section>
-<section id="save-your-project-8" class="level2 save">
+<section id="save-your-project-4" class="level2 save">
 <h2>Save your project</h2>
 </section>
 <section id="challenge-3-big-and-small" class="level2 challenge">
@@ -279,18 +275,18 @@ end" /></p>
 <p><strong>Create two new tool-selection sprites</strong>, called <strong>bigger</strong> and <strong>smaller</strong>. They should have the <strong>resources/bigger-selector.gif</strong> and <strong>resources/smaller-selector.gif</strong> costumes and should send the bigger and smaller messages.</p>
 <p>The pencil sprite can respond to the messages by changing either the pen size by 1 or the costume size by 10, depending on the value of pencil mode (use an <code class="blockyellow">if-else</code> block, similar to how the sprite chooses between putting the pen down or stamping)<br />Don’t forget the keyboard shortcuts for the bigger and smaller tools. I used the up and down arrows.</p>
 </section>
-<section id="save-your-project-9" class="level2 save">
+<section id="save-your-project-5" class="level2 save">
 <h2>Save your project</h2>
 <p>What you should have noticed is that changing the size of the stamp also changes the size of the pencil on-screen when you change to that tool.<br />To stop that, you need to set the size to 100% every time you change to a pencil tool, so that the tools look the right size.</p>
 <p>To make it even better, have the stamp remember what size it was before you selected the pencil and go back to that size when you select the stamp tool again. The easiest way to do that is to create a new <code class="blocklightgrey">variable</code> called <code class="blockorange">stampSize</code>, that is updated with the current size every time the stamp is resized. When the stamp tool is selected, it can set its size from the contents of this variable.</p>
 </section>
-<section id="test-your-project-10" class="level2 flag">
+<section id="test-your-project-5" class="level2 flag">
 <h2>Test Your Project</h2>
 <p><strong>Click on the green flag.</strong></p>
 <p>Do the size controls work for the pencils?</p>
 <p>What happens if you switch to the stamp, change the size and then switch back to a pencil?</p>
 </section>
-<section id="save-your-project-10" class="level2 save">
+<section id="save-your-project-6" class="level2 save">
 <h2>Save your project</h2>
 <p><strong>Well done you’ve finished, now you can enjoy the game!</strong></p>
 <p>Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>

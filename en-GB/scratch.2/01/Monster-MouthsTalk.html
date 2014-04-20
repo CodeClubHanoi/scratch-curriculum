@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scratch Card - Mouths and talking — Code Club World</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
+<div class="title">Scratch Card - Mouths and talking</div>
+<div><span class="level">Level 4</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">English</a></li><li><a href="../index.html">Advanced Scratch</a></li><li><strong>Scratch Card - Mouths and talking</strong></li></ol>
+</section>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>To make your monster talk, you can just use the<br /> <code class="blockpurple">Say</code> sprite.</p>
+<p><img src="faaf36e34d4280b0d481042741e9300173518d12.png" alt="when [space v] key pressed
+say [Hello!] for (2) secs" /></p></li>
+<li><p>To make it a bit more impressive, you could<br /> make the monsters <strong>mouth open</strong> and <strong>close</strong><br /> whilst it is talking. To do this, edit the sprite<br /> that contains the mouth - create a new<br /> <code class="blockpurple">costume</code> that has a closed mouth.<br /> By switching between the two, you can animate<br /> the mouth opening and closing.</p>
+<p><img src="33feb6a87f20c98539dbcd1dceb8a3ab7d46db26.png" alt="repeat (8)
+    wait (0.1) secs
+    switch to costume [mouthClosed v]
+    wait (0.1) secs
+    switch to costume [mouthOpen v]
+end" /></p></li>
+<li><p>To hook the two up, have the block that does the <code class="blockpurple">say</code> broadcast a message that the other block can react to.</p></li>
+</ul>
+<p><img src="dc4c6319baa0a3797fafcb26c3e024f0b6d9e222.png" alt="when [space v] key pressed
+broadcast [talk v]
+say [Hello!] for (2) secs
+
+when I receive [talk v]
+repeat (8)
+    wait (0.1) secs
+    switch to costume [mouthClosed v]
+    wait (0.1) secs
+    switch to costume [mouthOpen v]
+end" /></p>
+<ul>
+<li>To make this a bit more flexible, use a<br /> variable to control the <code class="blockorange">talkTime</code> the monster<br /> says something for, and also to control<br /> how many times the animation loop is<br /> repeated.</li>
+</ul>
+<p><img src="07a2d893f71d2ceffccfb2709d140f8d0819de6d.png" alt="when [space v] key pressed
+set [talkTime v] to (2)
+broadcast [talk v ]
+say [Hello!] for (talkTime) secs
+
+when [a v] key pressed
+set [talkTime v] to (4)
+broadcast [talk v]
+say [Something a bit longer] for (talkTime) secs
+
+when I receive [talk v]
+repeat ((talkTime) * (4))
+    wait (0.1) secs
+    switch to costume [mouthClosed v]
+    wait (0.1) secs
+    switch to costume [mouthOpen v]
+end" /></p>
+<p><strong>(Notice how we multiply talkTime by 4 to<br />make sure the loop repeats enough<br />times?)</strong></p>
+<ul>
+<li>You can also make your monster speak using<br /> sound by using one of the sound blocks. Just be<br /> sure to import the sounds first in the sounds tab.</li>
+</ul>
+<p><img src="4bf662f0dea818764bcde1282f6b2cbca9987f75.png" alt="when I receive [talking v]
+play sound [Screech v]" /></p>
+<p><strong>Why not try adding sounds to other events, you could use a spooky hovering<br />sound for a ghost drifting around the screen! If you have a microphone on<br />your computer you can even record your own sounds, surprise your classmates<br />by recording a loud monster ROOOAAAAARRRRR!!!</strong></p>
+</section>
+<section class="legal" id="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-2']);
+        _gaq.push(['_setDomainName', 'codeclubworld.org']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>

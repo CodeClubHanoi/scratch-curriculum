@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scratch Card - Movement — Code Club World</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
+<div class="title">Scratch Card - Movement</div>
+<div><span class="level">Level 4</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">English</a></li><li><a href="../index.html">Advanced Scratch</a></li><li><strong>Scratch Card - Movement</strong></li></ol>
+</section>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li>As your monster will be made up of lots of <strong>sprites</strong> you will need to make sure that<br /> all sprites move together at once. Rather than adding move commands to all your<br /> sprites you can simply attach your controls to your body sprite and use <code class="blockbrown">broadcast</code><br /> to control any other sprite.<br /> When our <strong>Tentacle sprite</strong><br /> (or any other sprite for that<br /> matter!) receives a<br /> <code class="blockbrown">moved right</code> broadcast,<br /> we can move it to the right<br /> too.</li>
+</ul>
+<p><img src="c713d17707dcbaab86df31bfeca9256e50dc534c.png" alt="// on Ghost Body
+when [right arrow v] key pressed
+change x by (moveSpeed)
+broadcast [moved right v]
+
+when [left arrow v] key pressed
+change x by ((moveSpeed) * (-1))
+broadcast [moved left v]" /></p>
+<p><img src="6a6478469aaa6e2b26a8872737ce6f84de51cfdf.png" alt="// on Tentacle
+
+when I receive [moved right v]
+change x by (moveSpeed)
+
+when I receive [moved left v]
+change x by ((moveSpeed) * (-1))" /></p>
+<ul>
+<li>Using <code class="blockbrown">broadcast</code> also means if we want to change the way our movement<br /> commands work, we only have to change one set of<br /> scripts. <strong>Have a look at this example:</strong></li>
+</ul>
+<p><img src="199951ee657b8b179c5615d6890823ce97502130.png" alt="// on Ghost Body
+when [right arrow v] key pressed
+change x by (moveSpeed)
+point in direction (90 v)
+if on edge, bounce
+if (not (touching [edge v]?))
+    broadcast [moved right v]
+    broadcast [moved v]
+end
+
+when [left arrow v] key pressed
+change x by ((moveSpeed) * (-1))
+point in direction (-90 v)
+if on edge, bounce
+if (not (touching [edge v]?))
+    broadcast [moved left v]
+    broadcast [moved v]
+end" /></p>
+<ul>
+<li><p>Here we’re telling the body to face the direction it<br /> is moving (make sure your sprite orientation is set<br /> to <strong>“only face left-right”</strong>) and to stop and turn around<br /> if it collides with the edge of our screen. You will have<br /> also noticed that we have wrapped our broadcast<br /> in an <code class="blockyellow">if</code> block, we only want the other body parts<br /> to move if the body isn’t on the edge of the screen.<br /> <strong>If you decide to add any animation to the<br /> movement, make sure that any associated<br /> movements take just as long. i.e. if moving a leg<br /> to the left takes 1 second due to an animation, all<br /> other left movements must take 1 second too<br /> (use a <code class="blockyellow">wait</code> block to make sure they’re all in step).</strong></p></li>
+<li><p>You can also animate your body sprite using<br /> <code class="blockpurple">costume</code> changes, by triggering the change every<br /> time a movement broadcast is received.</p></li>
+</ul>
+<p><img src="cdabe6fc5c0158ec8d930cbedebf7c10d3320e59.png" alt="when I receive [moved right v]
+next costume" /></p>
+</section>
+<section class="legal" id="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-2']);
+        _gaq.push(['_setDomainName', 'codeclubworld.org']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>

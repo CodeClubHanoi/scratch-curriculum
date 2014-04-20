@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scratch Card - Jointed Arm — Code Club World</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
+<div class="title">Scratch Card - Jointed Arm</div>
+<div><span class="level">Level 4</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">English</a></li><li><a href="../index.html">Advanced Scratch</a></li><li><strong>Scratch Card - Jointed Arm</strong></li></ol>
+</section>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<ul>
+<li><p>A jointed arm is made from <strong>two sprites</strong>, they can be quite tricky to build as the<br />two parts of the arm need to know where each other are in order not to separate<br />and look strange. This is done using a mathematical calculation called<br /><strong>trigonometry</strong> that is regularly used in the production of video games, robots and<br />other cool technology. <strong>Our first arms sprite is the upper arm</strong>, this is not too tricky,<br />as it will simply rotate at the shoulder and<br />move along with the body and all our other<br />body parts. One thing we will need to add<br />however is setting our arm <code class="blockblue">direction</code> to<br />variable (more on this later).</p>
+<p><img src="0dfa211cf9aa9f3f40f9237f4826639084d66888.png" alt="when [space v] key pressed
+turn cw (15) degrees
+set [left arm v] to (direction)
+broadcast [moved v]
+change x by (move speed)" /></p></li>
+<li><p>This next calculation is used to control the<br /> <strong>lower arm</strong>. This is where we use trigonometry to calculate where the lower arm<br /> should be place (you might need to ask for help when doing this).</p>
+<p><img src="765177454140bb7f4f30e535c30f8f874762bf2e.png" alt="when I receive [moved v]
+go to [Sprite3 v]
+go to x: ((x position) + ((45) * ([sin v] of (left arm)))) y: ((y position) + ((45) * ([cos v] of (left arm))))" /></p></li>
+<li>First of all our arm will update when the broadcast <code class="blockbrown">moved</code> is used but you can<br /> use any broadcast as long as your upper arm is broadcasting it or moving to<br /> the same broadcast as your lower arm.<br /></li>
+<li><p>Next our lower arm positions itself at the <strong>center point</strong> of the upper arm, this<br /> should be the point where the top of the upper arm meets the shoulder body.<br /> We then want to reposition the lower arm elbow to the other end of the upper<br /> arm. Imagine that as the upper arm rotates around the shoulder we draw a<br /> circle, first of all what is the radius of that circle? Well our arm in this example is<br /> about <strong>45 pixels</strong> long.<br /> We then want to find out what point around that circle the other end of our arm<br /> is, and position our lower arm there. We use the trigonometry calculation above to<br /> reposition our lower arm and create an elbow.</p></li>
+</ul>
+</section>
+<section class="legal" id="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-2']);
+        _gaq.push(['_setDomainName', 'codeclubworld.org']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>

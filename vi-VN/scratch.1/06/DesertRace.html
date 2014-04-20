@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Desert Race — Code Club World</title>
+    <title>Cuộc đua trên sa mạc — Code Club World</title>
 
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
@@ -16,8 +16,8 @@
 <body>
 <header>
 <div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
-<div class="title">Desert Race</div>
-<div><span class="level">Level 2</span></div>
+<div class="title">Cuộc đua trên sa mạc</div>
+<div><span class="level">Cấp độ 2</span></div>
 </header>
 <section class="legal">
 <div>
@@ -25,17 +25,17 @@ These projects are for use outside the UK only. More information is available on
 </div>
 </section>
 <section class="breadcrumb">
-<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Desert Race</strong></li></ol>
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Cuộc đua trên sa mạc</strong></li></ol>
 </section>
-<section id="introduction" class="level1 intro">
-<h1>Introduction</h1>
-<p>This game is a two player game where you race a parrot and a lioness across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.</p>
+<section id="li-gii-thiu" class="level1 intro">
+<h1>Lời giới thiệu</h1>
+<p>Trò chơi dành cho 2 người chơi này là cuộc đua giữa một chú vẹt và một cô sư tử trên sa mạc. Mỗi người chơi phải ấn một phím nhanh nhất có thể để di chuyển con thú của họ, con thú đầu tiên chạm tới cạnh của màn hình sẽ chiến thắng.</p>
 <p><img src="desertrace_screenshot.png" alt="screenshot" /></p>
 </section>
-<section id="step-1-create-the-scene-and-add-the-sprites" class="level1 activity">
-<h1>STEP 1: Create the scene and add the sprites</h1>
-<section id="activity-checklist" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-1-tao-khung-canh-va-them-cac-hoa-tit" class="level1 activity">
+<h1>BƯỚC 1: Tạo khung cảnh và thêm các hoạ tiết</h1>
+<section id="danh-sach-lit-ke-hoat-ng" class="level2 check">
+<h2>Danh sách liệt kê hoạt động</h2>
 <blockquote>
 <blockquote>
 <blockquote>
@@ -52,50 +52,50 @@ These projects are for use outside the UK only. More information is available on
 </blockquote>
 </blockquote>
 <ol>
-<li>Select the Stage, and add the <strong>Nature/desert</strong> backdrop.<br />ticking off the boxes below:<br /></li>
-<li>Add a new sprite, select the <strong>Lioness</strong> sprite that you will find in the <strong>Animals</strong> folder.<br /></li>
-<li>Add another sprite, select the <strong>Parrot</strong> sprite that you will find in the <strong>Animals</strong> folder. <code class="blocklightgrey">Shrink</code> it so that it is roughly the same size as the lioness sprite.</li>
+<li>Chọn sân khấu và thêm bối cảnh <strong>Nature/desert</strong> (Tự nhiên/sa mạc). Đánh dấu vào các ô bên dưới:<br /></li>
+<li>Thêm một đồ họa mới, chọn hình ảnh <strong>Lioness</strong> (cô sư tử) trong tệp <strong>Animals</strong>.<br /></li>
+<li>Thêm một đồ họa khác, chọn hình ảnh <strong>Parrot</strong> (chú vẹt) trong tệp <strong>Animals</strong>. <code class="blocklightgrey">Shrink</code> để nó có kích thước tương tự cô nàng sư tử.</li>
 </ol>
 </section>
 </section>
-<section id="step-2-make-the-lioness-and-the-parrot-move" class="level1 activity">
-<h1>STEP 2: Make the lioness and the parrot move</h1>
-<p>We want the sprite to move when you press a key.</p>
-<section id="activity-checklist-1" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-2-lam-cho-chu-khi-va-co-su-t-di-chuyn" class="level1 activity">
+<h1>BƯỚC 2: Làm cho chú khỉ và cô sư tử di chuyển</h1>
+<p>Chúng ta cần làm cho hoạt họa di chuyển khi bạn ấn phím.</p>
+<section id="vic-cn-lam" class="level2 check">
+<h2>Việc cần làm</h2>
 <ol>
-<li>First select the lion sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘L’</strong> key.</li>
+<li>Trước tiên hãy chọn hình ảnh sư tử và đặt nó vào <code class="blockblue">move (4) steps</code> khi bạn ấn phím <strong>‘L’</strong></li>
 </ol>
 <p><img src="5f030d2b539995c45e725827c6c48a493c6811cd.png" alt="when [l v] key pressed
     move (4) steps" /></p>
 <ol>
-<li>Next, select the parrot sprite and set it to <code class="blockblue">move (4) steps</code> when you press the <strong>‘A’</strong> key.</li>
+<li>Tiếp theo, chọn hình chú vẹt và đặt nó vào <code class="blockblue">move (4) steps</code> khi bạn ấn phím <strong>‘A’</strong> .</li>
 </ol>
 <p><img src="ea0da29ff29dcacb944b66526cb76769453ed58a.png" alt="when [a v] key pressed
     move (4) steps" /></p>
 </section>
-<section id="test-your-project" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong><br />Do your lioness and parrot move across the screen when you press the ‘A’ and ‘L’ keys?</p>
+<section id="chay-th-d-an-cua-ban" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh lá</strong><br />Liệu cô nàng sư tử và chú vẹt của bạn có di chuyển trên màn hình khi bạn ấn phím ‘A’ và ‘L’?</p>
 </section>
-<section id="save-your-project" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-d-an-cua-ban" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
 </section>
 </section>
-<section id="step-3-starting-the-race" class="level1 activity">
-<h1>STEP 3: Starting the race</h1>
-<p>We need to have a way to start the race and to know who has won. <strong>First we create a start button.</strong></p>
-<section id="activity-checklist-2" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-3-bt-u-cuc-ua" class="level1 activity">
+<h1>BƯỚC 3: Bắt đầu cuộc đua</h1>
+<p>Chúng ta cần có một cách để bắt đầu cuộc đua và biết được người chiến thắng.<br /><strong>Đầu tiên chúng ta tạo một nút khởi động.</strong></p>
+<section id="nhng-vic-cn-lam" class="level2 check">
+<h2>Những việc cần làm</h2>
 <ol>
-<li>Add a new sprite from a file. Choose the <strong>button3</strong> sprite which is inside <strong>“Things”</strong>.<br /></li>
-<li>Edit the costume of the button sprite, add the text <strong>‘start’</strong> to it and click OK. Move the sprite to the middle of the stage.<br /></li>
-<li>Now add a script that shows the sprite when the project is run:</li>
+<li>Thêm một hình họa mới từ một file.. Chọn hình họa <strong>button3</strong> ở bên trong phần <strong>“Things”</strong>.<br /></li>
+<li>Chỉnh sửa nút hình họa, thêm từ <strong>‘start’</strong> (bắt đầu) vào đó và click &quot;OK&quot;. Di chuyển hình ảnh đến giữa sân khấu.<br /></li>
+<li>Hãy bắt đầu thêm một dòng lệnh cho hình hoạ biết khi nào dự án được khởi động:</li>
 </ol>
 <p><img src="6b092c29425ba351f83f775c5750be3bce319e9c.png" alt="    when FLAG clicked
     show" /></p>
 <ol>
-<li>Now we want the button to count down from 3 and then say go and then <code class="blockblue">hide</code> when it is clicked. Add another script like this one:</li>
+<li>Bây giờ chúng ta cần nút đếm ngược từ 3, sau đó nói &quot;Go&quot; (bắt đầu đua) và <code class="blockblue">hide</code> khi nó được click. Thêm một dòng lệnh khác như dưới đây:</li>
 </ol>
 <p><img src="e4146642f573e25db0a2c498766f864e72b4b2ba.png" alt="when this sprite clicked
     say [3] for (1) secs
@@ -104,49 +104,50 @@ These projects are for use outside the UK only. More information is available on
     say [GO!] for (1) secs
     hide" /></p>
 </section>
-<section id="test-your-project-1" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>When you press the start button does it countdown to the start of the race before disappearing?</p>
+<section id="chay-th-d-an-cua-ban-1" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh lá.</strong></p>
+<p>Khi bạn nhấn nút khởi động, nó có đếm ngược để bắt đầu cuộc đua trước khi biến mất không?</p>
 </section>
-<section id="save-your-project-1" class="level2 save">
-<h2>Save your project</h2>
-<p>We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.</p>
+<section id="luu-d-an-cua-ban-1" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
+<p>Chúng ta cần để cho các tay đua di chuyển sau khi cuộc đua bắt đầu và biết rằng khi nào cuộc đua kết thúc. Bởi vậy, chúng ta cần một biến để lưu giữ thông tin đó.</p>
 <ol>
-<li>Add a variable for all sprites called <code class="blockorange">racing</code>. Untick the box next to it so it does not show on the stage.<br /></li>
-<li>Now set <strong>racing</strong> to be <strong>0</strong> when the project is first started. Change your <code class="blockyellow">when flag clicked</code> script from before to look like this:</li>
+<li>Thêm một biến cho tất cả các hình họa gọi là <code class="blockorange">racing</code>. Bỏ chọn ô cạnh đó để nó không thể hiển thị trên sân khấu.<br /></li>
+<li>Bây giờ hãy thiết lập <strong>racing</strong> về <strong>0</strong> khi dự án khởi động lần đầu tiên. Thay đổi dòng lệnh <code class="blockyellow">when flag clicked</code> trước đó để được như sau:</li>
 </ol>
 <p><img src="c7fe261470330ace56dcaf22a99fadf7eb376875.png" alt="when FLAG clicked
     show
     set [racing v] to (0)" /></p>
 <ol>
-<li>Next, set the <strong>racing</strong> variable to be 1 when the starting countdown has finished.<br /></li>
-<li>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.</li>
+<li>Tiếp theo, thiết lập biến <strong>racing</strong> tới 1 khi đồng hồ đếm ngược kết thúc.<br /></li>
+<li>Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. <strong>Add a control block to the script</strong> that only allows the parrot to move if <strong>racing = 1</strong>.<br /></li>
+<li>Bây giờ, chúng ta cần dừng cô sư tử và chú vẹt lại trừ khi biến của cuộc đua là 1. Click vào hình chú vẹt. <strong>Thêm một khối điều khiển vào chương trình</strong> mà chỉ cho phép chú vẹt di chuyển khi <strong>racing = 1</strong>.</li>
 </ol>
 <p><img src="862519bb20dcebacc1653a655e832a588d2f849f.png" alt="
     when [a v] key pressed
     if &lt;(racing) = [1]&gt;
         move (4) steps" /></p>
 <ol>
-<li>Now do the same for the lion sprite.</li>
+<li>Làm tương tự với hình họa của cô nàng sư tử.</li>
 </ol>
 </section>
-<section id="test-your-project-2" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>Does the lioness or the parrot move only after the countdown has finished?</p>
-<p>We want to know who wins the race and reset it when it has finished so you can<br />race again.</p>
+<section id="chay-th-d-an-cua-ban-2" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh lá.</strong></p>
+<p>Cô sư tử và chú vẹt chỉ di chuyển sau khi dừng đém ngược phải không?</p>
+<p>Chúng ta cần biết người dành chiến thắng trong cuộc đua và đặt lại nó khi kết thúc để có thể đua một lần nữa.</p>
 </section>
-<section id="save-your-project-2" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-d-an-cua-ban-2" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
 </section>
 </section>
-<section id="step-4-finishing-the-race" class="level1 activity">
-<h1>STEP 4: Finishing the race</h1>
-<section id="activity-checklist-3" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-4-kt-thuc-cuc-ua" class="level1 activity">
+<h1>BƯỚC 4: Kết thúc cuộc đua</h1>
+<section id="danh-sach-lit-ke-hoat-ng-1" class="level2 check">
+<h2>Danh sách liệt kê hoạt động</h2>
 <ol>
-<li>Add a block to the parrot’s script that sets the <strong>racing</strong> variable to be 0 when the sprite touches the edge of the screen.</li>
+<li>Thêm một khối lệnh cho chú vẹt để đặt biến <strong>racing</strong> trở về 0 khi hình họa chạm tới góc của màn hình.</li>
 </ol>
 <p><img src="c8d847225cfeeba3c665c15a745a87a1f28d34a6.png" alt="when [a v] key pressed
 if &lt;(racing) = [1]&gt;
@@ -154,8 +155,8 @@ if &lt;(racing) = [1]&gt;
     if &lt;touching [edge v]?&gt;
     set (racing) to [0]" /></p>
 <ol>
-<li>Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click <code class="blocklightgrey">sounds</code> and then record the sound of the parrot winning the race!<br /></li>
-<li>Now add blocks that <code class="blockpurple">play</code> the sound you recorded and makes the parrot say it has won:</li>
+<li><p>Giờ đây chúng ta cần chú vẹt cho ta biết nếu nó chiến thắng cuộc đua. Ghi lại một âm thanh mới cho hình họa chú vẹt, nó sẽ được phát khi chú vẹt chiến thắng. Click <code class="blocklightgrey">sounds</code> và sau đó ghi lại âm thanh của chú vẹt chiến thắng trong cuộc đua!</p></li>
+<li><p>Thêm khối lệnh âm thanh <code class="blockpurple">play</code> mà bạn ghi lại được và sau đó để cho chú vẹt nói rằng nó đã chiến thắng:</p></li>
 </ol>
 <p><img src="63957c0f693cd6cf5735a0cc9d42e8945155f981.png" alt="    when [a v] key pressed
     if &lt;(racing) = [1]&gt;
@@ -165,26 +166,26 @@ if &lt;(racing) = [1]&gt;
             play sound [recording1 v]
             say [The Parrot Wins! v] for (3) secs   " /></p>
 <ol>
-<li>Now repeat these steps for the lioness.</li>
+<li>Bây giờ hãy lặp lại các bước trên đối với cô sư tử.</li>
 </ol>
 </section>
-<section id="test-your-project-3" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?<br />Do the sprites make their winning sound and say they’ve won when they reach the end of the race?</p>
+<section id="chay-th-d-an-cua-ban-3" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh lá.</strong></p>
+<p>Bạn có thể nhấn nút bắt đầu và tiếp tục cuộc đua bằng cách ấn phím ‘A’ và ‘L’ không?<br />Liệu hình họa có phát ra âm thanh chiến thắng khi nó hoàn thành cuộc đua?</p>
 </section>
-<section id="save-your-project-3" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-d-an-cua-ban-3" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
 </section>
 </section>
-<section id="step-5-resetting-the-game" class="level1 activity">
-<h1>STEP 5: Resetting the game</h1>
-<p>After the race is finished we need to tell the other sprites we have won and reset the game so we can play again.</p>
-<p><strong>We need the winning sprite to broadcast that it has won.</strong></p>
-<section id="activity-checklist-4" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-5-t-lai-tro-choi" class="level1 activity">
+<h1>BƯỚC 5: Đặt lại trò chơi</h1>
+<p>Sau khi cuộc đua kết thúc, chúng ta cần cho những hình họa biết chúng ta đã chiến thắng và đặt lại trò chơi để có thể chơi một lần nữa.</p>
+<p><strong>Chúng ta cần hình họa chiến thắng truyền tin rằng nó đã giành phần thắng.</strong></p>
+<section id="nhng-vic-cn-lam-1" class="level2 check">
+<h2>Những việc cần làm</h2>
 <ol>
-<li>Click on the Parrot sprite.<br />Add a block that broadcasts a <strong>&quot;finished”</strong> message after the sprite says it has won.</li>
+<li>Click vào hình họa chú vẹt.<br />Thêm một khối lệnh truyền tin cho một tin nhắn <strong>&quot;finished”</strong> sau khi hình họa thông báo rằng nó đã chiến thắng.</li>
 </ol>
 <p><img src="b150a0748e51f9be5048cbb4151773c839b0a902.png" alt="when [a v] key pressed
 if &lt;(racing) = [1]&gt;
@@ -195,34 +196,34 @@ if &lt;(racing) = [1]&gt;
         say [The Parrot Wins! v] for (3) secs
         broadcast [finished v]" /></p>
 <ol>
-<li>Now we need to add a new script that listens for the finished broadcast and moves the parrot back to the start. What happens if you change the value that <strong>x</strong> is set to?</li>
+<li>Bây giờ, chúng ta cần thêm một dòng lệnh mới để lắng nghe tín hiệu kết thúc và di chuyển chú vẹt trở về vị trí khởi động. Chuyện gì xảy ra khi ta thay đổi giá trị <strong>x</strong> được thiết lập?</li>
 </ol>
 <p><img src="19dc6417503fa4c1f570030cdb637718b60594db.png" alt="when I receive [finished v]
     set x to (-170)" /></p>
 <ol>
-<li>Now add the same script for the lioness. Test different <strong>x</strong> values to make sure the lion and the parrot line up at the start.<br /></li>
-<li>We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start when we click the flag.</li>
+<li>Thêm lệnh tương tự cho cô sư tử. Kiểm tra các giá trị <strong>x</strong> khác nhau để chắc rằng cô sử tử và chú vẹt thẳng hàng tại vị trí khởi động.<br /></li>
+<li>Chúng ta cũng cần phải đặt cô sư tử và chú vẹt ở vị cùng vị trí khi dự án bắt đầu chạy. Do đó, thêm một dòng lệnh khác cho mỗi con vật để di chuyển chúng về vị trí khởi động khi click vào lá cờ.</li>
 </ol>
 <p><img src="f0f83b812562c866b3473e28eac324c59c9c0b9c.png" alt="when FLAG clicked
     set x to (-170)" /></p>
 <ol>
-<li>Now click on the button sprite and add a script that shows it when it receives the finished message.</li>
+<li>Bây giờ click vào nút “Sprite” và thêm dòng lệnh để biết khi nó nhận được tin nhắn đã hoàn thành.</li>
 </ol>
 </section>
-<section id="test-your-project-4" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click on the green flag.</strong></p>
-<p>Can you race against a friend, one of you moving the parrot by pressing ‘A’ and the other moving the Lion by pressing ‘L’?</p>
+<section id="chay-th-d-an-cua-ban-4" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
+<p><strong>Click vào lá cờ màu xanh lá.</strong></p>
+<p>Bạn có thể đua với một người bạn, một trong hai bạn di chuyển con vẹt bằng cách ấn phím ‘A’ còn người còn lại di chuyển cô sư tử bằng phím ‘L’ không?</p>
 </section>
-<section id="save-your-project-4" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-d-an-cua-ban-4" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
 </section>
-<section id="challenge-1-add-a-booster" class="level2 challenge">
-<h2>Challenge 1: Add a booster</h2>
+<section id="th-thach-1-them-mt-ng-co-tang-tc" class="level2 challenge">
+<h2>Thử thách 1: Thêm một động cơ tăng tốc</h2>
 <ul>
-<li><strong>Try to add a booster</strong> that you can use once each race that moves the parrot or the lion <strong>30 steps in 1 go.</strong><br /></li>
-<li><strong>Add a new costume</strong> with fire coming out behind for each sprite and make it appear when the boost is pressed.<br /></li>
-<li><strong>Create another sound</strong> that the sprite will make when the boost is pressed.</li>
+<li><strong>Thử thêm một động cơ tăng tốc</strong> mà ta có thể dùng một lần trong mỗi cuộc đua giúp chú vẹt và cô sư tử <strong>30 bước trong một lần.</strong><br /></li>
+<li><strong>Thêm một trang phục mới</strong> cùng với tia lửa phía sau mỗi hình họa sẽ xuất hiện khi nhấn nút tăng tốc.<br /></li>
+<li><strong>Thêm một âm thanh khác</strong> để hình họa sẽ phát ra khi tăng tốc.</li>
 </ul>
 <p><img src="4439f6da04ee4a5e49a5eba5727fd9070cc29f34.png" alt="when [p v] key pressed
 if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
@@ -235,21 +236,21 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
         say [The Parrot Wins! v] for (3) secs
         broadcast [finished v]" /></p>
 </section>
-<section id="test-your-project-5" class="level2 flag">
-<h2>Test Your Project</h2>
+<section id="chay-th-d-an-cua-ban-5" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
 </section>
-<section id="save-your-project-5" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-d-an-cua-ban-5" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
 </section>
-<section id="challenge-2-use-custom-blocks-to-simplify-your-script" class="level2 challenge">
-<h2>Challenge 2: Use custom blocks to simplify your script</h2>
-<p>The code to check if the race has finished is now used in two places for each sprite: when the sprite is moving normally and when it's moving with the booster. We can simplify our script using a custom block which is a chunk of code that gets used in more than one place. It's a bit like making up our own Scratch code block!</p>
+<section id="th-thach-2-dung-custom-blocks--on-gian-hoa-dong-lnh" class="level2 challenge">
+<h2>Thử thách 2: Dùng custom blocks để đơn giản hóa dòng lệnh</h2>
+<p>Dòng lệnh để kiểm tra nếu cuộc đua kết thúc giờ đây được sử dụng trong hai nơi cho mỗi hình họa: khi hình họa di chuyển bình thường, và khi chúng tăng tốc. Chúng ta có thể đơn giản hóa dòng lệnh của mình bằng cách dùng custom block, đó chính là một phần của dòng lệnh giúp ta có thể dùng chúng nhiều hơn một điểm, cũng giống như việc viết Scratch code block!</p>
 <ol>
-<li>Choose the Parrot's script.<br /></li>
-<li>Select the <code class="blocklightgrey">More Blocks</code> palette and then click the <code class="blocklightgrey">Make a Block</code> button.<br /></li>
-<li>Give the custom block a name by typing <strong>&quot;finished&quot;</strong> into the pink box. Then click OK.<br /></li>
-<li>You'll now see a <code class="blockpurple">define finished</code> block appear in the scripts window. Drag it to a clear area.<br /></li>
-<li>Detach the <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> block and drag it to the <code class="blockpurple">define finished</code> block.</li>
+<li>Chọn dòng lệnh của chú vẹt.<br /></li>
+<li>Chọn bảng màu <code class="blocklightgrey">More Blocks</code> và sau đó click vào <code class="blocklightgrey">Make a Block</code>.<br /></li>
+<li>Đặt tên cho khối custom bằng cách gõ <strong>&quot;finished&quot;</strong> vào ô màu hồng, sau đó chọn OK.<br /></li>
+<li>Ta có thể thấy khối <code class="blockpurple">define finished</code> xuất hiện trong cửa sổ dòng lệnh. Kéo nó ra một vùng trống.<br /></li>
+<li>Gỡ khối <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code><code class="blockyellow">then</code> và kéo nó tới khối <code class="blockpurple">define finished</code></li>
 </ol>
 <p><img src="e9d32fc8348aaec692744258a6434d21f6abda6b.png" alt="define finished
  if &lt;touching [edge v]?&gt;
@@ -264,16 +265,16 @@ if &lt;&lt;(racing) = [1]&gt; and &lt;(boosted) = [0]&gt;&gt;
     set [boosted v] to [1]     
     move (4) steps
 finished" /></p>
-<p>Can you drag the <code class="blockpurple">finished</code> block from the palette and use it like any other code item?</p>
-<p>Delete the other <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code> block from your script and replace it with another <code class="blockpurple">finished</code> custom block.</p>
-<p>Does this make your code easier to read? Can you create a similar custom block for the lioness sprite?</p>
+<p>Bạn có thể kéo khối <code class="blockpurple">finished</code> từ bảng màu và dùng nó như những mục mã hóa khác?</p>
+<p>Xóa khối <code class="blockyellow">if</code><code class="blocklightblue">touching edge?</code> khác từ dòng lệnh và thay thế nó bằng một khối <code class="blockpurple">finished</code> tự tạo.</p>
+<p>Liệu nó có thể làm cho chương trình của bạn dễ đọc hơn không? Bạn có thể tạo một khối tự tạo tương tự cho hình họa cô sư tử không?</p>
 </section>
-<section id="test-your-project-6" class="level2 flag">
-<h2>Test Your Project</h2>
+<section id="chay-th-d-an-cua-ban-6" class="level2 flag">
+<h2>Chạy thử dự án của bạn</h2>
 </section>
-<section id="save-your-project-6" class="level2 save">
-<h2>Save your project</h2>
-<p><strong>Well done you’ve finished, now you can enjoy the game!</strong></p>
+<section id="luu-d-an-cua-ban-6" class="level2 save">
+<h2>Lưu dự án của bạn</h2>
+<p><strong>Rất tốt, bạn đã hoàn thành, giờ hãy tận hưởng trò chơi của mình nào!</strong></p>
 </section>
 </section>
 <section class="legal" id="legal">

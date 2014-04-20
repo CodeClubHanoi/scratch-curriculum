@@ -17,7 +17,7 @@
 <header>
 <div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
 <div class="title">Flappy Parrot</div>
-<div><span class="level">Level 2</span></div>
+<div><span class="level">Cấp độ 2</span></div>
 </header>
 <section class="legal">
 <div>
@@ -27,44 +27,43 @@ These projects are for use outside the UK only. More information is available on
 <section class="breadcrumb">
 <ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">Tiếng Việt</a></li><li><a href="../index.html">Scratch cơ bản</a></li><li><strong>Flappy Parrot</strong></li></ol>
 </section>
-<section id="introduction" class="level1 intro">
-<h1>Introduction</h1>
-<p><strong>In this project we’ll make our own version of the highly popular mobile game Flappy Bird. This project requires Scratch 2.0.</strong><br />Press the space bar to flap and try to navigate through the gaps in the pipes!</p>
+<section id="gii-thiu" class="level1 intro">
+<h1>Giới thiệu</h1>
+<p><strong>Trong dự án này chúng ta sẽ tạo ra một phiên bản riêng của mình từ trò chơi trên điện thoại nổi tiếng Flappy Bird. Dự án này cần phải dùng Scratch 2.0.</strong><br />Nhấn nút cách để đập cánh và di chuyển qua kẽ hở của những đường ống!</p>
 <p><img src="flappy_screenshot.png" alt="screenshot" /></p>
 </section>
-<section id="step-1-make-flappy-fall" class="level1 activity">
-<h1><strong>Step 1:</strong> Make Flappy fall</h1>
-<section id="activity-checklist" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-1--flappy-roi" class="level1 activity">
+<h1><strong>Bước 1:</strong> Để Flappy rơi</h1>
+<section id="hoat-ng" class="level2 check">
+<h2>Hoạt động</h2>
 <ul>
-<li>Start a new Scratch project. Delete the cat by right-clicking it and selecting Delete<br /></li>
-<li>Replace the background with an outdoor landscape. <strong>desert</strong> is a good choice.<br /></li>
-<li>Add the Flappy character. You'll need a sprite with costumes for wings up and wings down. <strong>parrot</strong> is a good choice.<br /></li>
-<li>Change the name of your sprite to <strong>Flappy</strong>.<br /></li>
-<li>Give Flappy the following script:</li>
+<li>Tạo một dự án Scratch. Xóa hình con mèo bắt cách chọn con mèo và nhấn chuột phải, chọn Delete<br /></li>
+<li>Thay phần phông nền với một khung cảnh ngoài trời. <strong>desert (sa mạc)</strong> có thể rất thích hợp.<br /></li>
+<li>Thêm hình họa Flappy. Bạn sẽ cần một hình họa với trang phục có cánh đâp lên đập xuống. Ví dụ như <strong>parrot</strong> là rất thích hợp.<br /></li>
+<li>Thay tên nhân vật của bạn thành <strong>Flappy</strong>.<br /></li>
+<li>Đặt đoạn mã sau cho Flappy:</li>
 </ul>
 <p><img src="5d5d7e27f895c15829c4abb48e5fe70a33dda51d.png" alt="when FLAG clicked
     go to x: (-50) y: (0)
     forever
         change y by (-3)" /></p>
 </section>
-<section id="test-your-project" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, does Flappy start in the middle of the screen and then fall to the bottom?</p>
+<section id="kim-tra-lai" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, Flappy có xuất hiện ở giữa màn hình và sau đó rơi xuống cuối màn hình?</p>
 </section>
-<section id="save-your-project" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-2-make-flappy-fly" class="level1 activity">
-<h1><strong>Step 2:</strong> Make Flappy fly</h1>
-<p><em>Next, we want Flappy to flap upwards when you press the space bar.</em></p>
-<section id="activity-checklist-1" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-2-lam-flappy-bay" class="level1 activity">
+<h1><strong>Bước 2:</strong> Làm Flappy bay</h1>
+<p><em>Tiếp theo, chúng ta sẽ làm cho Flappy bay lên khi nhấn nút cách.</em></p>
+<section id="hoat-ng-1" class="level2 check">
+<h2>Hoạt động</h2>
 <ul>
-<li>Click on the <strong>Costumes</strong> tab and name the costumes <strong>wings up</strong> and <strong>wings down</strong>.<br /></li>
-<li>Now switch back to the <strong>Scripts</strong> tab and add this script:</li>
-</ul>
+<li>Nhấn vào thẻ <strong>Costumes</strong> và đặt tên trang phục <strong>wings up (đập cánh lên)</strong> và <strong>wings down (đập cánh xuống)</strong><br /></li>
+<li><p>Bây giờ quay trở lại thẻ <strong>Scripts</strong> và thêm đoạn lệnh này:</p>
 <p><img src="4c7794cb5c21db60485e4adce7a0398875405fc3.png" alt="when [space v] key pressed
     switch costume to [wings down v]
     repeat (10)
@@ -73,25 +72,26 @@ These projects are for use outside the UK only. More information is available on
     switch costume to [wings up v]
     repeat (10)
         change y by (6)
-    end" /></p>
+    end" /></p></li>
+</ul>
 </section>
-<section id="test-your-project-1" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, are you able to control Flappy with the space bar? Do you notice that sometimes you press the space bar but Flappy doesn't move? We'll fix that next...</p>
+<section id="kim-tra-lai-1" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, bạn đã có thể điều khiển Flappy với nút cách chưa? Bạn có thấy rằng đôi khi ấn nút cách nhưng Flappy không di chuyển? Chúng ta sẽ tiếp tục sửa phần này…</p>
 </section>
-<section id="save-your-project-1" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-1" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-3-fix-the-controls" class="level1 activity">
-<h1><strong>Step 3:</strong> Fix the controls</h1>
-<p><em>We'd like Flappy to respond every time we press the space bar. But when we push the space bar Flappy begins two loops of movements. If we push the space bar again before these loops have finished, Scratch ignores the second press. To solve this, we'll use a variable to count up how many flaps we need to do.</em></p>
-<section id="activity-checklist-2" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="step-3-sa-lnh-iu-khin" class="level1 activity">
+<h1><strong>Step 3:</strong> Sửa lệnh điều khiển</h1>
+<p><em>Chúng ta muốn Flappy phản ứng lại mỗi khi chúng ta nhấn nút cách. Nhưng mỗi khi nhấn nút cách thì Flappy đều bắt đầu hai nhịp chuyển động. Nếu chúng ta ấn nút cách khi Flappy chưa kết thúc hai nhịp này, Scatch sẽ bỏ qua lần nhấn thứ hai. Để giải quyết vấn đề này, chúng ta sẽ sử dụng một biến để đếm số nhịp cần thực hiện.</em></p>
+<section id="hoat-ng-2" class="level2 check">
+<h2>Hoạt động</h2>
 <ul>
-<li>Disconnect the blocks under the <code class="blockbrown">when space key pressed</code> and put them to the side (we'll use them in a few moments.)<br /></li>
-<li>Make a new variable <code class="blockgrey">For this sprite only</code> and call it <code class="blockorange">flaps</code>.<br /></li>
-<li>Add the following script by draging in the blocks you put aside:</li>
+<li><p>Tách rời các khối ở dưới <code class="blockbrown">when space key pressed</code> và đặt sang bên cạnh (chúng ta sẽ sử dụng chúng trong chốc lát)</p></li>
+<li>Tạo một biến mới <code class="blockgrey">For this sprite only</code> và đặt tên nó là <code class="blockorange">flaps</code>.<br /></li>
+<li><p>Thêm đoạn lệnh sau bằng cách kéo các khối mà bạn vừa đặt sang bên cạnh.</p></li>
 </ul>
 <p><img src="6b53c0c9ba2b3935b1cff51bfc37c538b399c319.png" alt="when FLAG clicked
     set [flaps v] to [0]
@@ -109,50 +109,50 @@ These projects are for use outside the UK only. More information is available on
             end
 " /></p>
 <ul>
-<li>Finally, add to your <code class="blockbrown">when space key pressed</code> event:</li>
+<li>Cuối cùng, thêm lệnh sau vào sự kiện <code class="blockbrown">when space key pressed</code> sau:</li>
 </ul>
 <p><img src="cce39614e4c0e10598de7a0f1ca225d62175027a.png" alt="when [space v] key pressed
     change [flaps v] by (1)" /></p>
 </section>
-<section id="test-your-project-2" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, does Flappy now flap once for each time you press the space bar?</p>
+<section id="kim-tra-lai-2" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, giờ Flappy đã đập một nhịp cho mỗi lần bạn ấn nút cách chưa?<br />does Flappy now flap once for each time you press the space bar?</p>
 </section>
-<section id="save-your-project-2" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-2" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-4-add-the-pipes" class="level1 activity">
-<h1><strong>Step 4:</strong> Add the pipes</h1>
-<p><em>Next we'll add some obstacles for Flappy to fly through.</em></p>
-<section id="activity-checklist-3" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-4-them-cac-ung-ng" class="level1 activity">
+<h1><strong>Bước 4:</strong> Thêm các đường ống</h1>
+<p><em>Tiếp theo chúng ta sẽ thêm một số vật cản để Flappy bay qua nhé.</em></p>
+<section id="hoat-ng-3" class="level2 check">
+<h2>Hoạt động</h2>
 <ul>
-<li>Click on the <code class="blockgrey">Paint new sprite</code> button.<br /></li>
-<li>Name your costume <strong>pipe</strong>.<br /></li>
-<li>If the costume is in <code class="blockgrey">Bitmap Mode</code> click on the <code class="blockgrey">Convert to vector</code> button.<br /></li>
-<li>Click on the <code class="blockgrey">Zoom -</code> so that you can see the entire drawing area.<br /></li>
-<li>Click on the <code class="blockgrey">Rectangle</code>, pick a colour, and click on the <code class="blockgrey">Filled rectangle</code> button.<br /></li>
-<li>Click and drag two boxes, one from the top middle and one from the bottom middle as shown:</li>
+<li>Nhấn nút <code class="blockgrey">Paint new sprite</code>.<br /></li>
+<li>Đặt tên trang phục là <strong>pipe</strong>.<br /></li>
+<li>Nếu trang phục là dạng <code class="blockgrey">Bitmap Mode</code>, nhấn nút <code class="blockgrey">Convert to vector</code>.<br /></li>
+<li>Nhấn nút <code class="blockgrey">Zoom -</code> để nhìn rõ phần để vẽ.<br /></li>
+<li>Nhấn nút <code class="blockgrey">Rectangle</code>, chọn một màu và nhấn nút <code class="blockgrey">Filled rectangle</code>.<br /></li>
+<li>Nhấn và kéo để tạo hai khối, một từ phía trên, giữa màn hình và cái kia từ phía dưới, giữa màn hình như hình sau:</li>
 </ul>
 <p><img src="pipe_design.png" alt="screenshot" /></p>
 <ul>
-<li>You can shade your pipes by clicking on the <code class="blockgrey">Color a shape</code> button and click on the <code class="blockgrey">Horizontal gradient</code> button. Choose two shades of the same colour one for the foreground and one for the background. When you click to fill the shapes, the colours will fade between your chosen colours.<br /></li>
-<li>Name your sprite <strong>Pipe</strong>.</li>
+<li>Bạn có thể tô màu các ống này bằng cách nhấn nút <code class="blockgrey">Color a shape</code> và chọn <code class="blockgrey">Horizontal gradient</code>. Chọn hai mầu đậm nhạt cùng tông làm màu mặt trước và màu mặt sau. Khi bạn nhấn để tô màu các ống, màu sắc sẽ được pha theo các màu bạn chọn.<br /></li>
+<li>Đặt tên hình họa là <strong>Pipe</strong>.</li>
 </ul>
 </section>
-<section id="save-your-project-3" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-3" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-5-make-the-pipes-move" class="level1 activity">
-<h1><strong>Step 5:</strong> Make the pipes move</h1>
-<p><em>Next we'll make the pipes move and arrange them randomly to provide an obstacle course for Flappy.</em></p>
-<section id="activity-checklist-4" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-5-di-chuyn-cac-ung-ng" class="level1 activity">
+<h1><strong>Bước 5:</strong> Di chuyển các đường ống</h1>
+<p><em>Tiếp theo chúng ta sẽ di chuyển các đường ống này di chuyển và sắp xếp chúng một cách ngẫu nhiên để tạo ra một lối đi có vật cản cho Flappy.</em></p>
+<section id="hoat-ng-4" class="level2 check">
+<h2>Hoạt động</h2>
 <ul>
-<li>Click on your <strong>Pipe</strong> sprite and select the <code class="blockgrey">Scripts</code> tab.<br /></li>
-<li>Add the following scripts:</li>
+<li>Nhấn vào nhân vật <em>Pipe</em> của bạn và chọn thẻ <code class="blockgrey">Scripts</code>.<br /></li>
+<li>Thêm đoạn lệnh sau:</li>
 </ul>
 <p><img src="663c25c798490d623b5f0ec2fe5d31c2dc2d37bc.png" alt="when FLAG clicked
     hide
@@ -169,25 +169,25 @@ when I start as a clone
     end
     delete this clone" /></p>
 </section>
-<section id="test-your-project-3" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, do pipes appear with gaps to fly through at different heights? If you find it difficult to navigate Flappy through the pipes without touching them, you can make the gap bigger in the <strong>pipe</strong> sprite by editing the costume.</p>
+<section id="kim-tra-lai-3" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, các đường ống được xếp có tạo ra các kẽ hở để bay qua ở các độ cao khác nhau không? Nếu bạn thấy rằng điều khiển Flappy di chuyển qua các kẽ hở này mà không bị va vào các đường ống là rất khó, bạn có thể làm các kẽ hở này to hơn trong hình họa <em>pipe</em> bằng cách thay đổi phần trang phục.</p>
 </section>
-<section id="save-your-project-4" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-4" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-6-detect-collision-with-the-pipes" class="level1 activity">
-<h1><strong>Step 6:</strong> Detect collision with the pipes</h1>
-<p><em>To make the game a challenge, the player needs to guide Flappy through the gaps without touching the pipes or the edges of the screen. Now we'll add some blocks to detect if Flappy hits something.</em></p>
-<section id="activity-checklist-5" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-6-phat-hin-va-cham-vi-cac-ung-ng" class="level1 activity">
+<h1><strong>Bước 6:</strong> Phát hiện va chạm với các đường ống</h1>
+<p><em>Để làm cho trò chơi có tính thử thách, người chơi phải điều khiển Flappy qua các kẽ hở mà không va vào các đường ống hoặc rìa màn hình. Bây giờ chúng ta sẽ thêm vài khối lệnh để phát hiện nếu Flappy có va phải vật cản.</em></p>
+<section id="hoat-ng-5" class="level2 check">
+<h2>Hoạt động</h2>
 <ul>
-<li>Let's add a sound to play when Flappy collides. Click on the <strong>Flappy</strong> sprite then on the <code class="blockgrey">Sounds</code> tab.<br /></li>
-<li>Click the <code class="blockgrey">Choose sound from library</code> button.<br /></li>
-<li>Pick a collision sound for <strong>Flappy</strong>. The <strong>screech</strong> sound is good.<br /></li>
-<li>Now click back on the <code class="blockgrey">Scripts</code> tab.<br /></li>
-<li>Add the following script:</li>
+<li>Hãy cho chạy thêm một tiếng động khi Flappy va phải vật cản. Nhấn chọn nhân vật <strong>Flappy</strong> và chọn thẻ <code class="blockgrey">Sounds</code>.<br /></li>
+<li>Ấn chọn nút <code class="blockgrey">Choose sound from library</code>.<br /></li>
+<li>Chọn một tiếng động va chạm cho Flappy. Ví dụ như <strong>screech</strong>.<br /></li>
+<li>Bây giờ lại nhấn vào thẻ <code class="blockgrey">Scripts</code>.<br /></li>
+<li>Thêm đoạn lệnh sau:</li>
 </ul>
 <p><img src="284bceb31a68c0a75038a56ed4dc9c48c67fa24e.png" alt="when FLAG clicked
     wait until ((touching [edge v]?) or (touching [Pipe v]?))
@@ -196,55 +196,55 @@ when I start as a clone
     broadcast [GameOver v]
     stop [other scripts in sprite v]" /></p>
 <ul>
-<li>Click on the <strong>Pipe</strong> sprite and add a script:</li>
+<li>Nhấn chuột vào hình họa <strong>Pipe</strong> và thêm lệnh:</li>
 </ul>
 <p><img src="00728ae39c19d14ec1a6a4b14104135d3cef2471.png" alt="when I receive [GameOver v]
     stop [other scripts in sprite v]" /></p>
 </section>
-<section id="test-your-project-4" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, does the game end when Flappy touches a pipe or the edge of the screen?</p>
+<section id="kim-tra-lai-4" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, trò chơi có kết thúc khi Flappy va vào một đường ống hoặc rìa màn hình không?</p>
 </section>
-<section id="save-your-project-5" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-5" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
 </section>
-<section id="step-7-add-scoring" class="level1 activity">
-<h1><strong>Step 7:</strong> Add scoring</h1>
-<p><em>The player should score a point every time Flappy makes it though a pipe. Let's add that next.</em></p>
-<section id="activity-checklist-6" class="level2 check">
-<h2>Activity Checklist</h2>
+<section id="buc-7-them-phn-tinh-im" class="level1 activity">
+<h1><strong>Bước 7:</strong> Thêm phần tính điểm</h1>
+<p><em>Người chơi sẽ ghi được một điểm mỗi khi Flappy bay qua một kẽ hở. Tiếp theo hãy thêm chức năng này nhé.</em></p>
+<section id="hoat-ng-6" class="level2 check">
+<h2>Hoạt động</h2>
 <ul>
-<li>Let's add a sound to play when Flappy scores a point. Click on the <strong>Pipe</strong> sprite add a score sound. <strong>bird</strong> is a good choice.<br /></li>
-<li>Now click back on the <code class="blockgrey">Scripts</code> tab.<br /></li>
-<li>Make a new variable <code class="blockgrey">For all sprites</code> and call it <code class="blockorange">score</code>.<br /></li>
-<li>Add a block to set the score to 0 when the flag is clicked.<br /></li>
-<li>Add the following block:</li>
+<li>Hãy tạo một âm thanh báo hiệu khi Flappy ghi được một điểm. Nhấn hình hoạt <strong>Pipe</strong> và thêm một âm thanh ghi điểm. Ví dụ như <strong>bird</strong>.<br /></li>
+<li>Bây giờ lại nhấn vào thẻ <code class="blockgrey">Scripts</code>.<br /></li>
+<li>Tạo một biến mới <code class="blockgrey">For all sprites</code> và đặt tên là <code class="blockorange">score</code>.<br /></li>
+<li>Thêm một khối để đặt điểm từ mức 0 khi nhấn nút cờ xanh.<br /></li>
+<li>Thêm đoạn sau:</li>
 </ul>
 <p><img src="3df49536287acd015c6483af738433c24c9e7108.png" alt="when I start as a clone
     wait until &lt;(x position) &lt; ([x position v] of [Flappy v])&gt;
     change [score v] by (1)
     play sound [bird v]" /></p>
 </section>
-<section id="test-your-project-5" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, does the player score points for flying Flappy through the pipes?</p>
+<section id="th-lai" class="level2 flag">
+<h2>Thử lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, người chơi có ghi điểm khi Flappy bay qua các đường ống không?</p>
 </section>
-<section id="save-your-project-6" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-6" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
-<section id="things-to-try" class="level2 try">
-<h2>Things to try</h2>
+<section id="co-th-th-them" class="level2 try">
+<h2>Có thể thử thêm</h2>
 <ol>
-<li><strong>How many ways can you make this game easier or harder?</strong><br /></li>
-<li><strong>Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at these challenges!</strong></li>
+<li><strong>Có bao nhiêu cách để làm trò chơi này dễ hơn hoặc khó hơn? </strong><br /></li>
+<li><strong>Làm tốt lắm, bạn đã hoàn thành trò chơi cơ bản. Tuy nhiên có thêm một số thứ nữa bạn có thể làm với trò chơi này. Hay thử sức với những thử thách này nhé!</strong></li>
 </ol>
 </section>
-<section id="challenge-1-add-a-high-score" class="level2 challenge">
-<h2>Challenge 1: add a high score</h2>
+<section id="th-thach-1-them-phn-im-cao" class="level2 challenge">
+<h2>Thử thách 1: thêm phần điểm cao</h2>
 <ul>
-<li>Make a new variable and tick the <code class="blockgrey">Cloud variable (stored on server)</code> box. Call the variable <code class="blockorange">hi-score</code><br /></li>
-<li>when the game is over check if you need to set a new high score:</li>
+<li>Tạo một biến mới và đánh dấu vào hộp <code class="blockgrey">Cloud variable (stored on server)</code>. Đặt tên biến là <code class="blockorange">hi-score</code><br /></li>
+<li>Khi trò chơi kết thúc, xem lại nếu bạn cần đặt một mức điểm cao mới:</li>
 </ul>
 <p><img src="ccfeb9da62043450464335533e5fd87ed6c905ed.png" alt="when I receive [GameOver v]
     if &lt;(score) &gt; (hi-score)&gt; then
@@ -252,19 +252,19 @@ when I start as a clone
     end
     stop [other scripts in sprite v]" /></p>
 </section>
-<section id="test-your-project-6" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, does your score update the hi score?</p>
+<section id="kim-tra-lai-5" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, điểm của bạn có được cập nhật thanh hi score? does your score update the hi score?</p>
 </section>
-<section id="save-your-project-7" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-7" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
-<section id="challenge-2-add-gravity" class="level2 challenge">
-<h2>Challenge 2: add gravity</h2>
-<p>When something falls under gravity it doesn't usually fall at a fixed rate. For this challenge we will make Flappy fall as if under gravity.</p>
+<section id="th-thach-2-them-trong-lc" class="level2 challenge">
+<h2>Thử thách 2: thêm trọng lực</h2>
+<p>Khi một vật rơi theo trọng lực, thường vật đó sẽ không rơi ở một tốc độ cố định. Trong thử thách này chúng ta sẽ làm Flappy rơi theo trọng lực.</p>
 <ul>
-<li>Add a new variable <code class="blockgrey">For this sprite only</code> to <strong>Flappy</strong> and call it <code class="blockorange">rise</code>.<br /></li>
-<li>Change Flappy's falling script:</li>
+<li>Thêm một biến <code>For this sprite only</code> cho <strong>Flappy</strong> và đặt tên là <code class="blockorange">rise</code>.<br /></li>
+<li>Thay lệnh rơi cho Flappy:</li>
 </ul>
 <p><img src="6102997a2f9bdcbe6cf164c4575b56f532f07f7c.png" alt="when FLAG clicked
     set [rise v] to [0]
@@ -273,7 +273,7 @@ when I start as a clone
         change y by (rise)
         change [rise v] by (-0.4)" /></p>
 <ul>
-<li>And change Flappy's flapping script:</li>
+<li>Và thay đổi lệnh đập cánh cho Flappy:</li>
 </ul>
 <p><img src="98cfce029e263e8d32eaea3ecf32f1aab08f9d34.png" alt="when FLAG clicked
     set [flaps v] to [0]
@@ -287,19 +287,18 @@ when I start as a clone
             switch costume to [wings up v]
             wait (0.2) secs" /></p>
 </section>
-<section id="test-your-project-7" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, does Flappy now accelerate when falling and flapping?</p>
+<section id="kim-tra-lai-6" class="level2 flag">
+<h2>Kiểm tra lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, Flappy có tăng tốc khi rơi hay khi đập cánh không?</p>
 </section>
-<section id="save-your-project-8" class="level2 save">
-<h2>Save your project</h2>
+<section id="luu-lai-8" class="level2 save">
+<h2>Lưu lại</h2>
 </section>
-<section id="challenge-3-fall-off-screen" class="level2 challenge">
-<h2>Challenge 3: fall off screen</h2>
-<p>When the player loses make Flappy fall off the bottom of the screen before ending the game.</p>
+<section id="th-thach-3-roi-khoi-man-hinh" class="level2 challenge">
+<h2>Thử thách 3: rơi khỏi màn hình</h2>
+<p>Khi người chơi thua, Flappy rơi khỏi rìa màn hình trước khi trò chơi kết thúc.</p>
 <ul>
-<li>Replace the <code class="blockbrown">broadcast GameOver</code> block with <code class="blockbrown">broadcast Fall</code><br /></li>
-<li>Now add the following scripts:</li>
+<li>Thay khối <code class="blockbrown">broadcast GameOver</code> bằng khối <code class="blockbrown">broadcast Fall</code> + Bây giờ thêm đoạn lệnh sau:</li>
 </ul>
 <p><img src="70861fda22fb5e9f56c3864d3dedeb39e5adbcc4.png" alt="when I receive [Fall v]
     repeat (10)
@@ -313,16 +312,16 @@ when I receive [Fall v]
     hide
     broadcast [GameOver v]" /></p>
 <ul>
-<li>Don't forget to add a <code class="blockpurple">show</code> block and reset Flappy's direction when the game restarts.</li>
+<li>Đừng quên thêm một khối <code class="blockpurple">show</code> và đặt lại phương hướng của Flappy khi trò chơi bắt đầu.</li>
 </ul>
 </section>
-<section id="test-your-project-8" class="level2 flag">
-<h2>Test Your Project</h2>
-<p><strong>Click the green flag</strong>, does Flappy now fall off the screen after hitting a pipe? Does Flappy reappear in the correct orientation when restarting the game.</p>
+<section id="th-lai-1" class="level2 flag">
+<h2>Thử lại</h2>
+<p><strong>Nhấn nút cờ xanh</strong>, Flappy có rơi khỏi màn hình sau khi va phải đường ống không? Flappy có xuất hiện lại theo đúng hướng khi khởi động lại trò chơi không?</p>
 </section>
-<section id="save-your-project-9" class="level2 save">
-<h2>Save your project</h2>
-<p><strong>Well done you’ve finished, now you can enjoy the game!</strong><br />Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
+<section id="luu-lai-9" class="level2 save">
+<h2>Lưu lại</h2>
+<p><strong>Làm rất tốt, bạn đã hoàn thành và bây giờ có thể chơi trò chơi!<br />Đừng quên là bạn có thể chia sẻ trò chơi của mình với tất cả bạn bè và gia đình khi ấn nút </strong>Share__ trên thanh công cụ nhé!</p>
 </section>
 </section>
 <section class="legal" id="legal">

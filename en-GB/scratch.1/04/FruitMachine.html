@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Fruit machine — Code Club World</title>
+
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/lesson.css">
+  <link rel="stylesheet" href="../../../css/scratch.css">
+</head>
+<body>
+<header>
+<div class="logo"><a href="../../../index.html"><img src="../../../img/ccw_logo.svg"/></a></div>
+<div class="title">Fruit machine</div>
+<div><span class="level">Level 2</span></div>
+</header>
+<section class="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+</div>
+</section>
+<section class="breadcrumb">
+<ol class="breadcrumb"><li><a href="../../../index.html">Languages</a></li><li><a href="../../index.html">English</a></li><li><a href="../index.html">Beginner Scratch</a></li><li><strong>Fruit machine</strong></li></ol>
+</section>
+<section id="introduction" class="level1 intro">
+<h1>Introduction</h1>
+<p>This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).</p>
+<p><img src="fruitmachine_screenshot.png" alt="screenshot" /></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>scratch2</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</section>
+<section id="step-1-create-a-sprite-that-changes-costumes" class="level1 activity">
+<h1>STEP 1: Create a sprite that changes costumes</h1>
+<section id="activity-checklist" class="level2 check">
+<h2>Activity Checklist</h2>
+<p><strong>Let’s import the different pictures for the game</strong></p>
+<ol>
+<li>Start a new scratch project. Delete the cat by right clicking it and clicking Delete<br /></li>
+<li>First of all let's add a new Backdrop from the library. Choose the <strong>rays</strong> backdrop from the <strong>Other</strong> category and then delete the original blank stage.<br /></li>
+<li>Now add a new sprite from the library.<br /></li>
+<li>Choose an image from any folder. We used <strong>things/Bananas</strong>, but you can use any image you want to.<br /></li>
+<li>Click on the blue '<strong>i</strong>' next to the sprite's picture in the Sprites window. Rename the sprite to 'Fruit'.<br /></li>
+<li>Now click the Costumes tab and import two more things so there are three costumes in total (we used <strong>things/apple</strong> and <strong>things/watermelon-a</strong>, but you can use any images you like).</li>
+</ol>
+<p><strong>Now we’ve got some costumes, we want the sprite to change between them.</strong></p>
+</section>
+</section>
+<section id="step-2-making-the-picture-change" class="level1 activity">
+<h1>STEP 2: Making the picture change</h1>
+<section id="activity-checklist-1" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li>Click the <code class="blocklightgrey">Scripts</code> tab.<br /></li>
+<li>Click <code class="blockgrey">Events</code> and drag a <code class="blockyellow">when flag clicked</code> into the scripts area. This will be triggered when we click the green flag.<br /></li>
+<li>Click the Control tab and add a <code class="blockyellow">forever</code> and attach it so it snaps to the bottom.<br /></li>
+<li><strong>Click the green flag</strong> in the top right. Notice that a yellow outline is around our script. It’s running because we clicked the green flag, which triggers this.<br /></li>
+<li>Now click <code class="blockgrey">Looks</code> and drag in a <code class="blockpurple">next costume</code><br /></li>
+<li>How do we slow it down so it isn’t changing so quickly? Click the <code class="blockgrey">Control</code> tab and drag in a <code class="blockyellow">wait 1 secs</code><br /></li>
+<li>Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the <code class="blockyellow">wait 1 secs</code> block?</li>
+</ol>
+<p><img src="62a85c12abf878edc5def0543fa1bc7bc3fa18a3.png" alt="when FLAG clicked
+forever     
+    next costume
+    wait (0.5) secs" /></p>
+</section>
+<section id="test-your-project" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong><br />Do the costumes change at a sensible rate?</p>
+</section>
+<section id="save-your-project" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="things-to-try" class="level2 try">
+<h2>Things to try</h2>
+<p>Adjust the time in the <code class="blockyellow">wait 1 secs</code> block.What numbers do you think would make the game too easy, or too hard?</p>
+</section>
+</section>
+<section id="step-3-making-it-stop-when-we-click-on-it" class="level1 activity">
+<h1>STEP 3: Making it stop when we click on it</h1>
+<section id="activity-checklist-2" class="level2 check">
+<h2>Activity Checklist</h2>
+<p><strong>Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?</strong><br />One way to do it is by using a variable to set the state of the Sprite. This will also be useful later...</p>
+<ol>
+<li>Create a new variable by clicking <code class="blockgrey">Data</code> and <code class="blocklightgrey">Make a variable</code>. Call it <code class="blockorange">stopped</code> and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.<br /></li>
+<li>At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to <strong>&quot;NO&quot;</strong>.</li>
+</ol>
+<p><img src="0aa86ad505c5d28967e4d7e5344034c2bbeb16d4.png" alt="when FLAG clicked
+set [stopped v] to (NO)
+forever 
+    next costume
+    wait (0.1) secs" /></p>
+<ol>
+<li>Now we'll set the variable <code class="blockorange">stopped</code> to <strong>&quot;YES&quot;</strong> when someone clicks on the sprite.</li>
+</ol>
+<p><img src="cb78f33297f165fac0bdf78fcdb9532de7df8ce1.png" alt="    when this sprite clicked
+    set [stopped v] to (YES)" /></p>
+<ol>
+<li>Finally we need to make the sprite stop changing costume when the variable <code class="blockorange">stopped</code> changes to &quot;YES&quot;. Add an <code class="blockyellow">if...then</code> loop and use a new <strong>equals</strong> <code class="blockgreen">[] = []</code> operator block (found under the <em>Operators</em> tab) to check if <code class="blockorange">stopped</code> is still &quot;NO&quot;.</li>
+</ol>
+<p><img src="6c11d310ed7b719f56481b640e39c317b5b5cdc7.png" alt="when FLAG clicked
+set [stopped v] to (NO)
+forever 
+    if &lt;(stopped) = [NO]&gt; then  
+        next costume
+        wait (0.5) secs" /></p>
+</section>
+<section id="test-your-project-1" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag, wait for a moment, then click on the sprite.</strong></p>
+<p>Does it change costume before you click on it?</p>
+<p>Does it stop when you do click on it?</p>
+<p><strong>Start the program again.</strong> Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click anywhere else on the Stage?</p>
+</section>
+<section id="save-your-project-1" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-4-creating-the-other-sprite" class="level1 activity">
+<h1>Step 4: Creating the other sprite</h1>
+<p><strong>Now we need to make the other sprites so we can play our game!</strong></p>
+<section id="activity-checklist-3" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li><strong>Duplicate the sprite</strong> (Fruit) by right-clicking on it in the bottom right corner.<br /></li>
+<li>Duplicate it again so there are <strong>3</strong> sprites on the screen.<br /></li>
+<li>Move each sprite so they are in a line. Make them a bit smaller with if you need to.</li>
+</ol>
+</section>
+<section id="test-your-project-2" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong> All the sprites should change. Try to stop them all on the same picture by clicking on each one in turn!</p>
+</section>
+<section id="save-your-project-2" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-5-start-each-sprite-with-a-random-costume" class="level1 activity">
+<h1>Step 5: Start each sprite with a random costume</h1>
+<p><strong>Let's make the sprites change to a random costume when the green flag is clicked.</strong></p>
+<p>When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison.<br />It would make the game more interesting (and harder) if they changed in a less predictable way.</p>
+<section id="activity-checklist-4" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li>If you look under the <code class="blocklightgrey">costumes</code> tab for a sprite then you'll see that each costume has a number. You can specify which costume a sprite is wearing using either its name or its number.<br /></li>
+<li>To make the sprite start with a random costume, let's add a <code class="blockpurple">switch costume to</code> block with <code class="blockgreen">pick random (1) to (3)</code> to choose<br />the costume number.<br /></li>
+<li>We can also use exactly the same block in the <code class="blockyellow">forever</code> loop so that the sprite switches to a different costume each time it changes during the game.</li>
+</ol>
+<p><img src="c51c772da9712fce08361344810e30cdfa68dec6.png" alt="when FLAG clicked
+set [stopped v] to (0)
+switch costume to &lt;pick random (1) to (3)&gt;
+forever 
+    if &lt;(stopped) = [NO]&gt; then  
+        switch costume to &lt;pick random (1) to (3)&gt;
+            wait (0.5) secs" /></p>
+<ol>
+<li>Do the same thing for each of your sprites.</li>
+</ol>
+</section>
+<section id="test-your-project-3" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong> All the sprites should change their costumes in an unpredictable sequence.</p>
+<p>How would we need to change our script if we added another costume?</p>
+</section>
+<section id="save-your-project-3" class="level2 save">
+<h2>Save your project</h2>
+</section>
+<section id="things-to-try-1" class="level2 try">
+<h2>Things to try</h2>
+<p><strong>Make the game harder</strong></p>
+<p>Change the difficulty of the game somehow. Just making the costumes change quicker is fairly easy. Can you come up with something more imaginative. Some ideas you might like to try:</p>
+<ul>
+<li>Change the number of costumes each sprite has.<br /></li>
+<li>Make some sprites have unique costumes.<br /></li>
+<li>Have different times between costume changes.</li>
+</ul>
+<p><strong>Have fun coming up with your own things!</strong></p>
+<p>Every time you make a change, think about whether it makes the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?</p>
+</section>
+<section id="step-6-display-a-message-when-the-game-has-finished." class="level2 activity">
+<h2>Step 6: Display a message when the game has finished.</h2>
+<p><strong>Let's show the player a &quot;Game Over&quot; message when they've finished</strong></p>
+</section>
+<section id="activity-checklist-5" class="level2 check">
+<h2>Activity Checklist</h2>
+<p>First of all, let's create a different Backdrop to display when the game has finished.</p>
+<ol>
+<li>Click on the stage and then the <code class="blocklightgrey">Backdrops</code> tab. Change the name of the existing backdrop to <strong>&quot;GameOn&quot;</strong>.<br /></li>
+<li>Duplicate the backdrop and then add some text to the copy that says <strong>&quot;Game Over&quot;</strong>. You can change the size of the text by clicking on it and then<br />dragging one of the corners. Rename this backdrop to be <strong>&quot;GameOver&quot;</strong>.<br /></li>
+<li>Click on the <code class="blocklightgrey">Scripts</code> tab for the stage and set the &quot;GameOn&quot; backdrop to be the one displayed when the game is started.<br /></li>
+<li>How can we detect when all the sprites have stopped? Remember we use the <code class="blockorange">stopped</code> variable to record whether each sprite has been clicked? Let's check the <code class="blockorange">stopped</code> variable for the <strong>Fruit3</strong> sprite to see if the game is over. Select the Fruit3 sprite and then can use a <code class="blockblue">x position of Fruit3</code> block from the <code class="blocklightgrey">Sensing</code> tab, but change <strong>x position</strong> to <code class="blockorange">stopped</code>.</li>
+</ol>
+<p><img src="5da90a9de45e4d4dc5ae96ab581b0a41c907997e.png" alt="when FLAG clicked
+switch backdrop to [GameOn v]
+forever
+    if &lt;([stopped v] of [Fruit3 v]) = [YES]&gt; then
+        switch backdrop to [GameOver v]" /></p>
+</section>
+<section id="test-your-project-4" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong> Does the &quot;Game Over&quot; message appear when you click on Fruit3?</p>
+<p>What happens if you stop Fruit3 before you've clicked on both of the other fruit sprites? Let's<br />modify our script so that it will work regardless of the order in which the sprites are stopped.</p>
+<ol>
+<li>To check to see that <strong>all three</strong> fruit sprites have had their <code class="blockorange">stopped</code> variables set to <strong>YES</strong>, we can use the <code>and</code> {. blockgreen} operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time.</li>
+</ol>
+<p><img src="89e33cb4d76d31f714f91a71214b2d70bffd6ea2.png" alt="    when FLAG clicked
+switch backdrop to [GameOn v]
+forever
+    if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [YES]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [YES]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [YES]&gt;&gt; then
+        switch backdrop to [GameOver v]" /></p>
+</section>
+<section id="test-your-project-5" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong> Does the &quot;Game Over&quot; message appear when you all 3 Fruits are stopped.<br />regardless of the order you clicked on them?</p>
+</section>
+<section id="save-your-project-4" class="level2 save">
+<h2>Save your project</h2>
+</section>
+</section>
+<section id="step-7.-tell-the-player-whether-theyve-won-or-lost." class="level1 activity">
+<h1>Step 7. Tell the player whether they've won or lost.</h1>
+<p><strong>The aim of the game is to click on the sprites so they stop while showing the same costume. It would be nice to also display a message that told you whether you'd won or lost.</strong></p>
+<section id="activity-checklist-6" class="level2 check">
+<h2>Activity Checklist</h2>
+<ol>
+<li>We wrote the code to check that the game was over in <strong>step 6</strong>, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word <strong>&quot;WIN&quot;</strong>. Then change its name to <strong>&quot;Win&quot;</strong>.<br /></li>
+<li>Copy the backdrop again to create one with a <strong>&quot;Lose&quot;</strong> message. Give it the name <strong>&quot;Lose&quot;</strong>.<br /></li>
+<li>Now we need some code to work out which backrop to display once the game is over. We can use an <code class="blockyellow">if...then...else</code> block to see if the player has won or lost by comparing each <code class="blockpurple">costume #</code> (costume number) using a similar <code class="blockblue">x position of Sprite</code> block like we did before. This time, instead of looking at the <code class="blockorange">stopped</code> variable, we can check the<code class="blockpurple">costume #</code> and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.</li>
+</ol>
+<p><img src="e958d3e04ecf861a9fb539b76944ec596df8ae63.png" alt="    when FLAG clicked
+switch backdrop to [GameOn v]
+forever
+    if &lt;&lt;&lt;([stopped v]  of [Fruit1 v]) = [1]&gt; and &lt;([stopped v]  of [Fruit2 v]) = [1]&gt;&gt; and &lt;([stopped v]  of [Fruit3 v]) = [1]&gt;&gt; then
+        if &lt;&lt;([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])&gt; and &lt;([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])&gt;&gt; then
+            switch backdrop to [Win v]
+        else    
+            switch backdrop to [Lose v]" /></p>
+</section>
+<section id="test-your-project-6" class="level2 flag">
+<h2>Test Your Project</h2>
+<p><strong>Click the green flag.</strong> Does the correct message appear when the game has finished? What will happen if each sprite's costume numbers don't match (for example, if Fruit2's costume number 3 is an apple and Fruit3's costume number 3 is a melon)?</p>
+</section>
+<section id="save-your-project-5" class="level2 save">
+<h2>Save your project</h2>
+<p><strong>Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!</strong></p>
+</section>
+<section id="challenge-make-the-game-get-harder-and-easier-over-time" class="level2 challenge">
+<h2>Challenge: Make the game get harder and easier over time</h2>
+<p>Different people will have different skills at playing the game. <strong>How could you make the game adjust its difficulty depending on the player?</strong></p>
+<p>One way you could do it is to <strong>adjust the speed the costumes change at</strong>. You can use a variable, called <code class="blockorange">delay</code>, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier).</p>
+<p>You'll probably need to think about using a different way of starting the game each time it is played instead of the <code class="blockyellow">when flag clicked</code> Then you can store values in variables that are remembered between each round of the game.</p>
+</section>
+<section id="save-your-project-6" class="level2 save">
+<h2>Save your project</h2>
+<p><strong>Well done you’ve finished, now you can enjoy the game!</strong><br />Don’t forget you can share your game with all your friends and family by clicking on <strong>Share</strong> on the menu bar!</p>
+</section>
+</section>
+<section class="legal" id="legal">
+<div>
+These projects are for use outside the UK only. More information is available on our website at <a href="http://www.codeclub.org.uk/">http://www.codeclub.org.uk/</a>. This coursework is developed in the open on GitHub, <a href="https://github.com/CodeClub/">https://github.com/CodeClub/</a> come and join us!
+
+<br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+</section>
+</body>
+</div>
+ <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-30750176-2']);
+        _gaq.push(['_setDomainName', 'codeclubworld.org']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</html>
