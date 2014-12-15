@@ -92,35 +92,35 @@ forever
 ## Chạy thử chương trình { .flag}
 __Click vào cờ màu xanh lá cây, đợi 1 chút, sau đó click vào hình họa__ 
 
-Does it change costume before you click on it? 
+- Nó có thay đổi trang phục trước khi click vào đó không?
+- Nó có dừng lại khi click vào đó không?
+- __Bắt đầu chương trình một lần nữa.__ Nó có dừng lại khi đặt con trỏ chuột trên đó mà không click không?
+- Hình họa có dừng khi khi bạn click ở bất kỳ chỗ nào trên màn hình nền không?   
 
-Does it stop when you do click on it?
+## Lưu lại dự án { .save}
 
-__Start the program again.__ Does it stop when you put the mouse pointer on it, without clicking? Does the sprite stop when you click anywhere else on the Stage? 
+# Bước 4: Tạo hình họa khác {.activity}
+__Bây giờ chúng ta cần tạo những hình họa khác để có thể chơi trò chơi của chúng ta!__
 
-## Save your project { .save}
+## Những việc cần làm { .check }
 
-# Step 4: Creating the other sprite {.activity}
-__Now we need to make the other sprites so we can play our game!__
+1. **Nhân đôi hình họa** (trái cây) bằng cách click phải lên trên hình ở góc phải bên dưới.
+2. Nhân đôi một hình họa lần nữa để có **3** hình họa trên màn hình.
+3. Di chuyển mỗi hình họa để chúng cùng ở trên 1 đường thẳng. Chỉnh cho hình này nhỏ hơn nếu cần.
 
-## Activity Checklist { .check}
+## Chạy thử chương trình { .flag}
 
-1. **Duplicate the sprite** (Fruit) by right-clicking on it in the bottom right corner.
-2. Duplicate it again so there are **3** sprites on the screen.
-3. Move each sprite so they are in a line. Make them a bit smaller with if you need to.
+__Click vào hình cờ màu xanh.__ Tất cả các hình họa nên thay đổi. Cố gắng dừng tất cả trên cùng 1 hình ảnh bằng cách click vào từng hình một!
 
-## Test Your Project { .flag}
-__Click the green flag.__ All the sprites should change. Try to stop them all on the same picture by clicking on each one in turn!
+## Lưu lại dự án { .save}
 
-## Save your project { .save}
+# Bước 5: Bắt đầu mỗi hình họa với 1 bộ trang phục bất kỳ { .activity}
+__Chúng ta hãy dùng hình họa đổi thành 1 bộ trang phục bất kỳ khi click vào hình cờ xanh.__
 
-# Step 5: Start each sprite with a random costume { .activity}
-__Let's make the sprites change to a random costume when the green flag is clicked.__
+Khi bắt đầu trò chơi ngay sau khi tải, tất cả các hình họa có cùng 1 trang phục và sau đó thay đổi theo liên kết.
+Nếu chúng đổi trang phục theo cách khó đoán hơn, trò chơi sẽ trở nên thú vị (và khó hơn).
 
-When you start the game just after you’ve loaded it, all the sprites show the same costume and change in unison. 
-It would make the game more interesting (and harder) if they changed in a less predictable way. 
-
-## Activity Checklist { .check}
+## Những việc cần làm { .check}
 
 1. If you look under the `costumes`{.blocklightgrey}  tab for a sprite then you'll see that each costume has a number. You can specify which costume a sprite is wearing using either its name or its number.
 2. To make the sprite start with a random costume, let's add a `switch costume to` { .blockpurple} block with  `pick random (1) to (3)` { .blockgreen} to choose 
