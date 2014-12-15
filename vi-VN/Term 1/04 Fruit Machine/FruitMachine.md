@@ -58,42 +58,39 @@ Trang phục có thay đổi ở 1 tốc độ hợp lý không?
 - Điều chỉnh thời gian ở khối `wait 1 secs` {.blockyellow}.
 - Bạn nghĩ con số nào làm trò chơi trở nên quá dễ, hoặc quá khó?
 
-# STEP 3: Making it stop when we click on it {.activity}
+# BƯỚC 3: Làm trò chơi dừng lại khi click vào đó {.activity}
 
-## Activity Checklist { .check}
+## Những việc cần làm { .check}
 
-**Great! We can make the sprite change costumes forever, but how do we make it stop when we click on it?**
-One way to do it is by using a variable to set the state of the Sprite. This will also be useful later...
+**Tuyệt! Chúng ta có thể dùng hình họa thay đổi trang phục mãi mãi, nhưng làm sao chúng ta có thể khiến nó dừng lại khi click vào đó?**
+Một cách để thực hiện điều này là sử dụng 1 biến số để đặt trạng thái của hình họa. Điều này sau này cũng sẽ rất hữu ích sau này...
 
-1. Create a new variable by clicking `Data` {.blockgrey} and `Make a variable`{.blocklightgrey}. Call it `stopped`{.blockorange} and make it for only this sprite, then uncheck the box next to it so it doesn’t display on the stage.
-2. At the start of the game, the sprite won't have been clicked so we'll set the variable to be equal to **"NO"**. 
-
+- Tạo 1 biến số bằng cách click vào `Data` {.blockgrey} và `Make a variable`{.blocklightgrey}. Gọi là `stopped`{.blockorange} và chỉ dùng cho hình họa này, sau đó bỏ dấu tick ở hộp bên cạnh để nó không hiện trên màn hình nền nữa.
+- Lúc bắt đầu trò chơi, hình họa sẽ không được click, vì thế chúng ta sẽ đặt biến số bằng với **""NO""**."
 ```blocks
 when FLAG clicked
 set [stopped v] to (NO)
-forever 
+forever
     next costume
     wait (0.1) secs
 ```
-3. Now we'll set the variable `stopped`{.blockorange} to  **"YES"** when someone clicks on the sprite.  
-
+- Bây giờ chúng ta sẽ đặt biến số `stopped`{.blockorange} thành  **"YES"** khi click vào hình họa. 
 ```blocks
     when this sprite clicked
     set [stopped v] to (YES)
 ```
-4. Finally we need to make the sprite stop changing costume when the variable `stopped`{.blockorange} changes to "YES". Add an `if...then` { .blockyellow} loop and use a new **equals** `[] = []` {.blockgreen} operator block (found under the *Operators* tab) to check if `stopped`{.blockorange}  is still "NO".
-
+- Cuối cùng chúng ta cần làm cho hình họa ngừng đổi trang phục khi biến số `stopped`{.blockorange} đổi thành "YES". Thêm 1 vòng lặp `if...then` { .blockyellow} và sử dụng 1 khối điều hành  **equals** `[] = []` {.blockgreen} mới (ở bên dưới thẻ *Operators*) để kiểm tra xem `stopped`{.blockorange}  có phải vẫn là "NO" không.
 ```blocks
 when FLAG clicked
 set [stopped v] to (NO)
-forever	
-	if <(stopped) = [NO]> then	
-    	next costume
-    	wait (0.5) secs
+forever    
+     if <(stopped) = [NO]> then
+     next costume
+     wait (0.5) secs
 ```
 
-## Test Your Project { .flag}
-__Click the green flag, wait for a moment, then click on the sprite.__ 
+## Chạy thử chương trình { .flag}
+__Click vào cờ màu xanh lá cây, đợi 1 chút, sau đó click vào hình họa__ 
 
 Does it change costume before you click on it? 
 
