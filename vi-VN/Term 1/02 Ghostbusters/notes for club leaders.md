@@ -1,29 +1,28 @@
-#NOTES FOR CLUB LEADERS
-##(Ghostbusters)
+#GHI CHÚ CHO TRƯỞNG NHÓM
 
-###Introduction
-This project is like the carnival game called whack-a-mole. You get points for hitting the ghosts that appear on the screen. The aim is to get as many points as possible in 30 seconds.
+##(Felix & Herbert)
 
-###Skills
-This project covers:
+###Giới thiệu:
+Chúng ta chuẩn bị làm một trò chơi đuổi bắt giữa mèo Felix và chuột Herbert. Bạn điều khiển Herbert với chuột máy tính và cố gắng tránh bị Felix bắt được. Bạn càng chạy trốn Felix được lâu thì càng ghi được nhiều điểm, nhưng đừng để vị bắt vì khi đó, điểm số sẽ bị giảm xuống! Đây là một dự án đơn giản nhằm mục đích giới thiệu các kiến thức cơ bản về Scratch.
 
-* Setting a variable
-* Loops
-* Keeping and setting the score
+### Kĩ năng
+Dự án này yêu cầu:
 
-###Resources
-This project uses resources found in the Scratch Backgrounds and Costumes folders
+1. Thay đổi tạo hình và ngoại hình
+2. Điều khiển điểm số
+3. Gửi thông báo
 
-###Scratch Cards required
-* Keep score 
-* Timer 
-* Animate it
+### Tài nguyên
+Dự án này dùng nguồn tài nguyên tìm được trong tệp Background và Costume của Scratch.
 
-###Basic exercises
-* Step 1: Create a flying ghost
-* Step 2: Make the ghost appear and vanish randomly 
-* Step 3: Make the ghost disappear when it’s clicked 
-* Step 4: Add a score and timer
+### Yêu cầu
+Đi theo con chuột
 
-###Challenges
-1. Add more ghosts
+### Bài tập cơ bản
+
+* Bước 1: Felix đi theo con trỏ
+* Bước 2: Felix đuổi bắt Herbert
+* Bước 3: Felix kêu khi bắt được Herbert
+* Bước 4: Herbert biến thành một con ma khi bị mèo bắt 
+* Bước 5: Giữ điểm
+
