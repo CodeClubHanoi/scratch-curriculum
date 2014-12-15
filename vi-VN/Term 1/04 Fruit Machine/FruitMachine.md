@@ -20,25 +20,25 @@ materials: ""*.sb2""
 
 __Chúng ta hãy nhập những hình ảnh khác nhau cho trò chơi__
 
-+ Bắt đầu 1 dự án scratch mới. Xóa bỏ hình con mèo bằg cách click vào đó sau đó click “Delete”
-+ Đầu tiên, chúng ta hãy thêm 1 hình nền mới từ thư viện hình ảnh. Chọn hình nền  **rays** từ mục **Other** và sau đó xóa bỏ nền trắng ban đầu. 2. Bây giờ thêm 1 hình họa mới từ thư viện.
-+ Chọn 1 hình ảnh từ bất kỳ thư mục nào. Chúng ta đã sử dụng **things/Bananas**, nhưng bạn có thể sử dụng bất kỳ hình ảnh nào bạn muốn.
-+ Click vào màu xanh '**i**' bên cạnh hình ảnh của sprit trong cửa sổ Sprit, Đặt tên lại hình họa thành 'Fruit'.
-+ Bây giờ click vào thẻ Trang phục và nhập thêm 2 loại nữa để có tất cả 3 trang phục (chúng ta đã dùng **things/apple** và **things/watermelon-a**, nhưng bạn có thể dùng bất cứ hình nào mình muốn).
+1. Bắt đầu 1 dự án scratch mới. Xóa bỏ hình con mèo bằg cách click vào đó sau đó click “Delete”
+2. Đầu tiên, chúng ta hãy thêm 1 hình nền mới từ thư viện hình ảnh. Chọn hình nền  **rays** từ mục **Other** và sau đó xóa bỏ nền trắng ban đầu. 2. Bây giờ thêm 1 hình họa mới từ thư viện.
+3. Chọn 1 hình ảnh từ bất kỳ thư mục nào. Chúng ta đã sử dụng **things/Bananas**, nhưng bạn có thể sử dụng bất kỳ hình ảnh nào bạn muốn.
+4. Click vào màu xanh '**i**' bên cạnh hình ảnh của sprit trong cửa sổ Sprit, Đặt tên lại hình họa thành 'Fruit'.
+5. Bây giờ click vào thẻ Trang phục và nhập thêm 2 loại nữa để có tất cả 3 trang phục (chúng ta đã dùng **things/apple** và **things/watermelon-a**, nhưng bạn có thể dùng bất cứ hình nào mình muốn).
 
-__Now we’ve got some costumes, we want the sprite to change between them.__
+__Bây giờ chúng ta có 1 số trang phục rồi, chúng ta muốn hình họa đổi các trang phục với nhau.__
 
-# STEP 2: Making the picture change { .activity}
+# BƯỚC 2: Làm hình ảnh thay đổi { .activity}
 
-## Activity Checklist { .check}
+## Những việc cần làm { .check}
 
-1. Click the `Scripts` {.blocklightgrey} tab.
-2. Click `Events`{.blockgrey} and drag a `when flag clicked` { .blockyellow} into the scripts area. This will be triggered when we click the green flag.
-3. Click the Control tab and add a `forever` { .blockyellow} and attach it so it snaps to the bottom.
-4. **Click the green flag** in the top right. Notice that a yellow outline is around our script. It’s running because we clicked the green flag, which triggers this.
-5. Now click `Looks`{.blockgrey} and drag in a `next costume` { .blockpurple}
-6. How do we slow it down so it isn’t changing so quickly? Click the `Control`{.blockgrey} tab and drag in a `wait 1 secs` { .blockyellow}
-7. Adjust the time until it’s repeating at a faster pace (a time of 0.5s looks good). What would happen if we didn’t have the `wait 1 secs` { .blockyellow} block?
+1. Click vào thẻ `Scripts` {.blocklightgrey}.
+2. Click vào `Events`{.blockgrey} và kéo 1 khối `when flag clicked` { .blockyellow} vào khu vực script.  Khi chúng ta click vào hình cờ màu xanh thì trò chơi bắt đầu.
+3. Click vào thẻ Control, thêm 1 khối `forever` { .blockyellow} và kéo nó rồi thả xuống phần cuối.
+4. Click vào hình cờ màu xanh **Click the green flag** ở góc trên bên phải. Lưu ý rằng có 1 đường viền màu vàng ở quan phần script. Nó đang chạy vì chúng ta đã click vào hình cờ xanh, nghĩa là khởi động trò chơi.  
+5. Bây giờ click vào `Looks`{.blockgrey} và kéo thả vào phần `next costume` { .blockpurple}
+6. Làm sao chúng ta có thể làm chậm tốc độ lại để nó không thay đổi quá nhanh? Click vào thẻ `Control`{.blockgrey} và kéo thả vào khối `wait 1 secs` { .blockyellow}
+7. Điều chỉnh thời gian cho đến khi nó lặp lại ở nhịp độ nhanh hơn (đặt khoảng 0.5s là hợp lý). Điều gì sẽ xảy ra nếu chúng ta không có khối `wait 1 secs` { .blockyellow}?
 
 ```blocks
 when FLAG clicked
@@ -47,15 +47,16 @@ forever
     wait (0.5) secs
 ```
 
-## Test Your Project { .flag}
-__Click the green flag.__ 
-Do the costumes change at a sensible rate?
+## Chạy thử chương trình { .flag}
+__Click vào cờ màu xanh__
+Trang phục có thay đổi ở 1 tốc độ hợp lý không?
 
-## Save your project { .save}
+## Lưu lại dự án { .save}
 
-## Things to try { .try}
+## Hãy thử { .try}
 
-Adjust the time in the `wait 1 secs` {.blockyellow} block.What numbers do you think would make the game too easy, or too hard?
+- Điều chỉnh thời gian ở khối `wait 1 secs` {.blockyellow}.
+- Bạn nghĩ con số nào làm trò chơi trở nên quá dễ, hoặc quá khó?
 
 # STEP 3: Making it stop when we click on it {.activity}
 
