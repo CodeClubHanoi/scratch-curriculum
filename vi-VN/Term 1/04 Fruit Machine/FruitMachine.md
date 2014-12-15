@@ -122,42 +122,40 @@ Nếu chúng đổi trang phục theo cách khó đoán hơn, trò chơi sẽ tr
 
 ## Những việc cần làm { .check}
 
-1. If you look under the `costumes`{.blocklightgrey}  tab for a sprite then you'll see that each costume has a number. You can specify which costume a sprite is wearing using either its name or its number.
-2. To make the sprite start with a random costume, let's add a `switch costume to` { .blockpurple} block with  `pick random (1) to (3)` { .blockgreen} to choose 
-the costume number. 
-3. We can also use exactly the same block in the `forever`{.blockyellow} loop so that the sprite switches to a different costume each time it changes during the game.
-
+- Nếu nhìn vào bên dưới thẻ `costumes`{.blocklightgrey} cho 1 hình họa, bạn sẽ thấy mỗi bộ trang phục có 1 con số. Bạn có thể xác định 1 hình họa mặc trang phục gì bằng cách sử dụng tên hoặc con số.  
+- Để 1 hình họa bắt đầu với 1 bộ trang phục bất kỳ, hãy thêm 1 khối  `switch costume to` { .blockpurple} với  `pick random (1) to (3)` { .blockgreen} để chọn số trang phục.
+- Chúng ta cũng có thể sử dụng chính xác cùng 1 khối cho vòng lặp `forever`{.blockyellow} để hình họa chuyển sang 1 bộ trang phục khác mỗi lần nó thay đổi trong suốt trò chơi.
 ```blocks
 when FLAG clicked
 set [stopped v] to (0)
 switch costume to <pick random (1) to (3)>
-forever	
-	if <(stopped) = [NO]> then	
-    	switch costume to <pick random (1) to (3)>
-	     	wait (0.5) secs
+forever    
+     if <(stopped) = [NO]> then
+     switch costume to <pick random (1) to (3)>
+          wait (0.5) secs
 ```
-4. Do the same thing for each of your sprites. 
+- Làm giống như vậy cho mỗi hình họa.
 
-## Test Your Project { .flag}
-__Click the green flag.__ All the sprites should change their costumes in an unpredictable sequence.
+## Chạy thử chương trình { .flag}
+__Click vào hình cờ màu xanh.__ Tất cả các hình họa nên đổi trang phục theo 1 tiến trình khó đoán.
 
-How would we need to change our script if we added another costume?
+Nếu muốn thêm 1 bộ trang phục khác thì chúng ta cần thay đổi đoạn chương trình như thế nào?
  
-## Save your project { .save}
+## Lưu lại dự án { .save}
 
-##Things to try { .try}
+##Hãy thử { .try}
  
- __Make the game harder__ 
+  __Làm trò chơi trở nên khó hơn__
 
-Change the difficulty of the game somehow. Just making the costumes change quicker is fairly easy. Can you come up with something more imaginative. Some ideas you might like to try:
+Thay đổi độ khó của trò chơi theo 1 cách nào đó. Nếu chỉ làm trang phục thay đổi nhanh hơn thì khá dễ. Liệu bạn có thể nghĩ ra cách gì giàu trí tưởng tượng hơn không? Một vài ý tưởng có thể bạn muốn thử:
 
-+ Change the number of costumes each sprite has.
-+ Make some sprites have unique costumes.
-+ Have different times between costume changes. 
++ Đổi số của trang phục mà mỗi hình họa có.
++ Để 1 vài hình họa có những trang phục độc nhất.
++ Đặt khoảng thời gian khác nhau giữa những lần đổi trang phục.
 
-__Have fun coming up with your own things!__
-
-Every time you make a change, think about whether it makes the game easier or harder. Is the game too easy or too hard? How can you adjust the difficulty so it’s just right?
+ __Hãy vui vẻ thưởng thức những thứ của riêng mình!__
+ 
+Mỗi lần thay đổi, hãy nghĩ xem nó làm trò chơi dễ hơn hay khó hơn. Liệu trò chơi có quá dễ hoặc quá khó không? Làm sao có thể điều chỉnh được độ khó để nó ở mức vừa phải?
 
 ## Step 6: Display a message when the game has finished. { .activity}
 __Let's show the player a "Game Over" message when they've finished__
