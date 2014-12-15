@@ -14,7 +14,7 @@ materials: ""*.sb2""
 ![screenshot](fruitmachine_screenshot.png)
 >>>>>>> scratch2
 
-# STEP 1: Create a sprite that changes costumes { .activity}
+# BƯỚC 1: Tạo 1 hình họa để đổi trang phục { .activity}
 
 ## Activity Checklist { .check}
 
