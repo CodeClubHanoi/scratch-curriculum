@@ -1,16 +1,16 @@
 ---
-title: What's That
-level: Level 3
-language: en-GB
+title: Cái gì vậy?
+level: Cấp độ 3
+language: vi-VN
 stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
 ...
 
-# Introduction { .intro}
+# Giới thiệu {.intro}
 
-A random object is shown on the blackboard, all distorted. You have to guess what it is by clicking on the right picture below. The quicker you guess, the higher your score!
+Một vật thể biến dạng xuất hiện trên bảng đen. Bạn sẽ phải đoán nó là cái gì bằng cách click vào bức tranh đúng vào vật thể phía dưới. Bạn click đúng càng nhanh thì điểm bạn dành được càng cao!
 
 ![screenshot](whatsthat_screenshot.png)
 
