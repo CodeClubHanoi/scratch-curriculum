@@ -1,15 +1,15 @@
 ---
-title: Fruit machine
-level: Level 2
+title: Máy hoa quả
+level: Cấp độ 2
 stylesheet: scratch
 language: en-GB
-embeds: "*.png"
-note: "notes for club leaders.md"
-materials: "*.sb2"
+embeds: ""*.png""
+note: ""notes for club leaders.md""
+materials: ""*.sb2""
 ...
 
-# Introduction {.intro}
-This is a game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
+# Giới thiệu {.intro}
+Đây là 1 trò chơi đơn giản có 3 hình họa để đổi trang phục. Bạn phải ngăn chúng lại khi chúng hiện ra hình ảnh giống nhau (giống 1 máy hoa quả!).
 
 ![screenshot](fruitmachine_screenshot.png)
 >>>>>>> scratch2
