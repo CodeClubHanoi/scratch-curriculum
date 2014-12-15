@@ -16,16 +16,15 @@ materials: ""*.sb2""
 
 # BƯỚC 1: Tạo 1 hình họa để đổi trang phục { .activity}
 
-## Activity Checklist { .check}
+## Những việc cần làm { .check}
 
-__Let’s import the different pictures for the game__
+__Chúng ta hãy nhập những hình ảnh khác nhau cho trò chơi__
 
-1. Start a new scratch project. Delete the cat by right clicking it and clicking Delete
-2. First of all let's add a new Backdrop from the library. Choose the **rays** backdrop from the **Other** category and then delete the original blank stage. 
-2. Now add a new sprite from the library.
-3. Choose an image from any folder. We used **things/Bananas**, but you can use any image you want to.
-4. Click on the blue '**i**' next to the sprite's picture in the Sprites window. Rename the sprite to 'Fruit'.
-5. Now click the Costumes tab and import two more things so there are three costumes in total (we used **things/apple** and **things/watermelon-a**, but you can use any images you like).
+1. Bắt đầu 1 dự án scratch mới. Xóa bỏ hình con mèo bằg cách click vào đó sau đó click “Delete”
+2. Đầu tiên, chúng ta hãy thêm 1 hình nền mới từ thư viện hình ảnh. Chọn hình nền  **rays** từ mục **Other** và sau đó xóa bỏ nền trắng ban đầu. 2. Bây giờ thêm 1 hình họa mới từ thư viện.
+3. Chọn 1 hình ảnh từ bất kỳ thư mục nào. Chúng ta đã sử dụng **things/Bananas**, nhưng bạn có thể sử dụng bất kỳ hình ảnh nào bạn muốn.
+4. Click vào màu xanh '**i**' bên cạnh hình ảnh của sprit trong cửa sổ Sprit, Đặt tên lại hình họa thành 'Fruit'.
+5. Bây giờ click vào thẻ Trang phục và nhập thêm 2 loại nữa để có tất cả 3 trang phục (chúng ta đã dùng **things/apple** và **things/watermelon-a**, nhưng bạn có thể dùng bất cứ hình nào mình muốn).
 
 __Now we’ve got some costumes, we want the sprite to change between them.__
 
