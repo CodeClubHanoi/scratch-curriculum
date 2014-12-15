@@ -157,33 +157,31 @@ Thay đổi độ khó của trò chơi theo 1 cách nào đó. Nếu chỉ làm
  
 Mỗi lần thay đổi, hãy nghĩ xem nó làm trò chơi dễ hơn hay khó hơn. Liệu trò chơi có quá dễ hoặc quá khó không? Làm sao có thể điều chỉnh được độ khó để nó ở mức vừa phải?
 
-## Step 6: Display a message when the game has finished. { .activity}
-__Let's show the player a "Game Over" message when they've finished__
+## Bước 6: Hiển thị 1 tin nhắn khi trò chơi kết thúc. { .activity}
+__Chúng ta hãy làm hiển thị tin nhắn "Game Over" cho người chơi khi họ kết thúc__
 
-## Activity Checklist { .check}
+## Những việc cần làm { .check}
 
-First of all, let's create a different Backdrop to display when the game has finished.
-1. Click on the stage and then the `Backdrops`{.blocklightgrey} tab. Change the name of the existing backdrop to **"GameOn"**. 
-2. Duplicate the backdrop and then add some text to the copy that says **"Game Over"**. You can change the size of the text by clicking on it and then 
-dragging one of the corners. Rename this backdrop to be **"GameOver"**.
-3. Click on the `Scripts`{.blocklightgrey} tab for the stage and set the "GameOn" backdrop to be the one displayed when the game is started. 	
-4. How can we detect when all the sprites have stopped? Remember we use the `stopped`{.blockorange} variable to record whether each sprite has been clicked? Let's check the `stopped`{.blockorange} variable for the **Fruit3** sprite to see if the game is over.  Select the Fruit3 sprite and then can use a `x position of Fruit3` { .blockblue} block from the `Sensing`{.blocklightgrey} tab, but change **x position** to `stopped`{.blockorange}.
-	
+Đầu tiên, chúng ta hãy tạo 1 hình nền khác để hiển thị khi trò chơi kết thúc.
+
+- Click vào sàn chơi và chọn thẻ `Backdrops`{.blocklightgrey}. Đổi tên hình nền hiện tại thành **"GameOn"**.
+- Nhân đôi hình nền và sau đó thêm 1 vài từ vào bản copy thể hiện **"Game Over"**. Có thể thay đổi kích cỡ chữ bằng cách click vào đó và kéo 1 trong các góc. Đổi lại tên hình nền thành **"GameOver"**.
+- Click vào thẻ `Scripts`{.blocklightgrey cho sàn chơi và đặt hình nền "GameOn" hiển thị khi trò chơi bắt đầu.   
+- Làm sao có thể phát hiện được khi tất cả các hình họa dừng lại? Hãy nhớ rằng chúng ta sử dụng biến số `stopped`{.blockorange} để lưu lại xem mỗi hình họa đã được click chưa? Chúng ta hãy kiểm tra biến số `stopped`{.blockorange} cho hình họa **Fruit3** để xem trò chơi đã dừng lại chưa. Chọn hình họa Fruit3 và sau đó sử dụng khối `x position of Fruit3` { .blockblue} từ thẻ `Sensing`{.blocklightgrey}, nhưng đổi **x position** thành `stopped`{.blockorange}.
 ```blocks
 when FLAG clicked
 switch backdrop to [GameOn v]
 forever
-	if <([stopped v] of [Fruit3 v]) = [YES]> then
-		switch backdrop to [GameOver v]
+     if <([stopped v] of [Fruit3 v]) = [YES]> then
+           switch backdrop to [GameOver v]
 ```
 
-## Test Your Project { .flag}
-__Click the green flag.__ Does the "Game Over" message appear when you click on Fruit3?
+## Chạy thử chương trình { .flag}
+__Click vào lá cờ màu xanh.__ Thông điệp "Game Over" có xuất hiện trên màn hình khi bạn click vào Fruit3 ?
 
-What happens if you stop Fruit3 before you've clicked on both of the other fruit sprites? Let's
-modify our script so that it will work regardless of the order in which the sprites are stopped.
+Điều gì diễn ra nếu bạn dừng Fruit3 trước khi bạn click vào cả hai hình họa trái cây còn lại? Hãy thay đổi chương trình sao cho chúng hoạt động không phụ thuộc vào thứ tự các hình họa dừng lại.
 
-5. To check to see that __all three__ fruit sprites have had their `stopped`{.blockorange} variables set to **YES**, we can use the `and` {. blockgreen} operator. This is a compicated block that can be quite fiddly to assemble, so try and put it together one step at a time. 
+5. Kiển tra để chắc rằng biến `stoped ` của __cả ba __ hình trái cây {.blockorange} đã chuyển sang trạng thái **YES**, chúng ta có thể sử dụng toán tử `and` {. blockgreen} . Đây là một đoạn khá khó để ghép lại nên hãy cố gắng lắp ráp chúng từng bước một.
 
 ```blocks
 	when FLAG clicked
@@ -193,50 +191,47 @@ forever
         switch backdrop to [GameOver v]
 ```
 
-## Test Your Project { .flag}
-__Click the green flag.__ Does the "Game Over" message appear when you all 3 Fruits are stopped.
-regardless of the order you clicked on them?
+## Kiếm tra dự án { .flag}
+__Click vào lá cờ màu xanh.__ Thông điệp "Game Over" có xuất hiện trên màn hình khi tất cả ba trái cây đều dừng lại, không phụ thuộc vào thứ tự bạn click vào chúng?
 
-## Save your project { .save}
+# Lưu lại dự án { .save }
 
-# Step 7. Tell the player whether they've won or lost. { .activity}
+# Bước 7: Thông báo cho người chơi rằng họ thắng hay thua cuộc chơi { .activity }
 
-__The aim of the game is to click on the sprites so they stop while showing the same costume. It would be nice to also display a message that told you whether you'd won or lost.__
+__Mục đích của trò chơi là click vào các hình họa trong khi chúng giống nhau. Chúng ta nên đưa ra màn hình một thông điệp cho người chơi rằng họ thắng hay thua.__
 
-## Activity Checklist { .check}
+## Những việc cần làm { .check }
 
-1. We wrote the code to check that the game was over in __step 6__, so all we need to do now is check to see if the player has won. Go back to the backdrops and and add some more text to the GameOver backdrop so that also displays the word **"WIN"**. Then change its name to **"Win"**.
-2. Copy the backdrop again to create one with a **"Lose"** message. Give it the name **"Lose"**.
-3. Now we need some code to work out which backrop to display once the game is over. We can use an `if...then...else` { .blockyellow} block to see if the player has won or lost by comparing each `costume #`{.blockpurple}  (costume number) using a similar `x position of Sprite` { .blockblue} block like we did before. This time, instead of looking at the `stopped`{.blockorange} variable, we can check the`costume #`{.blockpurple}  and see if Fruit1 has the same costume as Fruit2, and if Fruit2 has the same costume as Fruit3.
- 
-
+- Chúng ta sẽ viết một đoạn mã để kiểm tra khi trò chơi kết thúc ở __bước 6__, và việc duy nhất chúng ta phải làm là kiểm tra xem người chơi có thắng cuộc hay không. Quay lại hình nền và thêm một vài dòng vào hình nền GameOver và cũng như là đưa ra màn hình từ **"WIN"**. Sau đó đổi tên nó thành **"Win"**.
+- Sao chép hình nền một lần nữa và  tạo thông điệp **"Lose"** trên đó. Đặt tên nó là **"Lose"**.
+- Bây giờ chúng ta cần một vài đoạn chương trình để khiến cho các hình nền vừa được tạo hoạt động. Chúng ta có thể sử dụng `if...then...else` { .blockyellow} để biết rằng người chơi thắng hay thua bằng cách so sánh `costume #`{.blockpurple}  (số lượng custome) sử dụng đoạn code khá giống với đoạn  `x position of Sprite` { .blockblue} mà ta đã xây dựng lúc trước. Bây giờ, thay vì việc quan tâm đến biến `stopped`{.blockorange}, chúng ta có thế kiểm tra `costume #`{.blockpurple}  và xem xem Fruit1  Fruit2, Fruit3 có cùng costume hay không.
 ```blocks
-	when FLAG clicked
+     when FLAG clicked
 switch backdrop to [GameOn v]
 forever
     if <<<([stopped v]  of [Fruit1 v]) = [1]> and <([stopped v]  of [Fruit2 v]) = [1]>> and <([stopped v]  of [Fruit3 v]) = [1]>> then
-    	if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
-        	switch backdrop to [Win v]
+     if <<([costume # v]  of [Fruit1 v]) = ([costume # v]  of [Fruit1 v])> and <([costume # v]  of [Fruit2 v]) = ([costume # v]  of [Fruit3 v])>> then
+           switch backdrop to [Win v]
         else    
-			switch backdrop to [Lose v]
+                switch backdrop to [Lose v]
 ```
  
-## Test Your Project { .flag}
-__Click the green flag.__ Does the correct message appear when the game has finished? What will happen if each sprite's costume numbers don't match (for example, if Fruit2's costume number 3 is an apple and Fruit3's costume number 3 is a melon)?
+## Kiếm tra dự án { .flag}
+__Click vào là cờ màu xanh.__ Những thông điệp xuất hiện khi game xuất hiện có chính xác không? Điều gì xảy ra nếu các costume của các hình họa không giống nhau (ví dụ, nếu costume 3 của Fruit2 là một quả táo còn costume 3 của Fruit3 là một quả dưa?
 
-## Save your project { .save}
+## Lưu lại dự án { .save}
    
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Have a go at this challenge!__
+__Bạn đã hoàn thành xuất sắc dự án của mình. Có khá nhiều thứ thú vị có thể làm tiếp với trò chơi của bạn. Hãy thử các thử thách sau!__
 
-##Challenge: Make the game get harder and easier over time { .challenge}
+##Challenge: Khiến cho trò chơi khó hơn và dễ hơi theo thời gian { .challenge}
 
-Different people will have different skills at playing the game. __How could you make the game adjust its difficulty depending on the player?__
+Những người khác nhau có trình độ chơi khác nhau. __Bạn có thể thay đổi trò chơi như thế nào độ khó của nó có thể thay đổi theo trình độ người chơi?__
 
-One way you could do it is to __adjust the speed the costumes change at__. You can use a variable, called `delay`{.blockorange}, to give the duration of each sprite’s wait block. If the player wins the round, the delay can be reduced a little (to make the game harder). If the player loses the round, the delay can be increased a little (to make the game easier). 
+Một cách bạn có thể làm là __điều chỉnh tốc độ thay đổi của costume__. Bạn có thể sử dụng biến `delay`{.blockorange}, để tạo ra một khoảng thời gian chờ trong từng đoạn chương trình của các hình họa. Nếu người chơi thắng cuộc, khoảng thời gian chờ  có thế rút ngắn lại một chút (để khiến cho trò chơi khó hơn). Nếu người chơi thua cuộc, khoảng thời gian chờ có thể tăng lên một chút (để khiến trò chơi dễ hơn).
 
-You'll probably need to think about using a different way of starting the game each time it is played instead of the `when flag clicked`{.blockyellow} Then you can store values in variables that are remembered between each round of the game. 
+Bạn có thể nghĩ về việc thay đổi cách khởi động trò chơi thay vì `when flag clicked`{.blockyellow}. Sau đó bạn có thể lưu giá trị của biến được nhớ giữa các hiệp của trò chơi.
 
-## Save your project { .save}
+## Lưu lại dự án { .save}
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+__Rất tốt, bạn đã hoàn tất. Bây giờ bạn có thể trải nghiệm trò chơi của mình__
+Đừng quên rằng bạn có thể chia sẻ trò chơi của mình với bạn bè và người thân bằng cách click nút __Share__ ở thanh menu.
