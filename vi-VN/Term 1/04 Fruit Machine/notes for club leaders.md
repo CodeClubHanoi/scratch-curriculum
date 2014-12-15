@@ -1,29 +1,30 @@
-#NOTES FOR CLUB LEADERS
-##(Fruit Machine)
+#GHI CHÚ CHO LÃNH ĐẠO C U LẠC BỘ
+##(Máy hoa quả)
 
-###Introduction:
-This is a simple game that has three sprites that change costume. You have to stop them when they’re showing the same picture (like a fruit machine!).
+###Giới thiệu:
+Đây là 1 trò chơi đơn giản có 3 hình sprit để đổi trang phục. Bạn phải ngăn chúng lại khi chúng hiện ra hình ảnh giống nhau (giống 1 máy hoa quả!). 
 
-###Skills
-This project covers
+###Kỹ năng
 
-- Changing costumes
-- Running a loop
-- Stopping a loop on click
+Dự án này bao gồm
+- Đổi trang phục
+- Chạy vòng lặp
+- Ngừng 1 vòng lặp bằng click
 
-###Resources
-This project uses only standard Scratch images found within Scratch.
+###Các nguồn
+Dự án này chỉ sử dụng các hình ảnh Scratch tiêu chuẩn tìm thấy trong Scratch.
 
-###Scratch Cards required:
+###Các thẻ scratch được yêu cầu:
 Broadcast
 
-###Basic exercises
-* Step 1: Create a sprite that changes costumes 
-* Step 2: Making the picture change
-* Step 3: Making it stop when we click on it 
-* Step 4: Creating the other sprites
+###Các bài luyện cơ bản
+* Bước 1: Tạo 1 hình sprit để đổi trang phục 
+* Bước 2: Làm thay đổi hình ảnh
+* Bước 3: Làm cho hình dừng khi click vào đó 
+* Bước 4: Tạo những hình sprit khác
 
-###Challenges
-1. Make the game harder
-2. Make the game get harder and easier over time
-3. Detect when all the sprites have stopped on the same costume
+###Thử thách
+1. Làm trò chơi khó hơn
+2. Làm trò chơi dần trở nên khó hơn và dễ hơn
+3. Phát hiện khi tất cả các hình sprit dừng lại trên cùng 1 trang phục 
+
