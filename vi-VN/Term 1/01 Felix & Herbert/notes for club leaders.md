@@ -1,27 +1,28 @@
-#NOTES FOR CLUB LEADERS
+#GHI CHÚ CHO TRƯỞNG NHÓM
 
 ##(Felix & Herbert)
 
-###Introduction:
-We are going to make a game of catch with Felix the cat and Herbert the mouse. You control Herbert with the mouse and try to avoid getting caught by Felix. The longer you avoid him the more points you score, but don’t get caught because your score will go down! This is a simple project to introduce the basics of Scratch.
+###Giới thiệu:
+Chúng ta chuẩn bị làm một trò chơi đuổi bắt giữa mèo Felix và chuột Herbert. Bạn điều khiển Herbert với chuột máy tính và cố gắng tránh bị Felix bắt được. Bạn càng chạy trốn Felix được lâu thì càng ghi được nhiều điểm, nhưng đừng để vị bắt vì khi đó, điểm số sẽ bị giảm xuống! Đây là một dự án đơn giản nhằm mục đích giới thiệu các kiến thức cơ bản về Scratch.
 
-### Skills
-This project covers:
+### Kĩ năng
+Dự án này yêu cầu:
 
-1. Changing costumes and appearance
-2. Keeping and setting the score
-3. Broadcast messages
+1. Thay đổi tạo hình và ngoại hình
+2. Điều khiển điểm số
+3. Gửi thông báo
 
-### Resources
-This project uses resources found in the Scratch Backgrounds and Costumes folders
+### Tài nguyên
+Dự án này dùng nguồn tài nguyên tìm được trong tệp Background và Costume của Scratch.
 
-### Scratch Cards required
-Follow the mouse
+### Yêu cầu
+Đi theo con chuột
 
-### Basic exercises
+### Bài tập cơ bản
 
-* Step 1: Felix follows the mouse pointer
-* Step 2: Felix chases Herbert
-* Step 3: Felix says when he’s caught Herbert
-* Step 4: Herbert turns into a ghost when he’s caught 
-* Step 5: Keep score
+* Bước 1: Felix đi theo con trỏ
+* Bước 2: Felix đuổi bắt Herbert
+* Bước 3: Felix kêu khi bắt được Herbert
+* Bước 4: Herbert biến thành một con ma khi bị mèo bắt 
+* Bước 5: Giữ điểm
+
