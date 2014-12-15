@@ -8,63 +8,67 @@ note: "notes for club leaders.md"
 materials: "*.sb2"
 ...
 
-# Introduction { .intro}
-This game is a two player game where you race a parrot and a lioness across the desert. Each player has to press a key as fast as they can to move their animal, the first one to reach the edge of the screen wins.
+# Lời giới thiệu { .intro}
+Trò chơi dành cho 2 người chơi này là cuộc đua giữa một chú vẹt và một cô sư tử trên sa mạc. Mỗi người chơi phải ấn một phím nhanh nhất có thể để di chuyển con thú của họ, con thú đầu tiên chạm tới cạnh của màn hình sẽ chiến thắng.
 
 ![screenshot](desertrace_screenshot.png)
 
-# STEP 1: Create the scene and add the sprites { .activity}
+# BƯỚC 1: Tạo khung cảnh và thêm các hoạ tiết { .activity}
 
-## Activity Checklist { .check}
+## Danh sách liệt kê hoạt động { .check}
 >>>>>>> scratch2
 
-1. Select the Stage, and add the **Nature/desert** backdrop.
-ticking off the boxes below:
-2. Add a new sprite, select the **Lioness** sprite that you will find in the **Animals** folder.
-3. Add another sprite, select the **Parrot** sprite that you will find in the **Animals** folder. `Shrink`{.blocklightgrey} it so that it is roughly the same size as the lioness sprite.
+1. Chọn sân khấu và thêm bối cảnh **Nature/desert** (Tự nhiên/sa mạc). Đánh dấu vào các ô bên dưới: 
+2. Thêm một đồ họa mới, chọn hình ảnh **Lioness** (cô sư tử) trong tệp **Animals**. 
+3. Thêm một đồ họa khác, chọn hình ảnh **Parrot** (chú vẹt) trong tệp **Animals**. `Shrink`{.blocklightgrey} để nó có kích thước tương tự cô nàng sư tử.
 
-# STEP 2: Make the lioness and the parrot move { .activity}
 
-We want the sprite to move when you press a key.
+# BƯỚC 2: Làm cho chú khỉ và cô sư tử di chuyển { .activity}
 
-## Activity Checklist { .check}
+Chúng ta cần làm cho hoạt họa di chuyển khi bạn ấn phím.
 
-1. First select the lion sprite and set it to `move (4) steps`{.blockblue} when you press the **‘L’** key.
+## Việc cần làm { .check}
+
+
+1. Trước tiên hãy chọn hình ảnh sư tử và đặt nó vào `move (4) steps`{.blockblue} khi bạn ấn phím **‘L’**
 
 ```blocks
 when [l v] key pressed
     move (4) steps
 ```
 
-2. Next, select the parrot sprite and set it to `move (4) steps`{.blockblue} when you press the **‘A’** key.
+2. Tiếp theo, chọn hình chú vẹt và đặt nó vào `move (4) steps`{.blockblue} khi bạn ấn phím **‘A’** .
 
 ```blocks
 when [a v] key pressed
     move (4) steps
 ```
 
-## Test Your Project { .flag}
 
-__Click the green flag__ 
-Do your lioness and parrot move across the screen when you press the ‘A’ and ‘L’ keys?
+## Chạy thử dự án của bạn { .flag}
+__Click vào lá cờ màu xanh lá__ 
+Liệu cô nàng sư tử và chú vẹt của bạn có di chuyển trên màn hình khi bạn ấn phím ‘A’ và ‘L’?
 
-## Save your project { .save}
+## Lưu dự án của bạn { .save}
 
-# STEP 3: Starting the race { .activity}
+# BƯỚC 3: Bắt đầu cuộc đua { .activity}
 
-We need to have a way to start the race and to know who has won. __First we create a start button.__
+Chúng ta cần có một cách để bắt đầu cuộc đua và biết được người chiến thắng.
+__Đầu tiên chúng ta tạo một nút khởi động.__
 
-## Activity Checklist { .check}
+## Những việc cần làm { .check}
 
-1. Add a new sprite from a file. Choose the **button3** sprite which is inside **“Things”**.
-2. Edit the costume of the button sprite, add the text **‘start’** to it and click OK. Move the sprite to the middle of the stage.
-3. Now add a script that shows the sprite when the project is run:
+
+1. Thêm một hình họa mới từ một file.. Chọn hình họa **button3** ở bên trong phần **“Things”**.
+2. Chỉnh sửa nút hình họa, thêm từ **‘start’** (bắt đầu) vào đó và click "OK". Di chuyển hình ảnh đến giữa sân khấu.
+3. Hãy bắt đầu thêm một dòng lệnh cho hình hoạ biết khi nào dự án được khởi động:
 
 ```blocks
     when FLAG clicked
     show
 ```
-4. Now we want the button to count down from 3 and then say go and then `hide`{.blockblue} when it is clicked. Add another script like this one:
+
+4. Bây giờ chúng ta cần nút đếm ngược từ 3, sau đó nói "Go" (bắt đầu đua) và `hide`{.blockblue} khi nó được click. Thêm một dòng lệnh khác như dưới đây:
 
 ```blocks
 when this sprite clicked
@@ -75,25 +79,30 @@ when this sprite clicked
     hide
 ```
 
-## Test Your Project { .flag}
-__Click on the green flag.__
 
-When you press the start button does it countdown to the start of the race before disappearing?
+##Chạy thử dự án của bạn { .flag}
+__Click vào lá cờ màu xanh lá.__ 
 
-## Save your project { .save}
+Khi bạn nhấn nút khởi động, nó có đếm ngược để bắt đầu cuộc đua trước khi biến mất không?
 
-We only want the racers to move after the race has started and we want to know when the race has finished so we need a variable to hold that information.
+## Lưu dự án của bạn { .save}
 
-1. Add a variable for all sprites called `racing`{.blockorange}. Untick the box next to it so it does not show on the stage.
-2. Now set **racing** to be **0** when the project is first started. Change your `when flag clicked`{.blockyellow} script from before to look like this:
+
+
+Chúng ta cần để cho các tay đua di chuyển sau khi cuộc đua bắt đầu và biết rằng khi nào cuộc đua kết thúc. Bởi vậy, chúng ta cần một biến để lưu giữ thông tin đó.
+
+1. Thêm một biến cho tất cả các hình họa gọi là `racing`{.blockorange}. Bỏ chọn ô cạnh đó để nó không thể hiển thị trên sân khấu.
+2. Bây giờ hãy thiết lập **racing** về **0** khi dự án khởi động lần đầu tiên. Thay đổi dòng lệnh `when flag clicked`{.blockyellow} trước đó để được như sau: 
 
 ```blocks
 when FLAG clicked
     show
     set [racing v] to (0)
 ```
-3. Next, set the **racing** variable to be 1 when the starting countdown has finished.
-4. Now we need to stop the lion and the parrot from moving unless the racing variable is set to be 1. Click on the parrot sprite. __Add a control block to the script__ that only allows the parrot to move if __racing = 1__.
+
+
+3. Tiếp theo, thiết lập biến **racing** tới 1 khi đồng hồ đếm ngược kết thúc.
+4. Bây giờ, chúng ta cần dừng cô sư tử và chú vẹt lại trừ khi biến của cuộc đua là 1. Click vào hình chú vẹt. __Thêm một khối điều khiển vào chương trình__ mà chỉ cho phép chú vẹt di chuyển khi __racing = 1__.
 
 ```blocks
 
@@ -101,23 +110,23 @@ when FLAG clicked
     if <(racing) = [1]>
         move (4) steps
 ```
-5. Now do the same for the lion sprite.
+5. Làm tương tự với hình họa của cô nàng sư tử.
 
-## Test Your Project { .flag}
-__Click on the green flag.__
 
-Does the lioness or the parrot move only after the countdown has finished?
+## Chạy thử dự án của bạn { .flag}
+__Click vào lá cờ màu xanh lá.__ 
 
-We want to know who wins the race and reset it when it has finished so you can
-race again.
+Cô sư tử và chú vẹt chỉ di chuyển sau khi dừng đém ngược phải không?
 
-## Save your project { .save}
+Chúng ta cần biết người dành chiến thắng trong cuộc đua và đặt lại nó khi kết thúc để có thể đua một lần nữa.
 
-# STEP 4: Finishing the race { .activity}
+## Lưu dự án của bạn { .save}
 
-## Activity Checklist { .check}
+# BƯỚC 4: Kết thúc cuộc đua { .activity}
 
-1. Add a block to the parrot’s script that sets the **racing** variable to be 0 when the sprite touches the edge of the screen.
+## Danh sách liệt kê hoạt động { .check}
+
+1. Thêm một khối lệnh cho chú vẹt để đặt biến **racing** trở về 0 khi hình họa chạm tới góc của màn hình.
 
 ```blocks
 when [a v] key pressed
@@ -126,8 +135,11 @@ if <(racing) = [1]>
     if <touching [edge v]?>
     set (racing) to [0]
 ```
-2. Now we want the parrot to let us know if it wins the race. Record a new sound for the Parrot sprite that will be played when the parrot wins. Click `sounds`{.blocklightgrey} and then record the sound of the parrot winning the race!
-3. Now add blocks that `play`{.blockpurple} the sound you recorded and makes the parrot say it has won:
+
+
+2. Giờ đây chúng ta cần chú vẹt cho ta biết nếu nó chiến thắng cuộc đua. Ghi lại một âm thanh mới cho hình họa chú vẹt, nó sẽ được phát khi chú vẹt chiến thắng. Click `sounds`{.blocklightgrey}  và sau đó ghi lại âm thanh của chú vẹt chiến thắng trong cuộc đua!
+
+3. Thêm khối lệnh âm thanh `play`{.blockpurple} mà bạn ghi lại được và sau đó để cho chú vẹt nói rằng nó đã chiến thắng:
 
 ```blocks
     when [a v] key pressed
@@ -138,26 +150,28 @@ if <(racing) = [1]>
             play sound [recording1 v]
             say [The Parrot Wins! v] for (3) secs   
 ```
-4. Now repeat these steps for the lioness.
 
-## Test Your Project { .flag}
-__Click on the green flag.__
+4. Bây giờ hãy lặp lại các bước trên đối với cô sư tử. 
 
-Can you press the start button and race by pressing the ‘A’ and ‘L’ keys?
-Do the sprites make their winning sound and say they’ve won when they reach the end of the race?
+##Chạy thử dự án của bạn { .flag}
+__Click vào lá cờ màu xanh lá.__ 
 
-## Save your project { .save}
+Bạn có thể nhấn nút bắt đầu và tiếp tục cuộc đua bằng cách ấn phím ‘A’ và ‘L’ không?
+Liệu hình họa có phát ra âm thanh chiến thắng khi nó hoàn thành cuộc đua?
 
-# STEP 5: Resetting the game { .activity}
+##Lưu dự án của bạn { .save}
 
-After the race is finished we need to tell the other sprites we have won and reset the game so we can play again.
+# BƯỚC 5: Đặt lại trò chơi { .activity}
 
-__We need the winning sprite to broadcast that it has won.__
+Sau khi cuộc đua kết thúc, chúng ta cần cho những hình họa biết chúng ta đã chiến thắng và đặt lại trò chơi để có thể chơi một lần nữa.
 
-## Activity Checklist { .check}
+__Chúng ta cần hình họa chiến thắng truyền tin rằng nó đã giành phần thắng.__
 
-1. Click on the Parrot sprite.
-Add a block that broadcasts a **"finished”** message after the sprite says it has won.
+## Những việc cần làm { .check}
+
+
+1. Click vào hình họa chú vẹt.
+Thêm một khối lệnh truyền tin cho một tin nhắn **"finished”** sau khi hình họa thông báo rằng nó đã chiến thắng.
 
 ```blocks
 when [a v] key pressed
@@ -170,34 +184,45 @@ if <(racing) = [1]>
         broadcast [finished v]
 ```
 
-2. Now we need to add a new script that listens for the finished broadcast and moves the parrot back to the start. What happens if you change the value that **x** is set to?
+
+2. Bây giờ, chúng ta cần thêm một dòng lệnh mới để lắng nghe tín hiệu kết thúc và di chuyển chú vẹt trở về vị trí khởi động. Chuyện gì xảy ra khi ta thay đổi giá trị **x** được thiết lập?
+
 
 ```blocks
 when I receive [finished v]
     set x to (-170)
 ```
-3. Now add the same script for the lioness. Test different **x** values to make sure the lion and the parrot line up at the start.
-4. We also want to put the lion and the parrot in the same position when the project is run, so add another script to each that moves them to the start when we click the flag.
+
+3. Thêm lệnh tương tự cho cô sư tử. Kiểm tra các giá trị **x** khác nhau để chắc rằng cô sử tử và chú vẹt thẳng hàng tại vị trí khởi động.
+4. Chúng ta cũng cần phải đặt cô sư tử và chú vẹt ở vị cùng vị trí khi dự án bắt đầu chạy. Do đó, thêm một dòng lệnh khác cho mỗi con vật để di chuyển chúng về vị trí khởi động khi click vào lá cờ.
+
 
 ```blocks
 when FLAG clicked
     set x to (-170)
 ```
-5. Now click on the button sprite and add a script that shows it when it receives the finished message.
 
-## Test Your Project { .flag}
+5. Bây giờ click vào nút “Sprite” và thêm dòng lệnh để biết khi nó nhận được tin nhắn đã hoàn thành.
 
-__Click on the green flag.__
 
-Can you race against a friend, one of you moving the parrot by pressing ‘A’ and the other moving the Lion by pressing ‘L’?
 
-## Save your project { .save}
+##Chạy thử dự án của bạn { .flag}
 
-##Challenge 1: Add a booster { .challenge}
+__Click vào lá cờ màu xanh lá.__ 
 
-* __Try to add a booster__ that you can use once each race that moves the parrot or the lion __30 steps in 1 go.__
-* __Add a new costume__ with fire coming out behind for each sprite and make it appear when the boost is pressed.
-* __Create another sound__ that the sprite will make when the boost is pressed.
+Bạn có thể đua với một người bạn, một trong hai bạn di chuyển con vẹt bằng cách ấn phím ‘A’ còn người còn lại di chuyển cô sư tử bằng phím ‘L’ không?
+
+
+##Lưu dự án của bạn { .save}
+
+
+##Thử thách 1: Thêm một động cơ tăng tốc { .challenge}
+
+
+
+* __Thử thêm một động cơ tăng tốc__ mà ta có thể dùng một lần trong mỗi cuộc đua giúp chú vẹt và cô sư tử __30 bước trong một lần.__
+* __Thêm một trang phục mới__ cùng với tia lửa phía sau mỗi hình họa sẽ xuất hiện khi nhấn nút tăng tốc.
+* __Thêm một âm thanh khác__ để hình họa sẽ phát ra khi tăng tốc.
 
 ```blocks
 when [p v] key pressed
@@ -211,21 +236,22 @@ if <<(racing) = [1]> and <(boosted) = [0]>>
         say [The Parrot Wins! v] for (3) secs
         broadcast [finished v]
 ```
-    
-## Test Your Project { .flag}
 
-## Save your project { .save}
 
-##Challenge 2: Use custom blocks to simplify your script { .challenge}
+##Chạy thử dự án của bạn { .flag}
 
-The code to check if the race has finished is now used in two places for each sprite: when the sprite is moving normally and when it's moving with the booster. We can simplify our script using a custom block which is a chunk of code that gets used in more than one place. It's a bit like making up our own Scratch code block!
+##Lưu dự án của bạn { .save}
 
-1.  Choose the Parrot's script.
-2. Select the `More Blocks`{.blocklightgrey} palette and then click the `Make a Block`{.blocklightgrey} button. 
-3. Give the custom block a name by typing **"finished"** into the pink box. Then click OK.
-4. You'll now see a `define finished`{.blockpurple} block appear in the scripts window. Drag it to a clear area.
-5. Detach the `if`{.blockyellow}`touching edge?`{.blocklightblue}`then`{.blockyellow} block and drag it to the `define finished`{.blockpurple} block.
+##Thử thách 2: Dùng custom blocks để đơn giản hóa dòng lệnh { .challenge}
 
+
+Dòng lệnh để kiểm tra nếu cuộc đua kết thúc giờ đây được sử dụng trong hai nơi cho mỗi hình họa: khi hình họa di chuyển bình thường, và khi chúng tăng tốc. Chúng ta có thể đơn giản hóa dòng lệnh của mình bằng cách dùng custom block, đó chính là một phần của dòng lệnh giúp ta có thể dùng chúng nhiều hơn một điểm, cũng giống như việc viết Scratch code block!
+
+1. Chọn dòng lệnh của chú vẹt.
+2. Chọn bảng màu `More Blocks`{.blocklightgrey} và sau đó click vào `Make a Block`{.blocklightgrey}.
+3. Đặt tên cho khối custom bằng cách gõ **"finished"** vào ô màu hồng, sau đó chọn OK.
+4. Ta có thể thấy khối `define finished`{.blockpurple} xuất hiện trong cửa sổ dòng lệnh. Kéo nó ra một vùng trống.
+5. Gỡ khối `if`{.blockyellow}`touching edge?`{.blocklightblue}`then`{.blockyellow} và kéo nó tới khối `define finished`{.blockpurple}
 
 ```blocks
 define finished
@@ -242,14 +268,15 @@ if <<(racing) = [1]> and <(boosted) = [0]>>
     move (4) steps
 finished
 ```
-Can you drag the `finished`{.blockpurple} block from the palette and use it like any other code item?
 
-Delete the other `if`{.blockyellow}`touching edge?`{.blocklightblue} block from your script and replace it with another `finished`{.blockpurple} custom block.
+Bạn có thể kéo khối `finished`{.blockpurple} từ bảng màu và dùng nó như những mục mã hóa khác?
 
-Does this make your code easier to read? Can you create a similar custom block for the lioness sprite?
+Xóa khối `if`{.blockyellow}`touching edge?`{.blocklightblue} khác từ dòng lệnh và thay thế nó bằng một khối `finished`{.blockpurple} tự tạo.
 
-## Test Your Project { .flag}
+Liệu nó có thể làm cho chương trình của bạn dễ đọc hơn không? Bạn có thể tạo một khối tự tạo tương tự cho hình họa cô sư tử không?
 
-## Save your project { .save}
+##Chạy thử dự án của bạn { .flag}
 
-__Well done you’ve finished, now you can enjoy the game!__
+##Lưu dự án của bạn { .save}
+
+__Rất tốt, bạn đã hoàn thành, giờ hãy tận hưởng trò chơi của mình nào!__
