@@ -1,37 +1,38 @@
-#NOTES FOR CLUB LEADERS
+#Ghi chú cho trưởng nhóm
 ##(Fish Chomp)
 
-###Introduction
-We’re going to make a Fish Chomp game! Guide the large Hungry Fish around and try to eat all the prey that are swimming around.
+###Giới thiệu
+Chúng ta chuẩn bị tạo trò Fish Chomp! Hướng dẫn con cá bơi xung quanh và bắt mồi.
 
-###Skills
-This project covers:
+###Kĩ năng
+Dự án này yêu cầu:
 
-* Moving sprites
-* Controlling sprites with the mouse
-* Changing costumes
-* Collision detection
-* Sprites reading other sprites’ state
-* Keeping and changing scores
+* Di chuyển các hình họa
+* Kiểm soát hình họa bằng con trỏ chuột
+* Thay đổi tạo hình
+* Phát hiện sự va chạm
+* Các hình họa nắm được tình trạng của nhau
+* Điều khiển sự thay đổi điểm số
 
-###Resources
-This project uses resources found in the Scratch Backgrounds and Costumes folders AND the hungry fish costumes can be found in the volunteers packs.
+###Tài nguyên
+Dự án nawyf dùng các tài nguyên được tìm thấy trong tệp Background và Costumes trong Scratch và tạo hình con cá có thể tìm thấy từ tài nguyên của tình nguyện viên.
 
-###Scratch Cards required:
-* Animate it
-* Keep score
-* Timer
-* Follow the mouse
 
-###Basic exercises
-* Step 1: Hungry Fish follows the mouse pointer 
-* Step 2: Add some prey
-* Step 3: Hungry Fish eats the prey
+###Yêu cầu
+* Tạo hiệu ứng
+* Giữ điểm số
+* Đếm giờ
+* Đi theo con trỏ
 
-###Challenges
-1. Make the prey move differently
-2. Make the prey avoid the hungry fish
-3. Add a score
-4. Add a countdown
-5. Add a bonus score
-6. Change the game: keep a prey alive!
+###Bài tập cơ bản
+* Bước 1: Hungry Fish đi theo con trỏ chuột
+* Bước 2: Thêm hình họa con mồi
+* Bước 3: Hungry Fish ăn mồi
+###Thử thách
+1. Làm các con mồi di chuyển khác nhau
+2. Làm con mồi tránh Hungry Fish
+3. Thêm điểm số
+4. Thêm bấm giờ
+5. Thêm điểm thưởng
+6. Thay đổi trò chơi: con mồi làm trung tâm
+
