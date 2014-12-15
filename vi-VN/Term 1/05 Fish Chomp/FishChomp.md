@@ -1,30 +1,31 @@
 ---
-title: Fish Chomp
-level: Level 2
-language: en-GB
+title: Cá bắt mồi
+level: Cấp độ 2
+language: vi-VN
 stylesheet: scratch
 embeds: "*.png"
 note: "notes for club leaders.md"
 materials: "*.sb2"
 ...
 
-# Introduction { .intro}
-We’re going to make a Fish Chomp game! Guide the large Hungry Fish and try to eat all the prey that are swimming around.
+
+# Giới thiệu { .intro}
+Chúng ta sẽ làm trò Fish Chomp! Điều khiển con cá lớn đang đói và cố gắng ăn hết những con mồi bơi xung quanh.
 
 ![screenshot](fishchomp_screenshot.png)
 
-# STEP 1: Create a sprite that follows the mouse { .activity}
-__Let’s make the Hungry Fish swim around the sea!__
+# BƯỚC 1: Tạo một hình họa chạy theo con trỏ màn hình { .activity}
+__Hãy làm con cá đang đói bơi xung quanh biển__
 
-## Activity Checklist { .check}
+## Hoạt động { .check}
 
-1. Start a new Scratch project.
-2. Select the Stage, then select the Stage’s Backdrop tab. Import the
-background **Nature/underwater3** using `choose background from library`{.blocklightgrey}. Finally, remove **backdrop1**.
-3. Change the name of Sprite1 to 'Hungry Fish' by clicking on the blue 'i' symbol.
-4. Import Hungry Fish’s costume, **resources/hungry-fish.png** then remove its existing **costume1** and **costume2**.
-5. Click on the blue '**i**' symbol again,  and make sure the sprite can only flip left-right.
-6. Now create a script for Hungry Fish to follow the mouse around the sea like this:
+1. Bắt đầu một dự án mới.
+2. Chọn stage, backdrop. Chọn hình nền __Nature/underwater3__ bằng cách nhấn nút `choose background from library
+`{.blocklightgrey}. Cuối cùng, bỏ **backdrop1**
+3. Thay đổi tên của Sprite1 thành ‘Hungry Fish’ bằng cách nhấp chuột vào biểu tượng chữ ‘i’ màu xanh.
+4. Nhập hình Hungry Fish, **resources/hungry-fish.png** rồi xóa **costume1** và **costume2** đang có sẵn.
+5. Click vào biểu tượng chữ ‘**i**’ màu xanh một lần nữa, mà đảm bảo là hình họa chỉ có thể xoay trái-phải.
+6. Bây giờ, tạo lệnh cho Hungry Fish để nó di chuyển theo con trỏ xung quanh biển như sau:
 
 ```blocks
 when FLAG clicked
@@ -33,14 +34,15 @@ when FLAG clicked
         move (3) steps
 ```
 
-## Test Your Project { .flag}
+## Chạy thử { .flag}
 
-__Click the green flag.__ 
-Move the mouse pointer around the sea. Does the fish follow the pointer?
-What happens if you don’t move the mouse pointer and the fish catches up with it? What does it look like? Why does it do this?
+__Click vào biểu tượng lá cờ màu xanh.__ 
+Di chuyển con trỏ chuột xung quanh biển. Con cá có đi theo con trỏ không?
+Chuyện gì sẽ xảy ra nếu bạn không di chuyển con trỏ chuột và con cá theo kịp nó? Trông con cá lúc đó thế nào? Và tại sao nó lại làm như vậy?
 
-1. You can stop the Hungry Fish flipping like crazy if you make it only move when it’s not too near the mouse pointer
-(The `distance to`{.blocklightblue} block is in the `Sensing`{.blocklightgrey} palette).
+1. Bạn có thể dừng việc Hungry Fish xoay chiều liên tục bằng cách làm nó di chuyển chỉ khi nó ở quá gần con trỏ
+(Dùng khối `distance to`{.blocklightblue} trong bảng `Sensing`{.blocklightgrey}).
+
 
 ```blocks
 when FLAG clicked
@@ -49,21 +51,24 @@ when FLAG clicked
         move (3) steps
 ```
 
-## Save your project { .save}
+## Lưu lại tiến độ của bạn { .save}
 
-## Things to try { .try}
-
-If you want, you can put different numbers in the script. How does that change how Hungry Fish moves? Change the distance threshold to a large number (e.g. 100), or a small number (e.g. 1). Change the amount the fish moves to a large number (e.g. 20) or a small number (e.g. 1 or even 0).
+## Có thể thử thêm { .try}
 
 
-# STEP 2: Add some prey { .activity}
-__It's time to make something for the Hungry Fish to try to eat!__
+Nếu bạn muốn, bạn có thể cho số khác nhau vào lệnh. Việc này có ảnh hưởng gì đến việc di chuyển có con cá? Thay đổi khoảng cách lên số lớn( VD: 100), hoặc số nhỏ hơn (VD: 1). Thay đổi số lần di chuyển của con cá lên số lớn (VD: 20), hoặc nhỏ (VD: 1 hoặc 0).
 
-## Activity Checklist { .check}
 
-1. Create a new sprite from the library, using **Animals/starfish**. 
-2. Use the `Shrink`{.blocklightgrey} sprite tool (above the Stage) to make the sprite smaller.
-3. Create a script to make the prey swim around. We want them to move randomly, so let’s make it move forward a bit, then turn a random amount left or right, then do it again.
+# BƯỚC 2: Thêm con mồi { .activity}
+__Đã đến lúc làm gì đấy cho con cá ăn rồi!__
+
+## Hoạt động  { .check}
+
+
+1. Tạo một hình họa mới trong thư viện, dùng **Animals/starfish**
+2. Dùng côn cụ `Shrink`{.blocklightgrey} (ở trên Stage) để làm hình họa nhỏ hơn.
+3. Tạo lệnh để làm những con mồi bơi xung quanh. Chúng ta muốn chúng di chuyển ngẫu nhiên, nên hãy làm chúng tiến lên một chút, rồi quay một chút, sang trái hoặc phải, rồi lặp lại.
+
 
 ```blocks
 when FLAG clicked
@@ -73,28 +78,29 @@ when FLAG clicked
         if on edge, bounce  
 ```
 
-## Test Your Project { .flag}
+## Chạy thử { .flag}
 
-__Click the green flag__ and watch the prey swim around. Does it swim like you expect? Does it swim realistically?
+__Click vào biểu tượng lá cờ màu xanh__ rồi xem những con mồi di chuyển. Chúng có bơi như bạn mong muốn? Chúng có thực sự đang bơi?
 
-__At the moment, the Hungry Fish and the prey don’t interact with each other. We’ll sort that out in the next step.__
+__Tại thời điểm này, con hungry Fish và những con mồi chưa có tương tác, chúng ta sẽ làm việc này trong bước sau.__
 
-## Save your project { .save}
+## Lưu lại tiến độ của bạn { .save}
 
-## Things to try { .try}
+## Có thể thử thêm { .try}
 
-* Try changing the numbers in the `pick random`{.blockgreen} and move blocks. How do they make the prey move differently?
-* What does the `if on edge, bounce`{.blockblue} block do? Take it out and see what happens.
+* Thử thay đổi số trong `pick random`{.blockgreen}
+ và di chuyển các khối. Việc này làm những con mồi di chuyển khác như thế nào?
+* Khối `If on edge, bounce`{.blockblue} có tác dụng gì? Bỏ nó đi và xem chuyện gì xảy ra.
 
-#STEP 3: Hungry Fish eats the prey { .activity}
+# BƯỚC 3: Hungry Fish ăn mồi { .activity}
 
-__Now we want to make the Hungry Fish eat the prey!__ Once the Hungry Fish has caught the prey in its mouth, two things need to happen:
-* The Hungry Fish needs to close its mouth and make a "chomp" sound.
-* The prey needs to disappear, then reappear a short while later.
+__Bây giờ chúng ta muốn làm con cá ăn những con mồi!__ Một khi con cá bắt được mồi trong miệng nó, hai việc cần xảy ra:
+* Con Hungry Fish cần ngậm miện lại là tạo ra âm thanh nuốt con mồi.
+* Con mồi cần biến mất, rồi xuất hiện lại sau đó một lúc.
 
-## Activity Checklist { .check}
+## Hoạt động { .check}
 
-1. First, let’s make the prey disappear if it is touching the Hungry Fish, and then reappear 3 seconds later. Use the `touching`{.blocklightblue} block to see if it is touching the fish.
+1. Đầu tiên, hãy làm con mồi biến mất khi nó chạm vào con Hungry Fish, rồi xuất hiện lại sau 3 giây. Dùng khối `touching`{.blocklightblue} để xem liệu nó có chạm vào con cá không.
 
 ```blocks
 
@@ -108,11 +114,11 @@ forever
 			show
 ```
 
-## Test Your Project { .flag}
-__Try out your game again – can you spot any problems?__ Notice that the prey disappears no matter where it touches the Hungry Fish. Also, the fish could just wait 3 seconds and eat the prey the moment it reappears – this isn’t very fair!
+## Chạy thử { .flag}
 
-2. How could we make sure the prey only disappears if it is touching the Hungry Fish’s mouth? Well, we could use the `touching color`{.blocklightblue} block, and see if it is touching the fish’s blue teeth. To do this, replace the `touching`{.blocklightblue} block with a `touching color`{.blocklightblue} block in your script, click on the color in the block and then click again on the fish’s teeth.
-3. Next we can make the prey move to a random point on the screen before reappearing using a `go to`{.blockblue} block, and giving it a random value for **x** and **y**.
+__Thử lại trò chơi - bạn có gặp vấn đề gì không?__ Hãy để ý, con mồi có thể biến mất dù nó chạm vào bất kì bộ phần nào của con cá. Vì thế, con cá có thể đứng yên đợi 3 giây để con mồi xuất hiện lại rồi ăn nó tiếp. Như vậy không công bằng!
+2. Làm thế nào để đảm bảo con mồi chỉ biến mất khi nó chạm vào miệng con cá? Chúng ta có thể dùng khối `touching color`{.blocklightblue}, và xem nếu con mồi chạm vào răng màu xanh của con cá không. Để làm việcnaày, bỏ khối `touching`{.blocklightblue} và thay bằng `touching color`{.blocklightblue} trong lệnh cũ, chọn màu trong khối và click vào răng con cá.
+3. Tiếp theo, chúng ta có thể làm con mồi di chuyển đến một vị trí bất kì trên màn hình trước khi xuất hiện trở lại bằng cách dùng khối `go to`, và cho nó một giá trị **x** và **y** ngẫu nhiên.
 
 ```blocks
 when FLAG clicked
@@ -127,11 +133,11 @@ when FLAG clicked
 			show
 ```
     
-## Test Your Project { .flag}
+## Chạy thử { .flag}
 
-Try the game again – does the prey only vanish when it touches the fish’s mouth? And does it re-appear in a random point on the screen instead of where it was eaten?
+Thử chơi lại trò chơi – Con mồi có biến mất chỉ khi nó chạm vào miệng con cá không? Và nó có xuất hiện trở lại tại một điểm bất kì thay bằng tại điểm nó bị ăn không?
 
-4. The fish needs to know when it has eaten something so it can play a sound and change its skin. To do this, we can have the prey `broadcast`{.blockyellow} the fact that it’s been eaten before vanishing.
+4. Con cá cần biết khi nó ăn được con mồi để có thể tạo ra âm thanh và đổi màu da của nó. Để làm được việc này, chúng ta cần khối `broadcast`{.blockyellow} chỉ ra việc con mồi đã bị ăn trước khi biến mất.
 
 ```blocks
 
@@ -148,10 +154,10 @@ forever
 		show
 	
 ```
-__Now we want the fish to respond to this message by making a “chomp” sound and snapping its jaws.__
+__Bây giờ chúng ta cần con cá phản hồi lại bằng việc tạo ra âm thanh và ngậm hàm lại.__
 
-5. Add the **resources/mouth-closed.png** costume and the **resources/chomp.mp3** sound to the Hungry Fish sprite.
-6. Then, add a new script to the Hungry Fish to respond to the message `broadcast`{.blockyellow} by the prey. This script should make the fish play the **'chomp'** sound and `switch to`{.blockpurple} the mouth-closed costume, wait briefly and then switch back.
+5. Thêm hình **resources/mouth-closed.png** và âm thanh **resources/chomp.mp3** cho hình họa Hungry Fish.
+6. Sau đó, thêm lệnh mới cho Hungry Fish để phản ứng lại tin `broadcast` của con mồi. Đoạn lệnh này cần làm con cá tạo tiếng động và chuyển sang hình `mouth-closed`{.blockyellow}, đợi một lúc rồi chuyển đổi trở lại.
 
 ```blocks
 when I receive [got me v]
@@ -162,100 +168,124 @@ when I receive [got me v]
 		switch to costume [hungry-fish v]
 ```
 
-__Now our Hungry Fish is ready to eat, let’s fill the ocean with prey. Right-click on the prey sprite and click “duplicate” several times.__
+__Bây giờ Hungry Fish đã sẵn sàng đi ăn mồi, hãy phủ đầy con mồi trong nước biến. Click chuột phải vào hình họa con mồi và nhấn "Duplicate" vài lần.__
 
-## Test Your Project { .flag}
-Click the green flag.
-Does the Hungry Fish eat the prey? Does it eat each of the different prey?
+## Chạy thử { .flag}
+__Click biểu tượng lá cờ màu xanh.__
+Con cá có ăn mồi không? Và nó có ăn các con mồi khác nhau không?
 
-## Save your project { .save}
+## Lưu lại tiến độ của bạn { .save}
 
-##Things to think about
-Why do we need to add a `show`{.blockblue} block to the start of the prey’s script? Think about what would happen if the prey is eaten, then the game is stopped before it reappears. What would happen if the game was restarted then?
+## Nghĩ thêm:
+Tại sao chúng ta cần thêm khối `show`{.blockblue} để bắt đầu dòng lệnh cho con mồi? Nghĩ xem chuyện gì sẽ xảy ra nếu con mồi bị ăn, sau đó trò chơi dừng lại trước khi tiếp tục. Chuyện gì sẽ xảy ra nếu trò chơi bắt đầu lại?
 
-__Well done you’ve finished the basic game. There are more things you can do to your game though. Are you ready for a challenge?__
+__Tốt lắm! Bạn đã hoàn thành trò chơi cơ bản. Có nhiều thứ khác bạn có thể sáng tạp với trò chơi này. Bạn có sẵn sàng thử thách?__
 
-
-## Challenge 1: Make the prey move differently { .challenge}
-
-At the moment, all the prey move in the same way. __Can you make one of them move differently?__ __Hint:__ Don’t spend too long on this bit without looking at the other activities in this project.
-
-__Pick one of the prey to experiment on.__ If they have the same costumes, make it a different colour with the `set color effect`{.blockpurple} block. That way, you can tell it apart from the rest of the prey.
-
-Make this prey move slower than the others. __Hint:__ Look at the `move 2 steps`{.blockblue} block.
+## Thử thách 1: Làm con mồi di chuyển khác đi { .challenge}
 
 
-## Test Your Project { .flag}
-Does the prey move slower? Does this make the game better?
-If you can do that, __try making one of the prey move quicker than the others.__
+Hiện tại, tất cả các con mồi đều di chuyển cùng chiều. __Bạn có thể làm một con trong số chúng di chuyển khác đi?__ __Gợi ý:__ Không cần dành quá nhiều thời gian cho việc này mà bỏ qua những hoạt động khác trong dự án.
 
 
-Does the prey still move in a sensible way? Do these changes make the game better?
-__Hint:__ If your prey swims around in circles, check the values of the `pick random`{.blockgreen} block in the `turn`{.blockblue} block.
+__Chọn một con mồi để thử nghiệm.__ Nếu chúng có cùng vẻ ngoài, làm chúng khác đi bằng cách thay đổi màu sắc với khối `set color effect`. Bằng cách này, bạn có thể phân biệt chúng với những con còn lại.
 
-How about you make each of the prey behave differently, using different combinations of these changes?
 
-Do any of these changes make the game better? Do they make the game more interesting, more fun, harder, or easier? Are any of those “better”?
+Làm con mồi này bơi chậm hơn các con khác. __Gợi ý:__ Nhìn vào khối `move 2 steps`{.blockblue}.
 
-## Save your project { .save}
 
-## Challenge 2: Make the prey avoid the Hungry Fish { .challenge}
+## Chạy thử { .flag}
 
-The prey in this game are really stupid! They just swim around randomly until they’re eaten. Real prey swim away from predators. __Let’s make one of the prey swim away from the Hungry Fish.__
+Con mồi có di chuyển chậm hơn không? Việc này có làm trò chơi thú vị hơn không?
+Nếu bạn làm được việc đó, __hãy thử làm một con mồi di chuyển nhanh hơn các con mồi khác.__
 
-There’s no block in Scratch that tells you the direction that another sprite is in. But you can make one sprite point towards another, then make it turn around to face away. The blocks you need are in the `Motion`{.blocklightgrey} palette.
 
-Using that idea, __make one of the prey always point away from the Hungry Fish.__ 
+Con mồi vẫn di chuyển như bình thường chứ? Những thay đổi này có làm trò chơi thú vị hơn không?
 
-You might find that your prey gets stuck in the corner if it is always swimming away from the fish. You might want to have the prey only try to escape when the fish gets close. __Hint:__ Look back at how we used the `distance to`{.blocklightblue} block ealier in the game. 
+__Gợi ý:__ Nếu con mồi bơi quanh vòng tròn, kiểm tra lại giá trị của khối `pick random`{.blockgreen} trong khối `turn`{.blockblue}.
 
-## Test Your Project { .flag}
-Does this make the prey harder to catch? Does it make the game better?
+Bạn nghĩ sao về việc làm mỗi con mồi di chuyển khác nhau bằng cách kết hợp những thay đổi trên?
 
-## Save your project { .save}
 
-## Challenge 3: Add a score { .challenge}
-It’s not enough just to eat lobsters. How do you know you’re better at the game than your friends? __You need a way to keep score so lets add a score board.__ Look at the __Keep Score scratch card__ for an idea of how to do it. 
+Những thay đổi này có làm trò chơi hay hơn, thú vị hơn, khó hơn hay dễ hơn không?
 
-Where should you put the block that changes the score?
 
-Make sure the score goes back to zero at the start of the game. Where should you put that block?
+## Lưu lại tiến độ của bạn { .save}
 
-## Test Your Project { .flag}
-Does the score go to zero at the start of the game? Does it go up every time you eat prey?
+## Thử thách 2: làm những con mồi tránh Hungry Fish { .challenge}
 
-## Save your project { .save}
 
-## Challenge 4: Add a countdown { .challenge}
+Những con mồi trong trò này rất ngu xuẩn! Chúng chỉ bơi xung quanh cho đến khi bị ăn. Những con mồi thật thường bơi xa khỏi kẻ thù của chúng. __Hãy làm con mồi chạy khỏi Hungry Fish__
 
-__Give yourself a time limit in the game.__ How many prey can you eat in thirty seconds?
+Không có khối nào trong Scratch cho bạn biết trước đường đi của hình họa. Nhưng bạn có thể làm một hình họa chỉ về phía một hình khác, sau đó làm nó quay đi hướng khác. Nhứng khối bạn cần nằm trong bảng `Motion`{.blocklightgray}.
 
-Look at the __Timer scratch card__ for how to add a timer to the game. Start with the game lasting thirty seconds.
 
-## Test Your Project { .flag}
-Does the timer start at 30?
+Với ý tưởng này, __làm một con mồi quay đầu ra hướng khác con cá.__
 
-Does it go down at the right speed?
 
-Can you catch prey while the timer is going?
+Bạn có thể thấy những con mồi bị kẹt ở góc nếu chúng luôn bơi ra khỏi con cá. Bạn muốn con mồi chỉ bơi đi xa khi con cá lại gần. __Gợi ý:__ xem lại cách chúng ta dùng khối `distance to`{.blocklightblue}.
 
-Does the game stop when the timer reaches zero?
 
-## Save your project { .save}
+## Chạy thử { .flag}
+Việc này có khiến việc bắt mồi khó hơn không? Nó có làm trò chơi tốt hơn không?
 
-## Challenge 5: Add a bonus score { .challenge}
-Award a large bonus score if you can eat all three lobsters at the same time. How can you tell how many prey have been eaten?
+## Lưu lại tiến độ của bạn { .save}
 
-__Hint:__ One way to do this __uses a variable to count how many prey are swimming around.__
+## Thử thách 3: Thêm điểm số { .challenge}
+Chỉ ăn mồi là chưa đủ.  Làm thế nào để bạn biết bạn chơi tốt hơn người khác? __Bạn cần tìm cách ghi lại điểm số, nên hãy thêm bảng ghi điểm.__ Nhìn vào __Keep score scratch card__ để xem cách làm.
 
-## Save your project { .save}
+Bạn nên để ô ghi điểm ở đâu?
 
-## Challenge 6: Change the game: keep a prey alive! { .challenge}
-Sometimes, you can have great new ideas by taking an existing idea and doing the opposite.
 
-__Modify the game so that, instead of you controlling a fish that tries to eat the others, you control one prey in a sea with lots of Hungry Fish.__ How long can you last before you’re eaten? Instead of having a score, how about giving the prey 3 lives and ending the game when they're all gone?
+Đảm bảo điểm số về 0 lúc bắt đầu trò chơi. Bạn nên để khối đó ở đâu?
 
-## Save your project { .save}
 
-__Well done you’ve finished, now you can enjoy the game!__
-Don’t forget you can share your game with all your friends and family by clicking on __Share__ on the menu bar!
+## Chạy thử { .flag}
+Điểm số có về 0 lúc trò chơi bắt đầu không? Điểm có tăng dần mỗi khi con cá ăn mồi?
+
+
+## Lưu lại tiến độ của bạn { .save}
+
+## Thử thách 4: Thêm biến thời gian { .challenge}
+
+
+__Giới hạn thời gian cho trò chơi.__ Bạn có thể ăn bao nhiêu mồi trong 30 giây?
+
+Nhìn vào __Timer scratch card__ để xem cách thêm bảng tính thời gian. Bắt đầu với 30 giây 
+
+
+## Chạy thử { .flag}
+
+Timer có phải 30 giây không?
+
+Nó có giảm đúng tốc độ?
+
+Bạn có thể ăn mồi lúc bảng tính thời gian đang chạy không?
+
+Trò chơi có dừng lại khi hết giờ?
+
+## Lưu lại { .save}
+
+## Thử thách 5: Thêm điểm thưởng { .challenge}
+
+Thưởng thêm nhiều điểm nếu bạn có thể ăn hết 3 con mồi một lúc. Làm cách nào để biết bạn đã ăn bao nhiêu con mồi?
+
+
+__Gợi ý:__ Một cách để làm việc này là __dùng một biến để đếm số mồi đang bơi xung quanh.__
+
+
+## Lưu lại { .save}
+
+## Thử thách 6: Thay đổi trò chơi: làm con mồi sống! { .challenge}
+Đôi khi bạn có thể có ý tưởng tuyệt vời bằng cách lấy một ý tưởng có sẵn và làm ngược lại.
+
+__Giản lược trò chơi bằng cách, thay bằng việc bạn điều khiển một con cá ăn mồi, bạn sẽ điều khiển một con mồi trong biển có rất nhiều Hungry Fish. __ Bạn có thể sống sót trong bao lâu? Thay bằng việc có điểm số, hãy cho con mồi 3 mạng và trò chơi kết thúc khi hết số mạng sống.
+
+
+## Lưu lại{ .save}
+
+
+__Tốt lắm! Bạn đã kết thúc. Bây giờ bạn có thể thử chơi!__
+Đừng quên bạn có thể chia sẻ trò chơi của bạn với bạn bè và gia đình bằng cách nhấp chuột vào __Share__ ở thanh menu!
+
+
+
