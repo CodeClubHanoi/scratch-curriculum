@@ -20,11 +20,11 @@ materials: ""*.sb2""
 
 __Chúng ta hãy nhập những hình ảnh khác nhau cho trò chơi__
 
-1. Bắt đầu 1 dự án scratch mới. Xóa bỏ hình con mèo bằg cách click vào đó sau đó click “Delete”
-2. Đầu tiên, chúng ta hãy thêm 1 hình nền mới từ thư viện hình ảnh. Chọn hình nền  **rays** từ mục **Other** và sau đó xóa bỏ nền trắng ban đầu. 2. Bây giờ thêm 1 hình họa mới từ thư viện.
-3. Chọn 1 hình ảnh từ bất kỳ thư mục nào. Chúng ta đã sử dụng **things/Bananas**, nhưng bạn có thể sử dụng bất kỳ hình ảnh nào bạn muốn.
-4. Click vào màu xanh '**i**' bên cạnh hình ảnh của sprit trong cửa sổ Sprit, Đặt tên lại hình họa thành 'Fruit'.
-5. Bây giờ click vào thẻ Trang phục và nhập thêm 2 loại nữa để có tất cả 3 trang phục (chúng ta đã dùng **things/apple** và **things/watermelon-a**, nhưng bạn có thể dùng bất cứ hình nào mình muốn).
++ Bắt đầu 1 dự án scratch mới. Xóa bỏ hình con mèo bằg cách click vào đó sau đó click “Delete”
++ Đầu tiên, chúng ta hãy thêm 1 hình nền mới từ thư viện hình ảnh. Chọn hình nền  **rays** từ mục **Other** và sau đó xóa bỏ nền trắng ban đầu. 2. Bây giờ thêm 1 hình họa mới từ thư viện.
++ Chọn 1 hình ảnh từ bất kỳ thư mục nào. Chúng ta đã sử dụng **things/Bananas**, nhưng bạn có thể sử dụng bất kỳ hình ảnh nào bạn muốn.
++ Click vào màu xanh '**i**' bên cạnh hình ảnh của sprit trong cửa sổ Sprit, Đặt tên lại hình họa thành 'Fruit'.
++ Bây giờ click vào thẻ Trang phục và nhập thêm 2 loại nữa để có tất cả 3 trang phục (chúng ta đã dùng **things/apple** và **things/watermelon-a**, nhưng bạn có thể dùng bất cứ hình nào mình muốn).
 
 __Now we’ve got some costumes, we want the sprite to change between them.__
 
